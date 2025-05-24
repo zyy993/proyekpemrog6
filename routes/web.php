@@ -38,10 +38,21 @@ Route::get('/info1', function () {
 Route::get('/info2', function () {
     return view('info2');
 });
-Route::get('/eticket', function () {
-    return view('eticket');
+Route::get('/eticket1', function () {
+    return view('eticket1');
 });
 Route::get('/myticket', function () {
     return view('myticket');
 });
-
+Route::get('/eticket2', function () {
+    return view('eticket2');
+});
+Route::get('/pilihtempat1', function () {
+    return view('pilihtempat1');
+});
+Route::get('/pilihtempat2', function () {
+    return view('pilihtempat2');
+});
+    Route::get('/seating', function () {
+       return view('seating');
+   });
