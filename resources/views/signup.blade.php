@@ -38,25 +38,28 @@
       class="absolute inset-0 w-full h-full object-cover -z-10"
       src="{{ asset('img/bgsignup.jpg') }}"
     />
-    <form
+    <form action="{{ route('submit.registrasi') }}" method="post"
+
       aria-label="Sign Up Form"
       class="relative w-full max-w-md flex flex-col items-center space-y-3 px-6 py-8 bg-transparent"
     >
+    @csrf
+
       <h2 class="text-white font-bold text-xl mb-2 select-none z-10">Sign Up</h2>
       <input
         class="w-full rounded-lg bg-[#E5E7EB] bg-opacity-80 placeholder-gray-400 text-gray-700 py-2 px-4 text-sm focus:outline-none z-10"
         placeholder="Email"
-        type="email"
+        type="email" name="email"
       />
       <input
         class="w-full rounded-lg bg-[#E5E7EB] bg-opacity-80 placeholder-gray-400 text-gray-700 py-2 px-4 text-sm focus:outline-none z-10"
         placeholder="Password"
-        type="password"
+        type="password" name="password"
       />
       <input
         class="w-full rounded-lg bg-[#E5E7EB] bg-opacity-80 placeholder-gray-400 text-gray-700 py-2 px-4 text-sm focus:outline-none z-10"
         placeholder="Confirm Password"
-        type="password"
+        type="password" name="name"
       />
       <button
         class="w-full rounded-md bg-[#4F6D8C] text-white font-semibold py-2 text-sm hover:bg-[#3e5670] transition-colors z-10"

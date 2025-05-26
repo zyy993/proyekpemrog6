@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +16,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
+Route::get('/regis', [AuthController::class, 'tampilRegistrasi'])->name('registrasi');
+
+Route::post('/regis/sub', [AuthController::class, 'submitRegistrasi'])->name('submit.registrasi');
+
+Route::get('/login', [AuthController::class, 'tampilLogin'])->name('login.tampil');
+
+Route::post('/login/sub', [AuthController::class, 'submitLogin'])->name('submit.login');
+
+Route::post('/home', [HomeController::class, 'tampilHome'])->name('home.tampil');
+
+
+
+route::get('/home',function(){
     return view('home');
 });
-Route::get('/signup', function () {
+Route::get('/', function () {
     return view('signup');
 });
 Route::get('/signin', function () {
@@ -56,3 +71,4 @@ Route::get('/pilihtempat2', function () {
     Route::get('/seating', function () {
        return view('seating');
    });
+
