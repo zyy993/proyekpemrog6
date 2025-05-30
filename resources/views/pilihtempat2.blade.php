@@ -17,6 +17,9 @@
             background-color: #ccc; /* Gray */
             cursor: not-allowed;
         }
+        .button-disabled {
+            opacity: 0.5; /* Reduced opacity for disabled state */
+        }
     </style>
     <script>
         function selectSeat(seat) {
@@ -24,31 +27,60 @@
             if (seat.classList.contains('selected')) {
                 return;
             }
-            // Remove 'selected' class from all seats
+
+            // Remove 'selected' class from all seats and reset their colors
             const selectedSeats = document.querySelectorAll('.selected');
-            selectedSeats.forEach(s => s.classList.remove('selected'));
+            selectedSeats.forEach(s => {
+                s.classList.remove('selected');
+                s.style.backgroundColor = ''; // Reset color to original
+                // Reset the corresponding opposite seat
+                const oppositeSeat = document.querySelector(`.seat[data-seat-name="${s.getAttribute('data-seat-name')}"]:not([data-side="${s.getAttribute('data-side')}"])`);
+                if (oppositeSeat) {
+                    oppositeSeat.classList.remove('selected');
+                    oppositeSeat.style.backgroundColor = ''; // Reset color
+                }
+            });
 
             // Add 'selected' class to the clicked seat
             seat.classList.add('selected');
+            seat.style.backgroundColor = '#4CAF50'; // Change to green or any color you prefer
+
+            // Check if the selected seat is in Zone A, B, or D and select the opposite
+            const seatName = seat.getAttribute('data-seat-name');
+            const side = seat.getAttribute('data-side');
+            if (seatName === 'ZONE A' || seatName === 'ZONE B' || seatName === 'ZONE D') {
+                const oppositeSide = side === 'left' ? 'right' : 'left';
+                const oppositeSeat = document.querySelector(`.seat[data-seat-name="${seatName}"][data-side="${oppositeSide}"]`);
+                if (oppositeSeat) {
+                    oppositeSeat.classList.add('selected');
+                    oppositeSeat.style.backgroundColor = '#4CAF50'; // Change to green or any color you prefer
+                }
+            }
 
             // Enable the Select Seat button
             const selectSeatButton = document.getElementById('selectSeatButton');
-            selectSeatButton.classList.remove('disabled');
+            selectSeatButton.classList.remove('disabled', 'button-disabled');
             selectSeatButton.disabled = false; // Enable button
+            selectSeatButton.style.opacity = 1; // Set opacity to 100%
         }
 
         function confirmSelection() {
-            const selectedSeat = document.querySelector('.selected');
-            if (selectedSeat) {
-                const seatName = selectedSeat.getAttribute('data-seat-name');
-                const confirmation = confirm(`You have selected ${seatName}. Do you want to proceed?`);
+            const selectedSeats = document.querySelectorAll('.selected');
+            if (selectedSeats.length > 0) {
+                const seatNames = Array.from(selectedSeats).map(seat => seat.getAttribute('data-seat-name')).join(', ');
+                const confirmation = confirm(`You have selected ${seatNames}. Do you want to proceed?`);
                 if (confirmation) {
                     alert('Seat confirmed!');
                 } else {
-                    selectedSeat.classList.remove('selected'); // Deselect if user cancels
+                    // Deselect all selected seats and reset their colors
+                    selectedSeats.forEach(seat => {
+                        seat.classList.remove('selected'); // Deselect
+                        seat.style.backgroundColor = ''; // Reset color
+                    });
                     const selectSeatButton = document.getElementById('selectSeatButton');
-                    selectSeatButton.classList.add('disabled');
+                    selectSeatButton.classList.add('disabled', 'button-disabled');
                     selectSeatButton.disabled = true; // Disable button again
+                    selectSeatButton.style.opacity = 0.5; // Set opacity to 50%
                 }
             } else {
                 alert('Please select a seat first.');
@@ -85,13 +117,13 @@
                 <div class="flex justify-between gap-1.5">
                     <!-- Left zones -->
                     <div class="flex flex-col gap-1.5 w-1/3">
-                        <div class="bg-[#a00052] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE A" onclick="selectSeat(this)">
+                        <div class="bg-[#a00052] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE A" data-side="left" onclick="selectSeat(this)">
                             ZONE A
                         </div>
-                        <div class="bg-[#d6006f] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE B" onclick="selectSeat(this)">
+                        <div class="bg-[#d6006f] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE B" data-side="left" onclick="selectSeat(this)">
                             ZONE B
                         </div>
-                        <div class="bg-[#e9c0c9] text-white font-bold text-sm text-center py-12 rounded-bl-lg seat" data-seat-name="ZONE D" onclick="selectSeat(this)">
+                        <div class="bg-[#e9c0c9] text-white font-bold text-sm text-center py-12 rounded-bl-lg seat" data-seat-name="ZONE D" data-side="left" onclick="selectSeat(this)">
                             ZONE D
                         </div>
                     </div>
@@ -106,13 +138,13 @@
                     </div>
                     <!-- Right zones -->
                     <div class="flex flex-col gap-1.5 w-1/3">
-                        <div class="bg-[#a00052] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE A" onclick="selectSeat(this)">
+                        <div class="bg-[#a00052] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE A" data-side="right" onclick="selectSeat(this)">
                             ZONE A
                         </div>
-                        <div class="bg-[#d6006f] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE B" onclick="selectSeat(this)">
+                        <div class="bg-[#d6006f] text-white font-bold text-sm text-center py-12 rounded-md seat" data-seat-name="ZONE B" data-side="right" onclick="selectSeat(this)">
                             ZONE B
                         </div>
-                        <div class="bg-[#e9c0c9] text-white font-bold text-sm text-center py-12 rounded-br-lg seat" data-seat-name="ZONE D" onclick="selectSeat(this)">
+                        <div class="bg-[#e9c0c9] text-white font-bold text-sm text-center py-12 rounded-br-lg seat" data-seat-name="ZONE D" data-side="right" onclick="selectSeat(this)">
                             ZONE D
                         </div>
                     </div>
@@ -121,7 +153,7 @@
         </div>
         <!-- Select Seat Button -->
         <div class="mt-4 text-center">
-            <button id="selectSeatButton" onclick="confirmSelection()" class="bg-blue-500 text-white py-2 px-4 rounded disabled" disabled>Select Seat</button>
+            <button id="selectSeatButton" onclick="confirmSelection()" class="bg-blue-500 text-white py-2 px-4 rounded button-disabled" disabled>Select Seat</button>
         </div>
     </main>
 

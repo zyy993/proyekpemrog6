@@ -137,8 +137,57 @@
      </form>
     </section>
    </div>
-   <div class="flex justify-center mb-12">
-    <button class="bg-[#607d8b] text-white font-semibold rounded-md px-6 py-2 text-sm select-none hover:bg-[#546e7a] transition-colors" type="button">
+   <!-- Payment Section -->
+    <section class="max-w-3xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+      <div class="relative w-full sm:w-72">
+        <select
+          aria-label="Bank selection"
+          id="bankSelect"
+          class="w-full appearance-none rounded border border-gray-300 bg-white py-2 pl-3 pr-10 text-xs text-gray-700 font-semibold"
+        >
+          <option value="">Bank selection</option>
+          <option value="BCA">BCA</option>
+          <option value="BRI">BRI</option>
+          <option value="Mandiri">Mandiri</option>
+          <option value="BSI">BSI</option>
+          <option value="CIMB">CIMB</option>
+          <option value="BNI">BNI</option>
+        </select>
+        <i
+          aria-hidden="true"
+          class="fas fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+        ></i>
+      </div>
+      <div
+        class="w-full sm:w-auto flex flex-col text-xs font-semibold text-black border border-gray-300 rounded-lg overflow-hidden shadow-md"
+        style="min-width: 220px;"
+      >
+        <div
+          class="flex justify-between px-5 py-2 border-b border-gray-300 bg-white"
+          style="height: 36px;"
+        >
+          <span class="text-gray-700">Ticket</span>
+          <span class="text-gray-700">4.375.000</span>
+        </div>
+        <div
+          class="flex justify-between px-5 py-2 border-b border-gray-300 bg-white"
+          style="height: 36px;"
+        >
+          <span class="text-gray-700">TAX</span>
+          <span class="text-gray-700">656.250</span>
+        </div>
+        <div
+          class="flex justify-between px-5 py-2 bg-white font-bold text-black rounded-b-lg"
+          style="height: 36px;"
+        >
+          <span>Complete</span>
+          <span>5.031.000</span>
+        </div>
+      </div>
+    </section>
+   <!-- Make Payment Button -->
+   <div class="max-w-3xl mx-auto flex justify-center">
+    <button id="makePaymentBtn" class="bg-[#607a9f] text-white font-semibold rounded-md py-2 px-10 select-none" type="button">
      Make Payment
     </button>
    </div>
@@ -253,5 +302,16 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.getElementById('makePaymentBtn').addEventListener('click', function() {
+      const bankSelect = document.getElementById('bankSelect');
+      const selectedBank = bankSelect.value;
+      if (!selectedBank) {
+        alert('Please select a bank before making payment.');
+        return;
+      }
+      alert(`You have selected ${selectedBank} bank for payment.`);
+    });
+  </script>
  </body>
 </html>

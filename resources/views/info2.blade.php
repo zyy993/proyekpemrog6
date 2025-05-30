@@ -94,141 +94,256 @@
    <!-- Tickets list -->
    <section class="mt-6 space-y-4 max-w-md mx-auto lg:mx-0">
     <!-- Ticket item 1 -->
-    <article class="border border-gray-300 rounded-xl flex overflow-hidden relative">
-     <img alt="Taylor Swift wearing red outfit with red gloves and rings, text overlay 'f*ck the patriarchy' in white cursive, ticket thumbnail" class="w-28 h-20 object-cover rounded-l-xl" height="90" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" width="120"/>
-     <div class="flex-1 p-3 flex flex-col justify-between">
-      <div>
-       <h2 class="font-semibold text-sm text-[#1A1A1A]">
-        Taylor Swift | The Eras Tour
-       </h2>
-       <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
+<article class="border border-gray-300 rounded-xl flex overflow-hidden relative">
+  <img alt="Taylor Swift wearing red outfit..." class="w-28 h-20 object-cover rounded-l-xl" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" />
+
+  <div class="flex-1 p-3 flex flex-col justify-between">
+    <div>
+      <h2 class="font-semibold text-sm text-[#1A1A1A]">Taylor Swift | The Eras Tour</h2>
+      <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
         <li class="flex items-center gap-1">
-         <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]">
-         </i>
-         <span>
-          Gelora Bung Karno Stadium, Jakarta
-         </span>
+          <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
+          <span>Gelora Bung Karno Stadium, Jakarta</span>
         </li>
         <li class="flex items-center gap-1">
-         <i class="fas fa-clock text-[#4B4B4B] text-[10px]">
-         </i>
-         <span>
-          Gates open at 5:00 PM | Show starts at 7:00 PM
-         </span>
+          <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
+          <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
         </li>
-       </ul>
-       <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline" href="#">
-        * Terms and conditions apply
-       </a>
-      </div>
-      <div class="flex items-center justify-end gap-3 mt-2">
-       <div class="flex items-center gap-1 text-xs text-[#4B4B4B]">
-        <i class="fas fa-user">
-        </i>
-        <span>
-         1
-        </span>
-       </div>
-       <button class="bg-[#1A2EBF] text-white text-xs font-semibold rounded px-3 py-1" type="button">
-        Buy Now
-       </button>
-      </div>
-     </div>
-     <div class="absolute top-0 right-0 bg-[#1A2EBF] text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">
-      Presale
-     </div>
-    </article>
+      </ul>
+      <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline" href="#">* Terms and conditions apply</a>
+    </div>
+<!-- Bagian bawah: jumlah tiket + tombol -->
+    <div class="flex flex-col items-end gap-2 mt-2">
+      <!-- Counter -->
+<div class="flex items-center gap-2">
+  <button id="decrement" type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold">−</button>
+  <span id="quantity" class="w-4 text-center text-sm font-semibold select-none">1</span>
+  <button id="increment" type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold">+</button>
+</div>
+      <!-- Tombol Buy -->
+      <button class="bg-[#1A2EBF] text-white text-xs font-semibold rounded px-3 py-1" type="button">Buy Now</button>
+    </div>
+  </div>
+  <div class="absolute top-0 right-0 bg-[#1A2EBF] text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">VVIP</div>
+</article>
+
+<!-- Script untuk tombol -->
+<script>
+  const quantityEl = document.getElementById("quantity");
+  const quantityLabel = document.getElementById("quantityLabel");
+  const decrementBtn = document.getElementById("decrement");
+  const incrementBtn = document.getElementById("increment");
+
+  let quantity = 1;
+
+  decrementBtn.addEventListener("click", () => {
+    if (quantity > 1) {
+      quantity--;
+      quantityEl.textContent = quantity;
+      quantityLabel.textContent = quantity;
+    }
+  });
+
+  incrementBtn.addEventListener("click", () => {
+    quantity++;
+    quantityEl.textContent = quantity;
+    quantityLabel.textContent = quantity;
+  });
+</script>
     <!-- Ticket item 2 -->
-    <article class="border border-gray-300 rounded-xl flex overflow-hidden relative">
-     <img alt="Taylor Swift wearing red outfit with red gloves and rings, text overlay 'f*ck the patriarchy' in white cursive, ticket thumbnail" class="w-28 h-20 object-cover rounded-l-xl" height="90" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" width="120"/>
-     <div class="flex-1 p-3 flex flex-col justify-between">
-      <div>
-       <h2 class="font-semibold text-sm text-[#1A1A1A]">
-        Taylor Swift | The Eras Tour
-       </h2>
-       <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
+<article class="border border-gray-300 rounded-xl flex overflow-hidden relative">
+  <img alt="Taylor Swift ticket" class="w-28 h-20 object-cover rounded-l-xl" height="90" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" width="120"/>
+  <div class="flex-1 p-3 flex flex-col justify-between">
+    <div>
+      <h2 class="font-semibold text-sm text-[#1A1A1A]">Taylor Swift | The Eras Tour</h2>
+      <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
         <li class="flex items-center gap-1">
-         <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]">
-         </i>
-         <span>
-          Gelora Bung Karno Stadium, Jakarta
-         </span>
+          <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
+          <span>Gelora Bung Karno Stadium, Jakarta</span>
         </li>
         <li class="flex items-center gap-1">
-         <i class="fas fa-clock text-[#4B4B4B] text-[10px]">
-         </i>
-         <span>
-          Gates open at 5:00 PM | Show starts at 7:00 PM
-         </span>
+          <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
+          <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
         </li>
-       </ul>
-       <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline" href="#">
-        * Terms and conditions apply
-       </a>
+      </ul>
+      <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline" href="#">* Terms and conditions apply</a>
+    </div>
+    <div class="flex flex-col items-end gap-2 mt-2">
+      <div class="flex items-center gap-2">
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold decrement">−</button>
+        <span class="quantity w-4 text-center text-sm font-semibold select-none">1</span>
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold increment">+</button>
       </div>
-      <div class="flex items-center justify-end gap-3 mt-2">
-       <div class="flex items-center gap-1 text-xs text-[#4B4B4B]">
-        <i class="fas fa-user">
-        </i>
-        <span>
-         1
-        </span>
-       </div>
-       <button class="bg-[#1A2EBF] text-white text-xs font-semibold rounded px-3 py-1" type="button">
-        Buy Now
-       </button>
-      </div>
-     </div>
-     <div class="absolute top-0 right-0 bg-[#1A2EBF] text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">
-      Presale
-     </div>
-    </article>
+      <button class="bg-[#1A2EBF] text-white text-xs font-semibold rounded px-3 py-1" type="button">Buy Now</button>
+    </div>
+  </div>
+  <div class="absolute top-0 right-0 bg-[#1A2EBF] text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">ZONE B</div>
+
+  <script>
+    (() => {
+      const article = document.currentScript.parentElement;
+      const incrementBtn = article.querySelector('.increment');
+      const decrementBtn = article.querySelector('.decrement');
+      const quantitySpan = article.querySelector('.quantity');
+
+      incrementBtn.addEventListener('click', () => {
+        let currentQty = parseInt(quantitySpan.textContent);
+        quantitySpan.textContent = currentQty + 1;
+      });
+
+      decrementBtn.addEventListener('click', () => {
+        let currentQty = parseInt(quantitySpan.textContent);
+        if (currentQty > 1) {
+          quantitySpan.textContent = currentQty - 1;
+        }
+      });
+    })();
+  </script>
+</article>
     <!-- Ticket item 3 -->
     <article class="border border-gray-300 rounded-xl flex overflow-hidden relative">
-     <img alt="Taylor Swift wearing red outfit with red gloves and rings, text overlay 'f*ck the patriarchy' in white cursive, ticket thumbnail" class="w-28 h-20 object-cover rounded-l-xl" height="90" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" width="120"/>
-     <div class="flex-1 p-3 flex flex-col justify-between">
-      <div>
-       <h2 class="font-semibold text-sm text-[#1A1A1A]">
-        Taylor Swift | The Eras Tour
-       </h2>
-       <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
+  <img alt="Taylor Swift ticket 3" class="w-28 h-20 object-cover rounded-l-xl" height="90" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" width="120"/>
+  <div class="flex-1 p-3 flex flex-col justify-between">
+    <div>
+      <h2 class="font-semibold text-sm text-[#1A1A1A]">Taylor Swift | The Eras Tour</h2>
+      <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
         <li class="flex items-center gap-1">
-         <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]">
-         </i>
-         <span>
-          Gelora Bung Karno Stadium, Jakarta
-         </span>
+          <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
+          <span>Gelora Bung Karno Stadium, Jakarta</span>
         </li>
         <li class="flex items-center gap-1">
-         <i class="fas fa-clock text-[#4B4B4B] text-[10px]">
-         </i>
-         <span>
-          Gates open at 5:00 PM | Show starts at 7:00 PM
-         </span>
+          <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
+          <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
         </li>
-       </ul>
-       <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline" href="#">
-        * Terms and conditions apply
-       </a>
+      </ul>
+      <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline" href="#">* Terms and conditions apply</a>
+    </div>
+    <div class="flex flex-col items-end gap-2 mt-2">
+      <div class="flex items-center gap-2">
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold decrement">−</button>
+        <span class="quantity w-4 text-center text-sm font-semibold select-none">1</span>
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold increment">+</button>
       </div>
-      <div class="flex items-center justify-end gap-3 mt-2">
-       <div class="flex items-center gap-1 text-xs text-[#4B4B4B]">
-        <i class="fas fa-user">
-        </i>
-        <span>
-         1
-        </span>
-       </div>
-       <button class="bg-[#1A2EBF] text-white text-xs font-semibold rounded px-3 py-1" type="button">
-        Buy Now
-       </button>
-      </div>
-     </div>
-     <div class="absolute top-0 right-0 bg-[#1A2EBF] text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">
-      Presale
-     </div>
-    </article>
+      <button class="bg-[#1A2EBF] text-white text-xs font-semibold rounded px-3 py-1" type="button">Buy Now</button>
+    </div>
+  </div>
+  <div class="absolute top-0 right-0 bg-[#1A2EBF] text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">ZONE D</div>
+
+  <script>
+    (() => {
+      const article = document.currentScript.parentElement;
+      const incrementBtn = article.querySelector('.increment');
+      const decrementBtn = article.querySelector('.decrement');
+      const quantitySpan = article.querySelector('.quantity');
+
+      incrementBtn.addEventListener('click', () => {
+        let currentQty = parseInt(quantitySpan.textContent);
+        quantitySpan.textContent = currentQty + 1;
+      });
+
+      decrementBtn.addEventListener('click', () => {
+        let currentQty = parseInt(quantitySpan.textContent);
+        if (currentQty > 1) {
+          quantitySpan.textContent = currentQty - 1;
+        }
+      });
+    })();
+  </script>
+</article>
    </section>
+    <!-- Tickets list sold out -->
+<section class="mt-6 space-y-4 max-w-md mx-auto lg:mx-0">
+    <!-- Ticket item 1 -->
+    <article class="border border-gray-300 rounded-xl flex overflow-hidden relative opacity-50 pointer-events-none select-none">
+  <img alt="Sold Out Ticket" class="w-28 h-20 object-cover rounded-l-xl" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" />
+
+  <div class="flex-1 p-3 flex flex-col justify-between">
+    <div>
+      <h2 class="font-semibold text-sm text-[#1A1A1A]">Taylor Swift | The Eras Tour</h2>
+      <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
+        <li class="flex items-center gap-1">
+          <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
+          <span>Gelora Bung Karno Stadium, Jakarta</span>
+        </li>
+        <li class="flex items-center gap-1">
+          <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
+          <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+        </li>
+      </ul>
+      <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto" href="#">* Terms and conditions apply</a>
+    </div>
+    <div class="flex flex-col items-end gap-2 mt-2">
+      <div class="flex items-center gap-2">
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold" disabled>−</button>
+        <span class="w-4 text-center text-sm font-semibold select-none">0</span>
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold" disabled>+</button>
+      </div>
+      <button class="bg-gray-500 text-white text-xs font-semibold rounded px-3 py-1 cursor-not-allowed" type="button" disabled>Sold Out</button>
+    </div>
+  </div>
+  <div class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">ZONE A</div>
+</article>
+    <!-- Ticket item 2 -->
+    <article class="border border-gray-300 rounded-xl flex overflow-hidden relative opacity-50 pointer-events-none select-none">
+  <img alt="Sold Out Ticket" class="w-28 h-20 object-cover rounded-l-xl" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" />
+
+  <div class="flex-1 p-3 flex flex-col justify-between">
+    <div>
+      <h2 class="font-semibold text-sm text-[#1A1A1A]">Taylor Swift | The Eras Tour</h2>
+      <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
+        <li class="flex items-center gap-1">
+          <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
+          <span>Gelora Bung Karno Stadium, Jakarta</span>
+        </li>
+        <li class="flex items-center gap-1">
+          <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
+          <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+        </li>
+      </ul>
+      <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto" href="#">* Terms and conditions apply</a>
+    </div>
+    <div class="flex flex-col items-end gap-2 mt-2">
+      <div class="flex items-center gap-2">
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold" disabled>−</button>
+        <span class="w-4 text-center text-sm font-semibold select-none">0</span>
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold" disabled>+</button>
+      </div>
+      <button class="bg-gray-500 text-white text-xs font-semibold rounded px-3 py-1 cursor-not-allowed" type="button" disabled>Sold Out</button>
+    </div>
+  </div>
+  <div class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">ZONE C</div>
+</article>
+    <!-- Ticket item 3 -->
+    <article class="border border-gray-300 rounded-xl flex overflow-hidden relative opacity-50 pointer-events-none select-none">
+  <img alt="Sold Out Ticket" class="w-28 h-20 object-cover rounded-l-xl" src="https://storage.googleapis.com/a1aa/image/0a4b78d3-ae50-43fa-a7b6-645d363582b4.jpg" />
+
+  <div class="flex-1 p-3 flex flex-col justify-between">
+    <div>
+      <h2 class="font-semibold text-sm text-[#1A1A1A]">Taylor Swift | The Eras Tour</h2>
+      <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
+        <li class="flex items-center gap-1">
+          <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
+          <span>Gelora Bung Karno Stadium, Jakarta</span>
+        </li>
+        <li class="flex items-center gap-1">
+          <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
+          <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+        </li>
+      </ul>
+      <a class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto" href="#">* Terms and conditions apply</a>
+    </div>
+    <div class="flex flex-col items-end gap-2 mt-2">
+      <div class="flex items-center gap-2">
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold" disabled>−</button>
+        <span class="w-4 text-center text-sm font-semibold select-none">0</span>
+        <button type="button" class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold" disabled>+</button>
+      </div>
+      <button class="bg-gray-500 text-white text-xs font-semibold rounded px-3 py-1 cursor-not-allowed" type="button" disabled>Sold Out</button>
+    </div>
+  </div>
+  <div class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none">Sold Out</div>
+</article>
+</section>
   </main>
    <!-- Footer -->
   <footer class="bg-[#0B1A8C] text-white px-6 py-8 select-none">
