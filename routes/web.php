@@ -53,6 +53,10 @@ Route::get('/info1', function () {
 Route::get('/info2', function () {
     return view('info2');
 });
+
+Route::get('/info3', function () {
+    return view('info3');
+});
 Route::get('/eticket1', function () {
     return view('eticket1');
 });
@@ -68,7 +72,15 @@ Route::get('/pilihtempat1', function () {
 Route::get('/pilihtempat2', function () {
     return view('pilihtempat2');
 });
+Route::get('/shoppingbasket', function () {
+    return view('shoppingbasket');
+});
+Route::get('/promotorawal', function () {
+    return view('promotorawal');
+});
     Route::get('/seating', function () {
        return view('seating');
    });
-
+    Route::get('/dashboard', function () {
+       return view('dashboard');
+   });

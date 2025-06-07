@@ -14,5 +14,7 @@ class HomeController extends BaseController
         return view('home');
 }
 
-
+    function ubahbanner(){
+        return view('ubahbanner');
+    }
 }

@@ -1,21 +1,21 @@
 <html lang="en">
- <head>
+<head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   TixMeUp Bill
+    TixMeUp Bill
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
-   /* Custom font for the page */
+    /* Custom font for the page */
     body {
       font-family: Arial, sans-serif;
     }
   </style>
- </head>
- <body class="bg-white">
+</head>
+<body class="bg-white">
   <!-- Header -->
   <header class="bg-[#0B1460] flex items-center justify-between px-4 sm:px-6 md:px-10 py-3">
     <div class="flex items-center space-x-2 min-w-[840px]">
@@ -24,120 +24,112 @@
     </div>
     <div class="flex items-center space-x-3 min-w-[180px] justify-end">
       <button aria-label="My Tickets" class="ml-4 flex items-center space-x-1 bg-[#1E2A78] hover:bg-[#2a3a9e] text-white text-sm font-semibold py-1.5 px-4 rounded-md">
-    <span>
-     My Tickets
-    </span>
-   </button>
+        <span>
+          My Tickets
+        </span>
+      </button>
     </div>
   </header>
   <main class="max-w-4xl mx-auto p-4">
-   <div class="bg-white border border-[#0B1460] rounded-md shadow-md p-6 mb-6 select-none" style="font-family: Arial, sans-serif">
-    <h1 class="text-center font-extrabold text-xl mb-6">
-  Your Bill
-</h1>
-    <section class="bg-[#0B1460] rounded-md p-6 mb-6 text-white">
-     <div class="flex items-center mb-4">
-      <img alt="TixMeUp logo, white stylized hand icon on blue background" class="w-8 h-8 mr-2" height="32" src="{{ asset('img/logo.png') }}" width="32"/>
-      <span class="font-semibold text-base">
-       TixMeUp
-      </span>
-     </div>
-     <dl class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 text-sm leading-tight">
-      <dt class="font-semibold">
-       Event
-      </dt>
-      <dd>
-       : Taylor Swift | The Eras Tour
-      </dd>
-      <dt class="font-semibold">
-       Class/Package
-      </dt>
-      <dd>
-       : CAT 1
-      </dd>
-      <dt class="font-semibold">
-       Price
-      </dt>
-      <dd>
-       : IDR 4.375.000
-      </dd>
-      <dt class="font-semibold">
-       Number of Ticket(s)
-      </dt>
-      <dd>
-       : 1
-      </dd>
-      <dt class="font-semibold">
-       Event Date
-      </dt>
-      <dd>
-       : September 9, 2025
-      </dd>
-      <dt class="font-semibold">
-       Event Time
-      </dt>
-      <dd>
-      : 05:00 PM
-      </dd>
-      <dt class="font-semibold">
-       Venue
-      </dt>
-      <dd>
-       : Gelora Bung Karno Stadium, Jakarta
-      </dd>
-      <dt class="font-semibold">
-       Promotor
-      </dt>
-      <dd>
-       : Egi Imutt
-      </dd>
-     </dl>
-    </section>
-    <section class="bg-white border border-gray-300 rounded-md p-4" style="font-family: Arial, sans-serif">
-    <h2 class="font-extrabold text-center mb-4 text-2xl text-gray-900">
-  Attendee Info
-</h2>
-     <form class="space-y-3 text-xs text-gray-700">
-      <div class="flex items-center">
-       <label class="w-28 font-semibold" for="fullname">
-        Full Name
-       </label>
-       <span class="mr-2">
-        :
-       </span>
-       <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" disabled="" id="fullname" name="fullname" placeholder="Full Name" type="text"/>
-      </div>
-      <div class="flex items-center">
-       <label class="w-28 font-semibold" for="email">
-        Email
-       </label>
-       <span class="mr-2">
-        :
-       </span>
-       <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" disabled="" id="email" name="email" placeholder="Email" type="email"/>
-      </div>
-      <div class="flex items-center">
-       <label class="w-28 font-semibold" for="phone">
-        Phone Number
-       </label>
-       <span class="mr-2">
-        :
-       </span>
-       <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" disabled="" id="phone" name="phone" placeholder="Phone Number" type="tel"/>
-      </div>
-      <div class="flex items-center">
-       <label class="w-28 font-semibold" for="address">
-        Address
-       </label>
-       <span class="mr-2">
-        :
-       </span>
-       <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" disabled="" id="address" name="address" placeholder="Address" type="text"/>
-      </div>
-     </form>
-    </section>
-   </div>
-   <!-- Payment Section -->
+    <div class="bg-white border border-[#0B1460] rounded-md shadow-md p-6 mb-6 select-none" style="font-family: Arial, sans-serif">
+      <h1 class="text-center font-extrabold text-xl mb-6">
+        Your Bill
+      </h1>
+      <section class="bg-[#0B1460] rounded-md p-6 mb-6 text-white">
+        <div class="flex items-center mb-4">
+          <img alt="TixMeUp logo, white stylized hand icon on blue background" class="w-8 h-8 mr-2" height="32" src="{{ asset('img/logo.png') }}" width="32"/>
+          <span class="font-semibold text-base">
+            TixMeUp
+          </span>
+        </div>
+        <dl class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1 text-sm leading-tight">
+          <dt class="font-semibold">
+            Event
+          </dt>
+          <dd>
+            : Taylor Swift | The Eras Tour
+          </dd>
+          <dt class="font-semibold">
+            Class/Package
+          </dt>
+          <dd>
+            : CAT 1
+          </dd>
+          <dt class="font-semibold">
+            Price
+          </dt>
+          <dd>
+            : IDR 4.375.000
+          </dd>
+          <dt class="font-semibold">
+            Number of Ticket(s)
+          </dt>
+          <dd>
+            : 1
+          </dd>
+          <dt class="font-semibold">
+            Event Date
+          </dt>
+          <dd>
+            : September 9, 2025
+          </dd>
+          <dt class="font-semibold">
+            Event Time
+          </dt>
+          <dd>
+            : 05:00 PM
+          </dd>
+          <dt class="font-semibold">
+            Venue
+          </dt>
+          <dd>
+            : Gelora Bung Karno Stadium, Jakarta
+          </dd>
+          <dt class="font-semibold">
+            Promotor
+          </dt>
+          <dd>
+            : Egi Imutt
+          </dd>
+        </dl>
+      </section>
+      <section class="bg-white border border-gray-300 rounded-md p-4" style="font-family: Arial, sans-serif">
+        <h2 class="font-extrabold text-center mb-4 text-2xl text-gray-900">
+          Attendee Info
+        </h2>
+        <form class="space-y-3 text-xs text-gray-700">
+          <div class="flex items-center">
+            <label class="w-28 font-semibold" for="fullname">
+              Full Name
+            </label>
+            <span class="mr-2">:</span>
+            <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" id="fullname" name="fullname" placeholder="Full Name" type="text"/>
+          </div>
+          <div class="flex items-center">
+            <label class="w-28 font-semibold" for="email">
+              Email
+            </label>
+            <span class="mr-2">:</span>
+            <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" id="email" name="email" placeholder="Email" type="email"/>
+          </div>
+          <div class="flex items-center">
+            <label class="w-28 font-semibold" for="phone">
+              Phone Number
+            </label>
+            <span class="mr-2">:</span>
+            <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" id="phone" name="phone" placeholder="Phone Number" type="tel"/>
+          </div>
+          <div class="flex items-center">
+            <label class="w-28 font-semibold" for="address">
+              Address
+            </label>
+            <span class="mr-2">:</span>
+            <input class="flex-1 bg-gray-200 rounded border border-gray-200 px-2 py-1 text-xs text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500" id="address" name="address" placeholder="Address" type="text"/>
+          </div>
+        </form>
+      </section>
+    </div>
+    <!-- Payment Section -->
     <section class="max-w-3xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
       <div class="relative w-full sm:w-72">
         <select
@@ -185,12 +177,12 @@
         </div>
       </div>
     </section>
-   <!-- Make Payment Button -->
-   <div class="max-w-3xl mx-auto flex justify-center">
-    <button id="makePaymentBtn" class="bg-[#607a9f] text-white font-semibold rounded-md py-2 px-10 select-none" type="button">
-     Make Payment
-    </button>
-   </div>
+    <!-- Make Payment Button -->
+    <div class="max-w-3xl mx-auto flex justify-center">
+      <button id="makePaymentBtn" class="bg-[#607a9f] text-white font-semibold rounded-md py-2 px-10 select-none" type="button">
+        Make Payment
+      </button>
+    </div>
   </main>
   <!-- Footer -->
   <footer class="bg-[#0B1A8C] text-white px-6 py-8 select-none">
@@ -313,5 +305,5 @@
       alert(`You have selected ${selectedBank} bank for payment.`);
     });
   </script>
- </body>
+</body>
 </html>
