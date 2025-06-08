@@ -78,9 +78,13 @@ Route::get('/shoppingbasket', function () {
 Route::get('/promotorawal', function () {
     return view('promotorawal');
 });
+Route::get('/mysales', function () {
+    return view('mysales');
+});
     Route::get('/seating', function () {
        return view('seating');
    });
     Route::get('/dashboard', function () {
        return view('dashboard');
    });
+
