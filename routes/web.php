@@ -81,6 +81,16 @@ Route::get('/promotorawal', function () {
 Route::get('/mysales', function () {
     return view('mysales');
 });
+
+Route::get('/arsipevent', function () {
+    return view('arsipevent');
+});
+Route::get('/riwayattransaksi', function () {
+    return view('riwayattransaksi');
+});
+Route::get('/faq', function () {
+    return view('faq');
+});
     Route::get('/seating', function () {
        return view('seating');
    });
