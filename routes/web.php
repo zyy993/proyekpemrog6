@@ -91,6 +91,25 @@ Route::get('/riwayattransaksi', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
+Route::get('/review', function () {
+    return view('review');
+});
+Route::get('/notif1', function () {
+    return view('notif1');
+});
+Route::get('/notif2', function () {
+    return view('notif2');
+});
+Route::get('/notif3', function () {
+    return view('notif3');
+});
+
+Route::get('/livechat', function () {
+    return view('livechat');
+});
+Route::get('/editprofile', function () {
+    return view('editprofile');
+});
     Route::get('/seating', function () {
        return view('seating');
    });

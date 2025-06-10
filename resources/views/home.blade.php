@@ -41,7 +41,7 @@
   </nav>
   <!-- Carousel -->
   <div class="relative border-b border-[#00108b]">
-    <img alt="Black and white photo of four women posing with red BLACKPINK text overlay" class="w-full object-cover max-h-[250px]" height="250" src="{{ asset('img/home.jpg') }}" width="1200"/>
+    <img alt="Black and white photo of four women posing with red BLACKPINK text overlay" class="w-full object-cover max-h-[250px]" height="250" src="{{ asset('img/Blackpink.png') }}" width="1200"/>
     <button aria-label="Previous slide" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-80 rounded-full p-2 text-2xl text-[#00108b]">
       <i class="fas fa-chevron-left"></i>
     </button>
@@ -68,7 +68,7 @@
       <div class="flex items-center space-x-4 overflow-x-auto scrollbar-hide">
         <!-- Card 1 -->
         <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-0">
-          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="https://storage.googleapis.com/a1aa/image/32583742-d3f6-4896-7ed6-5f3a9222f18b.jpg" width="280"/>
+          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/deadline.jpg') }}" width="280"/>
           <div class="p-3">
             <p class="text-xs font-semibold mb-1 select-none">Hello Monster – Baby Monster</p>
             <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
@@ -82,7 +82,7 @@
         </div>
         <!-- Card 2 -->
         <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-0">
-          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="https://storage.googleapis.com/a1aa/image/e9ac53a9-b517-4976-ebbf-a81b1f2552b6.jpg" width="280"/>
+          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/prambanan.jpg') }}" width="280"/>
           <div class="p-3">
             <p class="text-xs font-semibold mb-1 select-none">Hello Monster – Baby Monster</p>
             <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
@@ -96,7 +96,7 @@
         </div>
         <!-- Card 3 -->
         <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-0">
-          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="https://storage.googleapis.com/a1aa/image/32583742-d3f6-4896-7ed6-5f3a9222f18b.jpg" width="280"/>
+          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/oppa.jpg') }}" width="280"/>
           <div class="p-3">
             <p class="text-xs font-semibold mb-1 select-none">Hello Monster – Baby Monster</p>
             <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
@@ -116,7 +116,7 @@
       <div class="flex items-center space-x-4 overflow-x-auto scrollbar-hide">
         <!-- Card 1 -->
         <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-0">
-          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="https://storage.googleapis.com/a1aa/image/32583742-d3f6-4896-7ed6-5f3a9222f18b.jpg" width="280"/>
+          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/oppi.jpeg') }}" width="280"/>
           <div class="p-3">
             <p class="text-xs font-semibold mb-1 select-none">Hello Monster – Baby Monster</p>
             <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
@@ -130,7 +130,7 @@
         </div>
         <!-- Card 2 -->
         <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-0">
-          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="https://storage.googleapis.com/a1aa/image/32583742-d3f6-4896-7ed6-5f3a9222f18b.jpg" width="280"/>
+          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/TS.png') }}" width="280"/>
           <div class="p-3">
             <p class="text-xs font-semibold mb-1 select-none">Hello Monster – Baby Monster</p>
             <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
@@ -144,7 +144,7 @@
         </div>
         <!-- Card 3 -->
         <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-0">
-          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="https://storage.googleapis.com/a1aa/image/32583742-d3f6-4896-7ed6-5f3a9222f18b.jpg" width="280"/>
+          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/SO7.png') }}" width="280"/>
           <div class="p-3">
             <p class="text-xs font-semibold mb-1 select-none">Hello Monster – Baby Monster</p>
             <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
@@ -166,15 +166,15 @@
      Moments We Loved
     </h2>
     <div class="grid grid-cols-3 gap-4">
-    <img alt="Person in black suit and sunglasses looking at camera with white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/98ace023-9b81-489d-93cc-e4dbb55db6a5.jpg" width="300"/>
-    <img alt="Woman looking to side with green blurred background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/8f5b7cf8-1d7c-4ed6-82cf-94c25f1f7cab.jpg" width="300"/>
-    <img alt="Smiling woman with long hair and hand near face in purple light" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/293be790-a344-4f83-15f9-f0170a7055f1.jpg" width="300"/>
-    <img alt="Man in brown jacket posing with yellow background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/374ea3f1-b81d-4b0a-6bde-0b2a7ef2ac50.jpg" width="300"/>
-    <img alt="Group of four men in denim jackets posing with instruments" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/d3bf9825-b54b-482e-8625-394ec1e931d5.jpg" width="300"/>
-    <img alt="Man in black shirt posing with black and white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/ee8bb162-4430-4186-1a6f-88694ac8d696.jpg" width="300"/>
-    <img alt="Woman wearing black beret looking at camera with white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/8e6cf2fb-7283-47aa-9b71-78ed08af5aa2.jpg" width="300"/>
-    <img alt="Group of four men sitting on stage with crowd behind" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/cf9f981a-22b2-48d1-09bf-f2e16bb06c98.jpg" width="300"/>
-    <img alt="Group of five people posing and smiling with white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="https://storage.googleapis.com/a1aa/image/edf6fa74-5e9b-4bca-673d-2afbdbf3408b.jpg" width="300"/>
+    <img alt="Person in black suit and sunglasses looking at camera with white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/J-HOPE.jpeg') }}" width="300"/>
+    <img alt="Woman looking to side with green blurred background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/BERNADYA.jpeg') }}" width="300"/>
+    <img alt="Smiling woman with long hair and hand near face in purple light" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/OLIVIA.jpeg') }}" width="300"/>
+    <img alt="Man in brown jacket posing with yellow background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/EAJ.jpeg') }}" width="300"/>
+    <img alt="Group of four men in denim jackets posing with instruments" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/DAY6.jpeg') }}" width="300"/>
+    <img alt="Man in black shirt posing with black and white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/HINDIA.jpeg') }}" width="300"/>
+    <img alt="Woman wearing black beret looking at camera with white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/NIKI.jpeg') }}" width="300"/>
+    <img alt="Group of four men sitting on stage with crowd behind" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/NDX.jpeg') }}" width="300"/>
+    <img alt="Group of five people posing and smiling with white background" class="rounded-lg object-cover w-full h-[130px]" height="200" src="{{ asset('img/LOMBA SIHIR.jpeg') }}" width="300"/>
    </div>
    </div>
   </section>
