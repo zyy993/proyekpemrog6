@@ -16,28 +16,91 @@
   </style>
  </head>
  <body class="bg-white text-gray-900">
-<!-- Navbar -->
+
 <nav class="bg-[#00108b] flex items-center justify-between px-6 py-3">
   <div class="flex items-center space-x-2 min-w-[840px]">
-    <img alt="TixMeUp logo with hand gesture icon in white on blue background" class="w-8 h-8" height="32" src="{{ asset('img/logo.png') }}" width="32"/>
+    <img alt="TixMeUp logo" class="w-8 h-8" height="32" src="{{ asset('img/logo.png') }}" width="32"/>
     <span class="text-white font-semibold text-lg select-none">TixMeUp</span>
   </div>
-  <div class="hidden sm:flex flex-1 max-w-[480px] mx-6 mr-10"> <!-- Increased right margin here -->
+
+  <div class="hidden sm:flex flex-1 max-w-[480px] mx-6 mr-10">
     <div class="relative w-full">
       <input class="w-full rounded-full bg-[#00108b] placeholder-white text-white pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white" placeholder="Search by artist or event" type="text"/>
       <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-white text-sm"></i>
     </div>
   </div>
+
   <div class="flex items-center space-x-3 min-w-[180px] justify-end">
-    <button class="text-white text-xl sm:hidden">
-      <i class="fas fa-bars"></i>
-    </button>
-    <button class="text-white text-xl hidden sm:block">
+    <button id="dropdown-button" class="text-white focus:outline-none">
       <i class="fas fa-chevron-down"></i>
     </button>
+
+    <div id="dropdown-menu" class="hidden absolute bg-white text-black right-0 mt-2 rounded-md shadow-lg">
+      <ul class="py-1">
+        <li class="block px-4 py-2 text-sm hover:bg-gray-200">My Tickets</li>
+        <li class="block px-4 py-2 text-sm hover:bg-gray-200">Shopping Basket</li>
+        <li class="block px-4 py-2 text-sm hover:bg-gray-200">Transaction History</li>
+        <li class="block px-4 py-2 text-sm hover:bg-gray-200">Reviews & Ratings</li>
+        <li class="block px-4 py-2 text-sm hover:bg-gray-200">FAQ</li>
+        <li class="block px-4 py-2 text-sm hover:bg-gray-200">LogOut</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="sidebar" class="hidden fixed top-0 right-0 h-full w-64 bg-[#00108b] text-white shadow-lg flex-col p-4">
+    <div class="flex items-center space-x-2">
+      <img alt="User Avatar" class="w-10 h-10 rounded-full" src="{{ asset('img/user-avatar.png') }}" />
+      <div>
+        <h3 class="font-semibold">USERNAME</h3>
+        <p class="text-xs">username123@gmail.com</p>
+      </div>
+    </div>
+
+    <ul class="mt-4 space-y-2">
+      <li>My Tickets</li>
+      <li>Shopping Basket</li>
+      <li>Transaction History</li>
+      <li>Reviews & Ratings</li>
+      <li>FAQ</li>
+      <li class="flex justify-between">
+        <span>Started as an</span>
+        <i class="fas fa-chevron-down"></i>
+      </li>
+      <li class="flex justify-between">
+        <span>Admin</span>
+        <i class="fas fa-chevron-down"></i>
+      </li>
+      <li>LogOut</li>
+    </ul>
   </div>
 </nav>
 
+<script>
+  const dropdownButton = document.getElementById('dropdown-button');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  const sidebar = document.getElementById('sidebar');
+  const carousel = document.querySelector('.relative.border-b');  // Select the carousel container
+
+  dropdownButton.addEventListener('click', function() {
+    dropdownMenu.classList.toggle('hidden');
+    sidebar.classList.toggle('hidden'); // Toggle sidebar on button click
+  });
+
+  // Optional: Add functionality to close the dropdown and sidebar when clicking outside
+  document.addEventListener('click', function(event) {
+    // Check if the click is outside the dropdown and sidebar, but ignore clicks within the carousel
+    if (!dropdownButton.contains(event.target)
+        && !dropdownMenu.contains(event.target)
+        && !sidebar.contains(event.target)
+        && !carousel.contains(event.target)) {
+      dropdownMenu.classList.add('hidden');
+      sidebar.classList.add('hidden');
+    }
+  });
+</script>
+
+
+</div>
   <!-- Carousel -->
   <div class="relative border-b border-[#00108b]">
     <img alt="Black and white photo of four women posing with red BLACKPINK text overlay" class="w-full object-cover max-h-[250px]" height="250" src="{{ asset('img/Blackpink.png') }}" width="1200"/>
@@ -48,6 +111,7 @@
       <i class="fas fa-chevron-right"></i>
     </button>
   </div>
+
   <!-- Filter Buttons -->
 <div class="flex space-x-4 px-6 py-4">
   <button class="border border-[#00108b] rounded-full px-6 py-3 text-lg font-bold text-[#00108b] hover:bg-[#00108b] hover:text-white transition">
@@ -88,25 +152,7 @@
         </div>
 
 
-@foreach ($contents as $content)
-                <div class="card">
-                    @if($content->image_path)
-                        <img src="{{ asset('storage/' . $content->image_path) }}" alt="{{ $content->name }}" loading="lazy" />
-                    @else
-                        <img src="https://placehold.co/280x140?text=No+Image" alt="No Image" />
-                    @endif
-                    <div class="card-content">
-                        <p class="card-title">{{ $content->name }}</p>
-                        <div class="info">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>{{ $content->date->format('H.i') }}</span>
-                            <i class="fas fa-map-marker-alt" style="margin-left:12px;"></i>
-                            <span>{{ $content->location }}</span>
-                        </div>
-                        <button class="btn">More info</button>
-                    </div>
-                </div>
-            @endforeach
+
 
 
         <!-- Card 2 -->

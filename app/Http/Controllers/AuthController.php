@@ -15,6 +15,7 @@ function submitRegistrasi (Request $request){
 $user = new User();
 $user->name = $request->name;
 $user->email = $request->email;
+$user->no_hp = $request->no_hp;
 $user->password = bcrypt($request->password);
 $user->save();
 return redirect()->route ('login.tampil');
