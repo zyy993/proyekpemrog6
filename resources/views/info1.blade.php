@@ -41,20 +41,20 @@
     <!-- Right side with event details -->
     <section class="flex-4 bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
       <h1 class="font-bold text-lg leading-tight mb-10 underline">
-        Taylor Swift | The Eras Tour
+        Prambanan JAZZ 2025
       </h1>
       <div class="space-y-5 text-gray-700 text-sm">
         <div class="font-bold flex items-center space-x-3">
           <i class="far fa-calendar-alt text-gray-400 w-5"></i>
-          <span class="text-lg">September 9, 2025</span>
+          <span class="text-lg"> July 04 - 06, 2025</span>
         </div>
         <div class="font-bold flex items-center space-x-3">
           <i class="fas fa-map-marker-alt text-gray-400 w-5"></i>
-          <span class="text-lg">Gelora Bung Karno Stadium, Jakarta</span>
+          <span class="text-lg">Pelataran Candi Prambanan</span>
         </div>
         <div class="font-bold flex items-center space-x-3">
           <i class="far fa-clock text-gray-400 w-5"></i>
-          <span class="text-lg">Gate open at 5:00 PM | Show starts at 7:00 PM</span>
+          <span class="text-lg"> Gates open at 6:00 PM | Show starts at 8:00 PM</span>
         </div>
         <hr class="my-9 border-t-2 border-gray-300" />
        <div class="mt-14 flex items-center space-x-4">
@@ -84,29 +84,32 @@
 
      <!-- Konten tab -->
      <div id="content-deskripsi" class="p-6 text-gray-900">
-      <h2 class="font-extrabold text-base mb-2 underline">Taylor Swift | The Eras Tour - Live in Jakarta</h2>
+      <h2 class="font-extrabold text-base mb-2 underline">PRAMBANAN JAZZ  2025 – Where Music Meets Heritage</h2>
       <p class="mb-4 font-bold">
-        Bersiaplah untuk malam yang tak terlupakan bersama Taylor Swift dalam konser paling spektakuler tahun ini – The Eras Tour hadir di Jakarta!
+       Bersiaplah untuk menyambut harmoni yang magis di bawah langit senja Candi Prambanan – Prambanan Jazz Festival 2025 segera hadir, menghadirkan perpaduan menawan antara musik, budaya, dan sejarah.
       </p>
       <p class="mb-4">
-        Taylor akan membawamu menyusuri perjalanan musikal luar biasanya, dari awal karier hingga era terbarunya yang penuh warna. Saksikan secara langsung penampilan ikonik dari lagu-lagu legendaris seperti Love Story, You Belong with Me, Blank Space, Shake It Off, All Too Well (10 Minute Version), hingga hits dari album terbarunya yang telah mengguncang dunia.
+        Tahun ini, Prambanan Jazz kembali menyuguhkan pengalaman festival musik yang berbeda dari yang lain—di tengah kemegahan candi warisan dunia yang memesona, kamu akan dibawa dalam perjalanan musikal tak terlupakan bersama musisi terbaik dari dalam dan luar negeri.
       </p>
       <p class="mb-4">
-        Dikemas dalam tata panggung megah, visual menawan, koreografi memukau, dan momen-momen emosional yang akan menyentuh hati, The Eras Tour bukan sekadar konser—ini adalah pengalaman seumur hidup yang akan membawamu menyelami setiap era musik Taylor Swift, satu demi satu.
+        Lebih dari sekadar konser, Prambanan Jazz 2025 adalah ruang temu bagi generasi, genre, dan energi kreatif yang menyatu dalam harmoni. Bayangkan menyaksikan pertunjukan musik favoritmu saat langit berubah jingga, dengan siluet candi sebagai latar, diiringi semilir angin sore dan sorotan cahaya yang membalut suasana jadi semakin syahdu.
       </p>
       <p class="mb-4">
-        Ajak sahabat, kenakan outfit era favoritmu, dan bersiaplah bernyanyi bersama puluhan ribu Swifties lainnya dalam malam yang penuh magis, nostalgia, dan cinta.
+        Dari dentingan jazz klasik hingga kolaborasi lintas genre yang menggetarkan, dari panggung penuh keintiman hingga pertunjukan megah berlatar candi yang bersinar, setiap momen di Prambanan Jazz 2025 adalah perayaan cinta pada musik, alam, dan seni budaya.
       </p>
       <p class="mb-4">
-        Jangan lewatkan! Jakarta akan menjadi saksi sejarah perjalanan musik Taylor Swift—dan kamu adalah bagian penting di dalamnya.
+        Nikmati alunan musik dari artis ternama, suasana festival yang hangat, kuliner lokal yang menggoda, serta instalasi seni yang menawan—semua dalam satu tempat, satu akhir pekan, dan satu cerita yang akan terus terkenang.
+      </p>
+      <p class="mb-4">
+        Bersama teman, keluarga, dan pecinta musik dari seluruh penjuru, mari hadir dan jadi bagian dari magisnya Prambanan Jazz 2025. Karena di sini, musik tidak sekadar didengar—tapi dirasakan hingga ke hati.
       </p>
       <h3 class="font-semibold text-base mt-8 mb-3">Syarat dan Ketentuan :</h3>
       <p class="mb-3">1. Tiket hanya tersedia melalui platform penjualan resmi yang telah ditentukan oleh promotor.</p>
       <p class="mb-3">2. Semua pembelian bersifat final. Tidak ada pengembalian dana (refund) atau penukaran tiket kecuali dalam kondisi konser dibatalkan oleh pihak penyelenggara.</p>
-      <p class="mb-3">3. Harga belum termasuk pajak dan biaya layanan platform penjualan tiket.</p>
+      <p class="mb-3">3. Harga tiket belum termasuk pajak dan biaya layanan.</p>
       <p class="mb-3">4. Tiket akan dikirim dalam format digital (e-ticket) melalui email atau aplikasi resmi.</p>
-      <p class="mb-3">5. Penonton wajib menunjukkan e-ticket beserta identitas diri (KTP/Passport/SIM) yang sesuai dengan data pemesan saat memasuki venue.</p>
-      <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat pertunjukan dimulai.</p>
+      <p class="mb-3">5. Penonton wajib menunjukkan e-ticket serta identitas resmi (KTP/Passport/SIM) yang sesuai dengan data pemesanan.</p>
+      <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat konser dimulai.</p>
       <p class="mb-3">7. Dilarang membawa senjata tajam, minuman keras, narkoba, kembang api, laser pointer, drone, dan benda berbahaya lainnya.</p>
       <p class="mb-3">8. Tidak diperbolehkan membawa makanan dan minuman dari luar ke dalam area konser.</p>
       <p class="mb-3">9. Dilarang melakukan tindakan yang mengganggu kenyamanan dan keamanan penonton lain.</p>
@@ -130,22 +133,22 @@
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          PRAMBANAN JAZZ 2025
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
             <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-            <span>Gelora Bung Karno Stadium, Jakarta</span>
+            <span>Pelataran Candi Prambanan</span>
           </li>
           <li class="flex items-center gap-1">
             <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-            <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+            <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
           </li>
         </ul>
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >The concert will conclude on September 11, 2025.</a
         >
       </div>
       <!-- Bagian bawah: jumlah tiket + tombol -->
@@ -228,22 +231,22 @@ src="{{ asset('img/prambanan.jpg') }}"
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          PRAMBANAN JAZZ 2025
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
             <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-            <span>Gelora Bung Karno Stadium, Jakarta</span>
+            <span>Pelataran Candi Prambanan</span>
           </li>
           <li class="flex items-center gap-1">
             <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-            <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+            <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
           </li>
         </ul>
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >The concert will conclude on September 11, 2025.</a
         >
       </div>
       <div
@@ -316,22 +319,22 @@ src="{{ asset('img/prambanan.jpg') }}"
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          PRAMBANAN JAZZ 2025
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
             <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-            <span>Gelora Bung Karno Stadium, Jakarta</span>
+            <span>Pelataran Candi Prambanan</span>
           </li>
           <li class="flex items-center gap-1">
             <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-            <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+            <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
           </li>
         </ul>
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >The concert will conclude on September 11, 2025.</a
         >
       </div>
       <div
@@ -409,22 +412,22 @@ src="{{ asset('img/prambanan.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            PRAMBANAN JAZZ 2025
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
               <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
+              <span>Pelataran Candi Prambanan</span>
             </li>
             <li class="flex items-center gap-1">
               <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+              <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
             </li>
           </ul>
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >The concert will conclude on September 11, 2025.</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">
@@ -477,22 +480,22 @@ src="{{ asset('img/prambanan.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            PRAMBANAN JAZZ 2025
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
               <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
+              <span>Pelataran Candi Prambanan</span>
             </li>
             <li class="flex items-center gap-1">
               <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+              <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
             </li>
           </ul>
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >The concert will conclude on September 11, 2025.</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">
@@ -545,22 +548,22 @@ src="{{ asset('img/prambanan.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            PRAMBANAN JAZZ 2025
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
               <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
+              <span>Pelataran Candi Prambanan</span>
             </li>
             <li class="flex items-center gap-1">
               <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+              <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
             </li>
           </ul>
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >The concert will conclude on September 11, 2025.</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">

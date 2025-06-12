@@ -41,20 +41,20 @@
     <!-- Right side with event details -->
     <section class="flex-4 bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
       <h1 class="font-bold text-lg leading-tight mb-10 underline">
-        Taylor Swift | The Eras Tour
+        NCT DREAM | Dream the Future
       </h1>
       <div class="space-y-5 text-gray-700 text-sm">
         <div class="font-bold flex items-center space-x-3">
           <i class="far fa-calendar-alt text-gray-400 w-5"></i>
-          <span class="text-lg">September 9, 2025</span>
+          <span class="text-lg">September 27, 2025</span>
         </div>
         <div class="font-bold flex items-center space-x-3">
           <i class="fas fa-map-marker-alt text-gray-400 w-5"></i>
-          <span class="text-lg">Gelora Bung Karno Stadium, Jakarta</span>
+          <span class="text-lg">ICE BSD City Hall 5-6, Jakarta</span>
         </div>
         <div class="font-bold flex items-center space-x-3">
           <i class="far fa-clock text-gray-400 w-5"></i>
-          <span class="text-lg">Gate open at 5:00 PM | Show starts at 7:00 PM</span>
+          <span class="text-lg">Gates open at 6:00 PM | Show starts at 8:00 PM</span>
         </div>
         <hr class="my-9 border-t-2 border-gray-300" />
        <div class="mt-14 flex items-center space-x-4">
@@ -84,29 +84,33 @@
 
      <!-- Konten tab -->
      <div id="content-deskripsi" class="p-6 text-gray-900">
-      <h2 class="font-extrabold text-base mb-2 underline">Taylor Swift | The Eras Tour - Live in Jakarta</h2>
+      <h2 class="font-extrabold text-base mb-2 underline">NCT DREAM  : DREAM THE FUTURE – Live in Jakarta 2025</h2>
       <p class="mb-4 font-bold">
-        Bersiaplah untuk malam yang tak terlupakan bersama Taylor Swift dalam konser paling spektakuler tahun ini – The Eras Tour hadir di Jakarta!
+        Rasakan energi penuh semangat dari NCT DREAM dalam konser spektakuler mereka tahun ini – THE DREAM SHOW 4: DREAM THE FUTURE akhirnya hadir di Jakarta!
       </p>
       <p class="mb-4">
-        Taylor akan membawamu menyusuri perjalanan musikal luar biasanya, dari awal karier hingga era terbarunya yang penuh warna. Saksikan secara langsung penampilan ikonik dari lagu-lagu legendaris seperti Love Story, You Belong with Me, Blank Space, Shake It Off, All Too Well (10 Minute Version), hingga hits dari album terbarunya yang telah mengguncang dunia.
+        Setelah sukses mencetak sejarah di berbagai kota dunia, NCT DREAM kembali dengan pertunjukan yang lebih megah, lebih emosional, dan lebih futuristik. Konser ini bukan hanya perayaan perjalanan musik mereka, tapi juga ajakan untuk melangkah ke masa depan bersama—dalam satu mimpi besar yang tak akan terlupakan.
       </p>
       <p class="mb-4">
-        Dikemas dalam tata panggung megah, visual menawan, koreografi memukau, dan momen-momen emosional yang akan menyentuh hati, The Eras Tour bukan sekadar konser—ini adalah pengalaman seumur hidup yang akan membawamu menyelami setiap era musik Taylor Swift, satu demi satu.
+        Bersiaplah tenggelam dalam dunia penuh imajinasi dan musikalitas tinggi bersama Mark, Renjun, Jeno, Haechan, Jaemin, Chenle, dan Jisung! Tur ini akan membawamu menjelajahi sisi baru dari NCT DREAM—lebih dewasa, lebih kuat, dan lebih mengguncang dari sebelumnya.
       </p>
       <p class="mb-4">
-        Ajak sahabat, kenakan outfit era favoritmu, dan bersiaplah bernyanyi bersama puluhan ribu Swifties lainnya dalam malam yang penuh magis, nostalgia, dan cinta.
+        Dari nostalgia Chewing Gum, semangat membara di Boom, getaran emosional di Dive Into You, hingga hits terbaru yang memantapkan posisi mereka sebagai ikon global, konser ini akan menjadi pengalaman luar biasa bagi setiap NCTzen yang hadir.
       </p>
       <p class="mb-4">
-        Jangan lewatkan! Jakarta akan menjadi saksi sejarah perjalanan musik Taylor Swift—dan kamu adalah bagian penting di dalamnya.
+        Disajikan dengan tata panggung megah, visual sinematik, koreografi dinamis, serta momen-momen spesial yang bikin merinding—THE DREAM SHOW 4 bukan hanya konser, tapi perayaan mimpi, masa muda, dan masa depan yang gemilang.
+      </p>
+        <p class="mb-4">
+        Siapkan outfit terbaikmu, ajak sesama Czennie, dan bersiaplah berteriak, bernyanyi, dan merasakan keajaiban dari NCT DREAM secara langsung.
+        Jakarta akan jadi saksi dari masa depan mimpi-mimpi itu—dan kamu adalah bagian penting dari kisahnya.
       </p>
       <h3 class="font-semibold text-base mt-8 mb-3">Syarat dan Ketentuan :</h3>
       <p class="mb-3">1. Tiket hanya tersedia melalui platform penjualan resmi yang telah ditentukan oleh promotor.</p>
       <p class="mb-3">2. Semua pembelian bersifat final. Tidak ada pengembalian dana (refund) atau penukaran tiket kecuali dalam kondisi konser dibatalkan oleh pihak penyelenggara.</p>
-      <p class="mb-3">3. Harga belum termasuk pajak dan biaya layanan platform penjualan tiket.</p>
+      <p class="mb-3">3. Harga tiket belum termasuk pajak dan biaya layanan.</p>
       <p class="mb-3">4. Tiket akan dikirim dalam format digital (e-ticket) melalui email atau aplikasi resmi.</p>
-      <p class="mb-3">5. Penonton wajib menunjukkan e-ticket beserta identitas diri (KTP/Passport/SIM) yang sesuai dengan data pemesan saat memasuki venue.</p>
-      <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat pertunjukan dimulai.</p>
+      <p class="mb-3">5. Penonton wajib menunjukkan e-ticket serta identitas resmi (KTP/Passport/SIM) yang sesuai dengan data pemesanan.</p>
+      <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat konser dimulai.</p>
       <p class="mb-3">7. Dilarang membawa senjata tajam, minuman keras, narkoba, kembang api, laser pointer, drone, dan benda berbahaya lainnya.</p>
       <p class="mb-3">8. Tidak diperbolehkan membawa makanan dan minuman dari luar ke dalam area konser.</p>
       <p class="mb-3">9. Dilarang melakukan tindakan yang mengganggu kenyamanan dan keamanan penonton lain.</p>
@@ -130,22 +134,22 @@
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          NCT DREAM |  The Future
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
             <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-            <span>Gelora Bung Karno Stadium, Jakarta</span>
+            <span>ICE BSD City Hall 5-6, Jakarta</span>
           </li>
           <li class="flex items-center gap-1">
             <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-            <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+            <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
           </li>
         </ul>
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >The concert will conclude on September 11, 2025.</a
         >
       </div>
       <!-- Bagian bawah: jumlah tiket + tombol -->
@@ -228,22 +232,22 @@ src="{{ asset('img/oppa.jpg') }}"
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          NCT DREAM |  The Future
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
             <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-            <span>Gelora Bung Karno Stadium, Jakarta</span>
+            <span>ICE BSD City Hall 5-6, Jakarta</span>
           </li>
           <li class="flex items-center gap-1">
             <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-            <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+            <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
           </li>
         </ul>
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >The concert will conclude on September 11, 2025.</a
         >
       </div>
       <div
@@ -316,22 +320,22 @@ src="{{ asset('img/oppa.jpg') }}"
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          NCT DREAM |  The Future
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
             <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-            <span>Gelora Bung Karno Stadium, Jakarta</span>
+            <span>ICE BSD City Hall 5-6, Jakarta</span>
           </li>
           <li class="flex items-center gap-1">
             <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-            <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+            <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
           </li>
         </ul>
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >The concert will conclude on September 11, 2025.</a
         >
       </div>
       <div
@@ -409,22 +413,22 @@ src="{{ asset('img/oppa.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            NCT DREAM |  The Future
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
               <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
+              <span>ICE BSD City Hall 5-6, Jakarta</span>
             </li>
             <li class="flex items-center gap-1">
               <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+              <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
             </li>
           </ul>
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >The concert will conclude on September 11, 2025.</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">
@@ -477,22 +481,22 @@ src="{{ asset('img/oppa.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            NCT DREAM |  The Future
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
               <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
+              <span>ICE BSD City Hall 5-6, Jakarta</span>
             </li>
             <li class="flex items-center gap-1">
               <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+              <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
             </li>
           </ul>
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >The concert will conclude on September 11, 2025.</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">
@@ -545,22 +549,22 @@ src="{{ asset('img/oppa.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            NCT DREAM |  The Future
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
               <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
+              <span>ICE BSD City Hall 5-6, Jakarta</span>
             </li>
             <li class="flex items-center gap-1">
               <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
+              <span>Gates open at 6:00 PM | Show starts at 8:00 PM</span>
             </li>
           </ul>
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >The concert will conclude on September 11, 2025.</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">

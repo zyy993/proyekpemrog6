@@ -63,6 +63,59 @@
             selectSeatButton.disabled = false; // Enable button
             selectSeatButton.style.opacity = 1; // Set opacity to 100%
         }
+        function selectSeat(seat) {
+    // If the seat is already selected, do nothing
+    if (seat.classList.contains('selected')) {
+        return;
+    }
+
+    // Disable all other seats
+    const allSeats = document.querySelectorAll('.seat');
+    allSeats.forEach(s => {
+        if (!s.classList.contains('selected')) {
+            s.classList.add('disabled');
+            s.style.backgroundColor = '#ccc'; // Set to gray
+            s.style.cursor = 'not-allowed'; // Change cursor to not-allowed
+            s.onclick = null; // Remove click event
+        }
+    });
+
+    // Remove 'selected' class from all seats and reset their colors
+    const selectedSeats = document.querySelectorAll('.selected');
+    selectedSeats.forEach(s => {
+        s.classList.remove('selected');
+        s.style.backgroundColor = ''; // Reset color to original
+        // Reset the corresponding opposite seat
+        const oppositeSeat = document.querySelector(`.seat[data-seat-name="${s.getAttribute('data-seat-name')}"]:not([data-side="${s.getAttribute('data-side')}"])`);
+        if (oppositeSeat) {
+            oppositeSeat.classList.remove('selected');
+            oppositeSeat.style.backgroundColor = ''; // Reset color
+        }
+    });
+
+    // Add 'selected' class to the clicked seat
+    seat.classList.add('selected');
+    seat.style.backgroundColor = '#4CAF50'; // Change to green or any color you prefer
+
+    // Check if the selected seat is in Zone A, B, or D and select the opposite
+    const seatName = seat.getAttribute('data-seat-name');
+    const side = seat.getAttribute('data-side');
+    if (seatName === 'ZONE A' || seatName === 'ZONE B' || seatName === 'ZONE D') {
+        const oppositeSide = side === 'left' ? 'right' : 'left';
+        const oppositeSeat = document.querySelector(`.seat[data-seat-name="${seatName}"][data-side="${oppositeSide}"]`);
+        if (oppositeSeat) {
+            oppositeSeat.classList.add('selected');
+            oppositeSeat.style.backgroundColor = '#4CAF50'; // Change to green or any color you prefer
+        }
+    }
+
+    // Enable the Select Seat button
+    const selectSeatButton = document.getElementById('selectSeatButton');
+    selectSeatButton.classList.remove('disabled', 'button-disabled');
+    selectSeatButton.disabled = false; // Enable button
+    selectSeatButton.style.opacity = 1; // Set opacity to 100%
+}
+
 
         function confirmSelection() {
             const selectedSeats = document.querySelectorAll('.selected');
@@ -86,6 +139,40 @@
                 alert('Please select a seat first.');
             }
         }
+        function confirmSelection() {
+    const selectedSeats = document.querySelectorAll('.selected');
+    if (selectedSeats.length > 0) {
+        const seatNames = Array.from(selectedSeats).map(seat => seat.getAttribute('data-seat-name')).join(', ');
+        const confirmation = confirm(`You have selected ${seatNames}. Do you want to proceed?`);
+        if (confirmation) {
+            alert('Seat confirmed!');
+        } else {
+            // Deselect all selected seats and reset their colors
+            selectedSeats.forEach(seat => {
+                seat.classList.remove('selected'); // Deselect
+                seat.style.backgroundColor = ''; // Reset color
+            });
+
+            // Re-enable all seats
+            const allSeats = document.querySelectorAll('.seat');
+            allSeats.forEach(s => {
+                s.classList.remove('disabled');
+                s.style.backgroundColor = ''; // Reset to original color
+                s.style.cursor = 'pointer'; // Change cursor back to pointer
+                s.onclick = function() { selectSeat(this); }; // Re-attach click event
+            });
+
+            // Disable the Select Seat button again
+            const selectSeatButton = document.getElementById('selectSeatButton');
+            selectSeatButton.classList.add('disabled', 'button-disabled');
+            selectSeatButton.disabled = true; // Disable button again
+            selectSeatButton.style.opacity = 0.5; // Set opacity to 50%
+        }
+    } else {
+        alert('Please select a seat first.');
+    }
+}
+
     </script>
 </head>
 <body class="bg-white">

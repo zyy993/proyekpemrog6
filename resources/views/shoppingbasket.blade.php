@@ -46,9 +46,9 @@
    </h1>
    <!-- Payment in progress -->
    <section class="mb-8 relative">
-    <h2 class="font-semibold text-sm mb-2">
-     Payment in progress
-    </h2>
+    <h2 class="font-bold text-lg mb-2">
+    Payment in progress
+</h2>
     <div class="relative flex flex-col sm:flex-row bg-blue-50 border border-blue-200 rounded-md p-3 sm:p-4">
      <div class="absolute top-3 right-3 text-gray-500 select-none font-semibold-custom-strong date-text">
       2025.10.27
@@ -76,7 +76,7 @@
            List Tax
           </td>
           <td class="text-right py-0.5 font-semibold-custom">
-           607,700
+           502.500
           </td>
          </tr>
          <tr class="border-b border-gray-300">
@@ -84,7 +84,7 @@
            Complete
           </td>
           <td class="text-right py-0.5 font-semibold-custom">
-           3,957,500
+           3.852.500
           </td>
          </tr>
         </tbody>
@@ -96,7 +96,7 @@
         </span>
        </p>
        <p class="text-[9px] text-blue-600 mt-0.5 font-semibold-custom">
-        Berakhir pada 27 Mei 2025
+        *Berakhir pada 27 Mei 2025
        </p>
       </div>
       <div class="flex flex-col items-end mt-2 space-y-1">
@@ -112,9 +112,9 @@
    </section>
    <!-- Active ticket -->
    <section class="mb-8">
-    <h2 class="font-semibold text-sm mb-2">
-     Active ticket
-    </h2>
+    <h2 class="font-bold text-lg mb-2">
+    Active ticket
+</h2>
     <div class="relative flex flex-col sm:flex-row bg-blue-50 border border-blue-200 rounded-md p-3 sm:p-4 mb-4 max-w-full">
      <div class="absolute top-3 right-3 flex flex-col items-end space-y-1 select-none z-20">
       <span class="text-gray-700 font-semibold-custom date-text">
@@ -146,7 +146,7 @@
           List Tax
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          681,537
+          661.537
          </td>
         </tr>
         <tr class="border-b border-gray-300">
@@ -154,7 +154,7 @@
           Complete
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          5,091,787
+          5.071.787
          </td>
         </tr>
        </tbody>
@@ -166,7 +166,7 @@
        </span>
       </p>
       <p class="text-[9px] text-blue-600 mt-0.5 font-semibold-custom">
-       Berakhir pada 27 Mei 2025
+       *Berakhir pada 27 Mei 2025
       </p>
       <div class="flex justify-end mt-1">
        <a class="text-blue-600 font-semibold-custom hover:underline text-[9px]" href="#">
@@ -206,7 +206,7 @@
           List Tax
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          80,300
+          60,300
          </td>
         </tr>
         <tr class="border-b border-gray-300">
@@ -214,7 +214,7 @@
           Complete
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          482,300
+          462.300
          </td>
         </tr>
        </tbody>
@@ -226,7 +226,7 @@
        </span>
       </p>
       <p class="text-[9px] text-blue-600 mt-0.5 font-semibold-custom">
-       Berakhir pada 27 Mei 2025
+       *Berakhir pada 27 Mei 2025
       </p>
       <div class="flex justify-end mt-1">
        <a class="text-blue-600 font-semibold-custom hover:underline text-[9px]" href="#">
@@ -238,9 +238,9 @@
    </section>
    <!-- Expired ticket -->
    <section>
-    <h2 class="font-semibold text-sm mb-2">
-     Expired ticket
-    </h2>
+    <h2 class="font-bold text-lg mb-2">
+    Expired ticket
+</h2>
     <div class="relative flex flex-col sm:flex-row bg-gray-700 bg-opacity-90 rounded-md p-3 sm:p-4 mb-4 max-w-full overflow-hidden">
      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md z-10"></div>
      <div class="absolute top-3 right-3 flex flex-col items-end space-y-1 select-none z-20">
@@ -273,7 +273,7 @@
           List Tax
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          625,000
+          626,250
          </td>
         </tr>
         <tr class="border-b border-gray-600">
@@ -281,7 +281,7 @@
           Complete
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          5,000,000
+          5.031.250
          </td>
         </tr>
        </tbody>
@@ -293,7 +293,7 @@
        </span>
       </p>
       <p class="text-[9px] text-blue-600 mt-0.5 font-semibold-custom">
-       Berakhir pada 27 Mei 2025
+       *Berakhir pada 27 Mei 2025
       </p>
      </div>
     </div>
@@ -301,7 +301,7 @@
      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-md z-10"></div>
      <div class="absolute top-3 right-3 flex flex-col items-end space-y-1 select-none z-20">
       <span class="text-gray-300 bg-gray-800 rounded px-2 py-[2px] font-semibold date-text">
-       2026.07.10
+       2025.07.10
       </span>
       <span class="text-gray-300 bg-gray-800 rounded px-2 py-[2px] font-semibold text-[9px]">
        Expired
@@ -329,7 +329,7 @@
           List Tax
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          625,000
+          626.250
          </td>
         </tr>
         <tr class="border-b border-gray-600">
@@ -337,7 +337,7 @@
           Complete
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          5,000,000
+          5.031.250
          </td>
         </tr>
        </tbody>
@@ -349,7 +349,7 @@
        </span>
       </p>
       <p class="text-[9px] text-blue-600 mt-0.5 font-semibold-custom">
-       Berakhir pada 27 Mei 2025
+       *Berakhir pada 27 Mei 2025
       </p>
      </div>
     </div>
@@ -385,7 +385,7 @@
           List Tax
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          625,000
+          626.250
          </td>
         </tr>
         <tr class="border-b border-gray-600">
@@ -393,7 +393,7 @@
           Complete
          </td>
          <td class="text-right py-0.5 font-semibold-custom">
-          5,000,000
+          5.031.250
          </td>
         </tr>
        </tbody>
@@ -405,7 +405,7 @@
        </span>
       </p>
       <p class="text-[9px] text-blue-600 mt-0.5 font-semibold-custom">
-       Berakhir pada 27 Mei 2025
+       *Berakhir pada 27 Mei 2025
       </p>
      </div>
     </div>

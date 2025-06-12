@@ -41,20 +41,21 @@
     <!-- Right side with event details -->
     <section class="flex-4 bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
       <h1 class="font-bold text-lg leading-tight mb-10 underline">
-        Taylor Swift | The Eras Tour
+        BLACKPINK | DEADLINE
       </h1>
       <div class="space-y-5 text-gray-700 text-sm">
         <div class="font-bold flex items-center space-x-3">
           <i class="far fa-calendar-alt text-gray-400 w-5"></i>
-          <span class="text-lg">September 9, 2025</span>
+          <span class="text-lg">November 11, 2025</span>
         </div>
         <div class="font-bold flex items-center space-x-3">
           <i class="fas fa-map-marker-alt text-gray-400 w-5"></i>
-          <span class="text-lg">Gelora Bung Karno Stadium, Jakarta</span>
+          <span class="text-lg">Gelora Bung Karno Stadium,
+                   Jakarta</span>
         </div>
         <div class="font-bold flex items-center space-x-3">
           <i class="far fa-clock text-gray-400 w-5"></i>
-          <span class="text-lg">Gate open at 5:00 PM | Show starts at 7:00 PM</span>
+          <span class="text-lg">Gates open at 5:00 PM | Show starts at 7:00 PM</span>
         </div>
         <hr class="my-9 border-t-2 border-gray-300" />
        <div class="mt-14 flex items-center space-x-4">
@@ -84,29 +85,26 @@
 
      <!-- Konten tab -->
      <div id="content-deskripsi" class="p-6 text-gray-900">
-      <h2 class="font-extrabold text-base mb-2 underline">Taylor Swift | The Eras Tour - Live in Jakarta</h2>
+      <h2 class="font-extrabold text-base mb-2 underline">BLACKPINK | DEADLINE - Live in Jakarta</h2>
       <p class="mb-4 font-bold">
-        Bersiaplah untuk malam yang tak terlupakan bersama Taylor Swift dalam konser paling spektakuler tahun ini – The Eras Tour hadir di Jakarta!
+        Bersiaplah untuk malam penuh energi dan kemegahan bersama BLACKPINK dalam tur dunia paling ditunggu tahun ini – [The World Tour: Deadline] akhirnya hadir di Jakarta!
       </p>
       <p class="mb-4">
-        Taylor akan membawamu menyusuri perjalanan musikal luar biasanya, dari awal karier hingga era terbarunya yang penuh warna. Saksikan secara langsung penampilan ikonik dari lagu-lagu legendaris seperti Love Story, You Belong with Me, Blank Space, Shake It Off, All Too Well (10 Minute Version), hingga hits dari album terbarunya yang telah mengguncang dunia.
+        Setelah sukses mengguncang berbagai negara dengan penampilan memukau, BLACKPINK siap menghadirkan pertunjukan luar biasa yang akan membakar semangat para BLINK di tanah air. Konser ini bukan hanya tentang musik—ini adalah perayaan cinta, kekuatan, dan gaya khas BLACKPINK yang telah merebut hati jutaan penggemar di seluruh dunia.
+Jennie, Jisoo, Lisa, dan Rosé akan membawamu menjelajahi era kejayaan mereka, dari debut yang mendobrak dunia K-pop hingga lagu-lagu terbaru yang mendominasi chart global. Rasakan langsung dentuman beat dari DDU-DU DDU-DU, gemerlap Kill This Love, getaran emosional dari Stay, hingga kekuatan panggung luar biasa dari Pink Venom dan Shut Down.
       </p>
       <p class="mb-4">
-        Dikemas dalam tata panggung megah, visual menawan, koreografi memukau, dan momen-momen emosional yang akan menyentuh hati, The Eras Tour bukan sekadar konser—ini adalah pengalaman seumur hidup yang akan membawamu menyelami setiap era musik Taylor Swift, satu demi satu.
-      </p>
-      <p class="mb-4">
-        Ajak sahabat, kenakan outfit era favoritmu, dan bersiaplah bernyanyi bersama puluhan ribu Swifties lainnya dalam malam yang penuh magis, nostalgia, dan cinta.
-      </p>
-      <p class="mb-4">
-        Jangan lewatkan! Jakarta akan menjadi saksi sejarah perjalanan musik Taylor Swift—dan kamu adalah bagian penting di dalamnya.
+        Dibalut tata panggung spektakuler, efek visual futuristik, koreografi memikat, dan suasana yang membakar semangat, konser ini bukan hanya pertunjukan musik—ini adalah pengalaman global yang tak terlupakan bersama jutaan BLINK di seluruh dunia.
+Kenakan outfit BLACKPINK-mu yang paling ikonik, bawa lightstick kesayangan, dan bersiaplah menyatu dalam gelombang cinta dan energi luar biasa dari para member!
+Tandai kalendermu, karena Jakarta akan menjadi bagian dari sejarah tur dunia BLACKPINK – dan kamu adalah saksi hidupnya.
       </p>
       <h3 class="font-semibold text-base mt-8 mb-3">Syarat dan Ketentuan :</h3>
       <p class="mb-3">1. Tiket hanya tersedia melalui platform penjualan resmi yang telah ditentukan oleh promotor.</p>
       <p class="mb-3">2. Semua pembelian bersifat final. Tidak ada pengembalian dana (refund) atau penukaran tiket kecuali dalam kondisi konser dibatalkan oleh pihak penyelenggara.</p>
-      <p class="mb-3">3. Harga belum termasuk pajak dan biaya layanan platform penjualan tiket.</p>
+      <p class="mb-3">3. Harga tiket belum termasuk pajak dan biaya layanan.</p>
       <p class="mb-3">4. Tiket akan dikirim dalam format digital (e-ticket) melalui email atau aplikasi resmi.</p>
-      <p class="mb-3">5. Penonton wajib menunjukkan e-ticket beserta identitas diri (KTP/Passport/SIM) yang sesuai dengan data pemesan saat memasuki venue.</p>
-      <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat pertunjukan dimulai.</p>
+      <p class="mb-3">5. Penonton wajib menunjukkan e-ticket serta identitas resmi (KTP/Passport/SIM) yang sesuai dengan data pemesanan.</p>
+      <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat konser dimulai.</p>
       <p class="mb-3">7. Dilarang membawa senjata tajam, minuman keras, narkoba, kembang api, laser pointer, drone, dan benda berbahaya lainnya.</p>
       <p class="mb-3">8. Tidak diperbolehkan membawa makanan dan minuman dari luar ke dalam area konser.</p>
       <p class="mb-3">9. Dilarang melakukan tindakan yang mengganggu kenyamanan dan keamanan penonton lain.</p>
@@ -130,7 +128,7 @@
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          BLACKPINK | DEADLINE
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
@@ -145,7 +143,7 @@
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >* Berakhir pada 27 Mei 2025</a
         >
       </div>
       <!-- Bagian bawah: jumlah tiket + tombol -->
@@ -228,7 +226,7 @@ src="{{ asset('img/deadline.jpg') }}"
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          BLACKPINK | DEADLINE
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
@@ -243,7 +241,7 @@ src="{{ asset('img/deadline.jpg') }}"
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >* Berakhir pada 27 Mei 2025</a
         >
       </div>
       <div
@@ -316,7 +314,7 @@ src="{{ asset('img/deadline.jpg') }}"
     <div class="flex-1 p-3 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
-          Taylor Swift | The Eras Tour
+          BLACKPINK | DEADLINE
         </h2>
         <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
           <li class="flex items-center gap-1">
@@ -331,7 +329,7 @@ src="{{ asset('img/deadline.jpg') }}"
         <a
           class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline"
           href="#"
-          >* Terms and conditions apply</a
+          >* Berakhir pada 27 Mei 2025</a
         >
       </div>
       <div
@@ -409,7 +407,7 @@ src="{{ asset('img/deadline.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            BLACKPINK | DEADLINE
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
@@ -424,7 +422,7 @@ src="{{ asset('img/deadline.jpg') }}"
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >* Berakhir pada 27 Mei 2025</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">
@@ -477,7 +475,7 @@ src="{{ asset('img/deadline.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            BLACKPINK | DEADLINE
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
@@ -492,7 +490,7 @@ src="{{ asset('img/deadline.jpg') }}"
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >* Berakhir pada 27 Mei 2025</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">
@@ -545,7 +543,7 @@ src="{{ asset('img/deadline.jpg') }}"
       <div class="flex-1 p-3 flex flex-col justify-between">
         <div>
           <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            Taylor Swift | The Eras Tour
+            BLACKPINK | DEADLINE
           </h2>
           <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
             <li class="flex items-center gap-1">
@@ -560,7 +558,7 @@ src="{{ asset('img/deadline.jpg') }}"
           <a
             class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
             href="#"
-            >* Terms and conditions apply</a
+            >* Berakhir pada 27 Mei 2025</a
           >
         </div>
         <div class="flex flex-col items-end gap-2 mt-2">
@@ -595,7 +593,7 @@ src="{{ asset('img/deadline.jpg') }}"
       <div
         class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none"
       >
-        Sold Out
+        Presale
       </div>
     </article>
   </section>

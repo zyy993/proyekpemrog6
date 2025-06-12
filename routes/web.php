@@ -56,24 +56,16 @@ Route::get('/info3', function () {
     return view('info3');
 });
 
-Route::get('/eticket1', function () {
-    return view('eticket1');
+Route::get('/eticket', function () {
+    return view('eticket');
 });
 
 Route::get('/myticket', function () {
     return view('myticket');
 });
 
-Route::get('/eticket2', function () {
-    return view('eticket2');
-});
-
-Route::get('/pilihtempat1', function () {
-    return view('pilihtempat1');
-});
-
-Route::get('/pilihtempat2', function () {
-    return view('pilihtempat2');
+Route::get('/pilihtempat', function () {
+    return view('pilihtempat');
 });
 
 Route::get('/shoppingbasket', function () {
@@ -94,6 +86,10 @@ Route::get('/arsipevent', function () {
 
 Route::get('/riwayattransaksi', function () {
     return view('riwayattransaksi');
+});
+
+Route::get('/riwayattransaksi1', function () {
+    return view('riwayattransaksi1');
 });
 
 Route::get('/faq', function () {

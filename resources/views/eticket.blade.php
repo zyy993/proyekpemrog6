@@ -47,19 +47,19 @@
             Event
           </dt>
           <dd>
-            : Taylor Swift | The Eras Tour
+            : BLACKPINK | DEADLINE
           </dd>
           <dt class="font-semibold">
             Class/Package
           </dt>
           <dd>
-            : CAT 1
+            : VVIP,102
           </dd>
           <dt class="font-semibold">
             Price
           </dt>
           <dd>
-            : IDR 4.375.000
+            : IDR 4.410.250
           </dd>
           <dt class="font-semibold">
             Number of Ticket(s)
@@ -71,7 +71,7 @@
             Event Date
           </dt>
           <dd>
-            : September 9, 2025
+            : November 11, 2025
           </dd>
           <dt class="font-semibold">
             Event Time
@@ -89,7 +89,7 @@
             Promotor
           </dt>
           <dd>
-            : Egi Imutt
+            : iMe ID
           </dd>
         </dl>
       </section>
