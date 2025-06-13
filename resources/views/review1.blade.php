@@ -32,212 +32,140 @@
   </div>
 </nav>
   <main class="max-w-5xl mx-auto p-4 sm:p-6 md:p-8">
-   <!-- Review & Rating Header -->
-   <section>
-    <h2 class="font-semibold text-base mb-4 select-none">
-     Review &amp; Rating
-    </h2>
+ <!-- Review & Rating Header -->
+<section>
+    <h3 class="text-2xl font-bold text-gray-900">Review & Rating</h3>
+
     <div class="border border-gray-300 rounded-md flex flex-col md:flex-row md:space-x-6 p-4 mb-8" style="min-height: 120px">
-     <!-- Review count -->
-     <div class="flex-1 border-r border-gray-300 pr-6 mb-4 md:mb-0">
-      <p class="font-semibold text-sm mb-1 select-none">
-       Review count
-      </p>
-      <p class="font-extrabold text-3xl leading-none select-text">
-       9.926
-      </p>
-      <p class="text-xs text-gray-500 mt-1 select-none">
-       Total review from 9.926 people from this 9th of 2nd of year
-      </p>
-     </div>
-     <!-- Average rating -->
-     <div class="flex-1 border-r border-gray-300 pr-6 mb-4 md:mb-0">
-      <p class="font-semibold text-sm mb-1 select-none">
-       Average rating
-      </p>
-      <div class="flex items-center space-x-2">
-       <p class="font-extrabold text-3xl leading-none select-text">
-        4,4
-       </p>
-       <div class="flex space-x-0.5">
-        <i class="fas fa-star star-yellow">
-        </i>
-        <i class="fas fa-star star-yellow">
-        </i>
-        <i class="fas fa-star star-yellow">
-        </i>
-        <i class="fas fa-star star-yellow">
-        </i>
-        <i class="fas fa-star-half-alt star-yellow">
-        </i>
-       </div>
-      </div>
-      <p class="text-xs text-gray-500 mt-1 select-none">
-       Based on 9.926 reviews
-      </p>
-     </div>
-     <!-- Rating distribution -->
-     <div class="flex-1">
-      <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
-       <span class="w-10 flex items-center justify-end space-x-1 text-right">
-        <i class="fas fa-star star-yellow text-[10px]"></i>
-        <span>5</span>
-       </span>
-       <div class="h-3 rounded-full bg-purple-600" style="width: 58%">
-       </div>
-       <span class="w-12 text-right">
-        58,0%
-       </span>
-      </div>
-      <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
-       <span class="w-10 flex items-center justify-end space-x-1 text-right">
-        <i class="fas fa-star star-yellow text-[10px]"></i>
-        <span>4</span>
-       </span>
-       <div class="h-3 rounded-full bg-purple-400" style="width: 31.7%">
-       </div>
-       <span class="w-12 text-right">
-        31,7%
-       </span>
-      </div>
-      <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
-       <span class="w-10 flex items-center justify-end space-x-1 text-right">
-        <i class="fas fa-star star-yellow text-[10px]"></i>
-        <span>3</span>
-       </span>
-       <div class="h-3 rounded-full bg-purple-300" style="width: 10.3%">
-       </div>
-       <span class="w-12 text-right">
-        10,3%
-       </span>
-      </div>
-      <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
-       <span class="w-10 flex items-center justify-end space-x-1 text-right">
-        <i class="fas fa-star star-yellow text-[10px]"></i>
-        <span>2</span>
-       </span>
-       <div class="h-3 rounded-full bg-purple-200" style="width: 1.3%">
-       </div>
-       <span class="w-12 text-right">
-        1,3%
-       </span>
-      </div>
-      <div class="flex items-center space-x-2 text-xs text-gray-600 select-none">
-       <span class="w-10 flex items-center justify-end space-x-1 text-right">
-        <i class="fas fa-star star-yellow text-[10px]"></i>
-        <span>1</span>
-       </span>
-       <div class="h-3 rounded-full bg-purple-100" style="width: 0.1%">
-       </div>
-       <span class="w-12 text-right">
-        0,1%
-       </span>
-      </div>
-     </div>
+        <!-- Review count -->
+        <div class="flex-1 border-r border-gray-300 pr-6 mb-4 md:mb-0">
+            <p class="font-semibold text-sm mb-1 select-none">Review count</p>
+            <p class="font-extrabold text-3xl leading-none select-text">9.926</p>
+            <p class="text-xs text-gray-500 mt-1 select-none">Total review from 9.926 people from this 9th of 2nd of year</p>
+        </div>
+        <!-- Average rating -->
+        <div class="flex-1 border-r border-gray-300 pr-6 mb-4 md:mb-0">
+            <p class="font-semibold text-sm mb-1 select-none">Average rating</p>
+            <div class="flex items-center space-x-2">
+                <p class="font-extrabold text-3xl leading-none select-text">4,4</p>
+                <div class="flex space-x-0.5">
+                    <i class="fas fa-star star-yellow"></i>
+                    <i class="fas fa-star star-yellow"></i>
+                    <i class="fas fa-star star-yellow"></i>
+                    <i class="fas fa-star star-yellow"></i>
+                    <i class="fas fa-star-half-alt star-yellow"></i>
+                </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-1 select-none">Based on 9.926 reviews</p>
+        </div>
+        <!-- Rating distribution -->
+        <div class="flex-1">
+            <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
+                <span class="w-10 flex items-center justify-end space-x-1 text-right"><i class="fas fa-star star-yellow text-[10px]"></i><span>5</span></span>
+                <div class="h-3 rounded-full bg-purple-600" style="width: 58%"></div>
+                <span class="w-12 text-right">58,0%</span>
+            </div>
+            <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
+                <span class="w-10 flex items-center justify-end space-x-1 text-right"><i class="fas fa-star star-yellow text-[10px]"></i><span>4</span></span>
+                <div class="h-3 rounded-full bg-purple-400" style="width: 31.7%"></div>
+                <span class="w-12 text-right">31,7%</span>
+            </div>
+            <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
+                <span class="w-10 flex items-center justify-end space-x-1 text-right"><i class="fas fa-star star-yellow text-[10px]"></i><span>3</span></span>
+                <div class="h-3 rounded-full bg-purple-300" style="width: 10.3%"></div>
+                <span class="w-12 text-right">10,3%</span>
+            </div>
+            <div class="flex items-center space-x-2 text-xs text-gray-600 mb-1 select-none">
+                <span class="w-10 flex items-center justify-end space-x-1 text-right"><i class="fas fa-star star-yellow text-[10px]"></i><span>2</span></span>
+                <div class="h-3 rounded-full bg-purple-200" style="width: 1.3%"></div>
+                <span class="w-12 text-right">1,3%</span>
+            </div>
+            <div class="flex items-center space-x-2 text-xs text-gray-600 select-none">
+                <span class="w-10 flex items-center justify-end space-x-1 text-right"><i class="fas fa-star star-yellow text-[10px]"></i><span>1</span></span>
+                <div class="h-3 rounded-full bg-purple-100" style="width: 0.1%"></div>
+                <span class="w-12 text-right">0,1%</span>
+            </div>
+        </div>
     </div>
-   </section>
-   <!-- Reviews list -->
-   <section class="space-y-6">
-    <!-- Review 1 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+
+<!-- Review Section Updated -->
+  <h3 class="text-2xl font-bold text-gray-900 text-center">Give your review</h3>
+
+  <!-- Star Rating -->
+  <div class="flex justify-start mb-6 space-x-2 text-yellow-400 text-3xl cursor-pointer select-none">
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+  </div>
+
+<!-- Review Form -->
+<div class="bg-white p-4 border border-gray-200 rounded-lg">
+
+  <!-- Judul Ulasan -->
+  <div class="mb-4 flex items-start">
+    <!-- Label dan titik dua dengan justify-between -->
+    <div class="w-32 flex justify-between font-semibold">
+      <span>Review title</span><span>:</span>
+    </div>
+    <!-- Input tanpa border -->
+    <input type="text" class="flex-1 border-none rounded p-2 text-sm bg-transparent focus:outline-none" placeholder="Tuliskan judul untuk ulasanmu!" />
+  </div>
+
+  <!-- Isi Ulasan -->
+  <div class="mb-6 flex items-start">
+    <!-- Label dan titik dua dengan justify-between -->
+    <div class="w-32 flex justify-between font-semibold">
+      <span>Review</span><span>:</span>
+    </div>
+    <!-- Ubah jadi input juga agar seragam -->
+    <input type="text" class="flex-1 border-none rounded p-2 text-sm bg-transparent focus:outline-none" placeholder="Tuliskan ulasanmu" />
+  </div>
+
+</div>
+  <!-- Tombol Kirim (diberi jarak ke atas) -->
+  <div class="flex justify-end mt-6">
+    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700">Send</button>
+  </div>
+
+</section>
+
+<!-- Reviews List -->
+<section class="space-y-6">
+
+  <!-- Judul Section -->
+  <h3 class="text-2xl font-bold text-gray-900 text-center">Reviews from other users</h3>
+  <!-- Review 1 -->
+  <article class="flex space-x-4">
+    <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
       <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
       </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       AurelKim
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       13 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Konser Impian Seumur Hidup
-      </p>
+      <span class="mt-1 text-xs font-semibold text-black select-text">hanablink</span>
+      <time class="text-xs text-gray-500 mt-0.5 select-none">13 Maret 2023</time>
+    </div>
+    <div class="flex-1">
+      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">Worth Every Second!</p>
       <p class="text-xs text-gray-600 mt-1 select-text">
-       Ini pertama kalinya aku nonton JKT48 langsung dan aku sangat puas karena
-            aku lihat JKT48nya sangat energik. Aku juga suka lagu-lagunya. Terima kasih
-            sudah membuat konser ini.
+        Gila sih, ini konser paling niat dan heboh yang pernah aku datangi! Dari koreografi yang energik, kostum yang stylish, sampai lighting dan visual yang bikin panggung hidup. Aku suka banget bagian solo performance masing-masing member — semuanya tampil all out! Fansnya juga solid banget, teriak bareng, nyanyi bareng, pokoknya pengalaman konser yang nggak ada duanya.
       </p>
       <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
+        <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+          <i class="far fa-thumbs-up"></i>
+          <span>1</span>
+        </button>
+        <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+          <i class="far fa-thumbs-down"></i>
+          <span>0</span>
+        </button>
       </div>
-     </div>
-    </article>
-    <!-- Review 2 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="far fa-star text-gray-300">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       blinkzone88
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       13 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Seru tapi ada kendala teknis
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Overall sangat seru dan seru banget tapi agak kurang pas. Ada kendala teknis
-            yang bikin agak terganggu sedikit. Selain itu, sistem masuknya juga kurang
-            lancar, tapi yang penting tiketnya dan acara oke dan seru deh. Totalnya
-            puas banget dan bakal nonton lagi kalau ada acara JKT48 lagi. Sukses terus
-            buat acara TixMeUp.
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
+    </div>
+  </article>
     <!-- Review 3 -->
     <article class="flex space-x-4">
      <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
@@ -277,57 +205,6 @@
         </i>
         <span>
          0
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
-    <!-- Review 4 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       hanablink
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       12 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Worth Every Second!
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Konsernya sangat seru banget dan banyak lagu yang dinyanyikan. Aku sangat
-            puas dengan acara ini. Meskipun agak sedikit ada gangguan saat masuk tapi
-            overall sangat happy. Aku suka banget konser ini dan pengen nonton lagi
-            terus - terussaya pasti nonton lagi kalau ada konser JKT48 lagi. Terima
-            kasih TixMeUp, pokoknya sukses terus yaa &lt;3
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         1
         </span>
        </button>
        <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
@@ -492,8 +369,7 @@
      </div>
     </article>
    </section>
-   <!-- More complete button -->
-   <div class="flex justify-end mt-8">
+      <div class="flex justify-end mt-8">
     <button class="flex items-center space-x-2 text-xs text-gray-700 border border-gray-300 rounded px-4 py-2 select-none" type="button">
      <span>
       More complete

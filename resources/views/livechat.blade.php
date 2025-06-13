@@ -28,13 +28,9 @@
       </div>
     </div>
     <div class="flex items-center space-x-3 min-w-[180px] justify-end">
-      <button aria-label="My Tickets" class="ml-4 flex items-center space-x-1 bg-[#1E2A78] hover:bg-[#2a3a9e] text-white text-sm font-semibold py-1.5 px-4 rounded-md">
-    <span>
-     My Tickets
-    </span>
-    <i class="fas fa-chevron-down text-xs">
-    </i>
-   </button>
+     <button aria-label="Options" class="ml-4 flex items-center space-x-1 bg-[#1E2A78] hover:bg-[#2a3a9e] text-white text-sm font-semibold py-1.5 px-4 rounded-md">
+      <i class="fas fa-chevron-down text-xs"></i>
+    </button>
     </div>
   </header>
   <!-- Chat content -->
@@ -42,10 +38,10 @@
    <img alt="User avatar circle with blue background and lighter blue head and shoulders silhouette" class="w-24 h-24 rounded-full mb-12" height="96" src="{{ asset('img/Live Chat.png') }}" width="96"/>
    <div class="w-full space-y-4 mb-6">
     <div class="bg-[#c4c4c4] text-black text-xs font-semibold rounded-lg py-3 px-4 max-w-[70%] break-words">
-     Kak, tiket Pink VIP itu termasuk hi-touch atau cuma dekat panggung aja?
+     Hey! What's going on? Anything troubling you?
     </div>
     <div class="bg-[#4a6a9e] text-white text-xs font-semibold rounded-lg py-3 px-4 max-w-[70%] ml-auto break-words">
-     Hey! What's going on? Anything troubling you?
+     I would like to request a refund for my ticket. Could you please guide me through the process?
     </div>
    </div>
    <form class="w-full">

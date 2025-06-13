@@ -95,11 +95,15 @@ Route::get('/riwayattransaksi1', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
-
+Route::get('/faq1', function () {
+    return view('faq1');
+});
 Route::get('/review', function () {
     return view('review');
 });
-
+Route::get('/review1', function () {
+    return view('review1');
+});
 Route::get('/notif1', function () {
     return view('notif1');
 });
