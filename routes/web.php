@@ -79,7 +79,21 @@ Route::get('/promotorawal', function () {
 Route::get('/mysales', function () {
     return view('mysales');
 });
-
+Route::get('/mysales1', function () {
+    return view('mysales1');
+});
+Route::get('/mysales2', function () {
+    return view('mysales2');
+});
+Route::get('/mysales3', function () {
+    return view('mysales3');
+});
+Route::get('/mysales4', function () {
+    return view('mysales4');
+});
+Route::get('/mysales5', function () {
+    return view('mysales5');
+});
 Route::get('/arsipevent', function () {
     return view('arsipevent');
 });
