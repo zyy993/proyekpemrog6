@@ -16,8 +16,8 @@
   </style>
  </head>
  <body class="bg-[#02096e] text-white min-h-screen flex flex-col">
-  <!-- Header -->
-  <header class="bg-[#0B1A8C] flex items-center px-4 py-3 border-b border-[#0B1A8C]">
+  <!-- Navbar -->
+  <nav class="bg-[#0B1A8C] flex items-center px-4 py-3 border-b border-[#0B1A8C]">
     <img
       alt="TixMeUp logo hand sign in white on blue background"
       class="w-8 h-8 mr-2"
@@ -26,7 +26,7 @@
       width="32"
     />
     <span class="text-white font-extrabold text-lg select-none">TixMeUp</span>
-  </header>
+  </nav>
   <!-- Main content -->
   <main class="flex-grow flex flex-col items-center justify-center px-4 text-center relative" style="background-color: transparent;">
    <img alt="Digital globe with green glowing particles background" class="absolute inset-0 w-full h-full object-cover opacity-70 -z-10" height="400" src="{{ asset('img/bgsignup.jpg') }}" width="600"/>

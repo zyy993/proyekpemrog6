@@ -16,8 +16,8 @@
   </style>
 </head>
 <body class="bg-[#0B1A8C] flex flex-col min-h-screen">
-  <!-- Header -->
-  <header class="bg-[#0B1A8C] flex items-center px-4 py-3 border-b border-[#0B1A8C]">
+  <!-- Navbar -->
+  <nav class="bg-[#0B1A8C] flex items-center px-4 py-3 border-b border-[#0B1A8C]">
     <img
       alt="TixMeUp logo hand sign in white on blue background"
       class="w-8 h-8 mr-2"
@@ -26,8 +26,7 @@
       width="32"
     />
     <span class="text-white font-extrabold text-lg select-none">TixMeUp</span>
-  </header>
-
+  </nav>
   <!-- Main content with background image from Laravel asset -->
   <main
     class="flex-grow flex flex-col items-center justify-center px-4 py-10 relative"

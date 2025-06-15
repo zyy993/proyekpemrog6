@@ -118,18 +118,91 @@
   </style>
 </head>
 <body class="flex flex-col min-h-screen">
-<!-- Header -->
-<header class="bg-[#0B1460] flex items-center justify-between px-4 sm:px-6 md:px-10 py-3">
-  <div class="flex items-center space-x-2 min-w-[840px]">
-    <img alt="TixMeUp logo with hand gesture icon in white on blue background" class="w-8 h-8" height="32" src="{{ asset('img/logo.png') }}" width="32"/>
-    <span class="text-white font-semibold text-lg select-none">TixMeUp</span>
-  </div>
-  <div class="flex items-center space-x-3 min-w-[180px] justify-end">
-    <button aria-label="Options" class="ml-4 flex items-center space-x-1 bg-[#1E2A78] hover:bg-[#2a3a9e] text-white text-sm font-semibold py-1.5 px-4 rounded-md">
-      <i class="fas fa-chevron-down text-xs"></i>
-    </button>
-  </div>
-</header>
+<!-- Navbar -->
+<nav class="bg-[#00108b] flex items-center justify-between px-6 py-3">
+    <div class="flex items-center space-x-2 min-w-[840px]">
+        <img alt="TixMeUp logo with hand gesture icon in white on blue background" class="w-8 h-8" height="32"
+            src="{{ asset('img/logo.png') }}" width="32" />
+        <span class="text-white font-semibold text-lg select-none">TixMeUp</span>
+    </div>
+    <div class="flex items-center space-x-3 min-w-[180px] justify-end">
+        <button class="text-white text-xl sm:hidden">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button id="sidebarToggle" class="text-white text-xl hidden sm:block focus:outline-none">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <!-- Sidebar -->
+<div id="sidebar"
+     class="fixed bg-[#00108b] top-0 right-0 h-full w-64 shadow-lg z-50 transform translate-x-full transition-transform duration-300">
+    <div class="flex items-center justify-start px-4 py-3 border-b">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+             class="bi bi-person-circle text-white" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+        </svg>
+        <div class="ml-4">
+            <span class="font-semibold text-white text-lg">USERNAME</span>
+            <br>
+            <span class="text-white text-sm">user@example.com</span>
+        </div>
+        <button id="closeSidebar" class="text-white text-2xl focus:outline-none ml-auto">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <ul class="p-4 space-y-4 text-white ml-4">
+        <li><a href="#" class="hover:underline">My Tickets</a></li>
+        <li><a href="#" class="hover:underline">Shopping Basket</a></li>
+        <li><a href="#" class="hover:underline">Transaction History</a></li>
+        <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
+        <li><a href="#" class="hover:underline">FAQ</a></li>
+        <li>
+            <div class="flex items-center">
+                <a href="#" class="hover:underline">Started as an</a>
+                <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
+                    <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
+                </button>
+            </div>
+            <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
+                <li><a href="#" class="hover:underline text-xs">Admin</a></li>
+                <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="hover:underline">Logout</a></li>
+    </ul>
+</div>
+
+<script>
+    // JavaScript to toggle the visibility of Admin and Promotor options
+    document.getElementById('toggleAdminPromotor').addEventListener('click', function() {
+        const adminPromotorList = document.getElementById('adminPromotorList');
+        adminPromotorList.classList.toggle('hidden'); // Toggle the 'hidden' class
+    });
+</script>
+
+    </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.getElementById('sidebar');
+            const toggle = document.getElementById('sidebarToggle');
+            const close = document.getElementById('closeSidebar');
+            toggle.addEventListener('click', () => {
+                sidebar.classList.remove('translate-x-full');
+            });
+            close.addEventListener('click', () => {
+                sidebar.classList.add('translate-x-full');
+            });
+            // Optional: close sidebar when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!sidebar.contains(e.target) && !toggle.contains(e.target)) {
+                    sidebar.classList.add('translate-x-full');
+                }
+            });
+        });
+    </script>
+</nav>
   <!-- Main Content -->
   <main class="container flex-grow">
     <!-- Header Title -->
