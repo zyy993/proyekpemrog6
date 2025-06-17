@@ -1,27 +1,37 @@
+
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   TixMeUp Notification
+   TixMeUp
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <style>
    body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Montserrat', sans-serif;
     }
   </style>
  </head>
- <body class="bg-white">
+<body class="flex flex-col min-h-screen bg-white text-gray-800 font-inter">
     <!-- Navbar -->
     <nav class="bg-[#00108b] flex items-center justify-between px-6 py-3">
         <div class="flex items-center space-x-2 min-w-[840px]">
             <img alt="TixMeUp logo with hand gesture icon in white on blue background" class="w-8 h-8" height="32"
                 src="{{ asset('img/logo.png') }}" width="32" />
             <span class="text-white font-semibold text-lg select-none">TixMeUp</span>
+        </div>
+        <div class="hidden sm:flex flex-1 max-w-[480px] mx-6 mr-10"> <!-- Increased right margin here -->
+            <div class="relative w-full">
+                <input
+                    class="w-full rounded-full bg-[#00108b] placeholder-white text-white pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white"
+                    placeholder="Search by artist or event" type="text" />
+                <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-white text-sm"></i>
+            </div>
         </div>
         <div class="flex items-center space-x-3 min-w-[180px] justify-end">
             <button class="text-white text-xl sm:hidden">
@@ -136,220 +146,79 @@
         });
     </script>
     </nav>
-  <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-6">
-   <h1 class="text-center font-semibold text-black text-base mb-6 select-none">
-    Notification
-   </h1>
-   <!-- Tabs -->
-   <div class="flex space-x-3 mb-8 justify-center">
-    <button class="bg-[#B7C3D1] text-black text-xs font-semibold rounded-full px-4 py-1.5 select-none" type="button">
-     Semua
-    </button>
-    <button class="border border-black text-black text-xs font-semibold rounded-full px-4 py-1.5 select-none" type="button">
-     Belum Dibaca
-    </button>
-    <button class="border border-black text-black text-xs font-semibold rounded-full px-4 py-1.5 select-none" type="button">
-     Belum Dibalas
-    </button>
-   </div>
-   <!-- Notification list -->
-   <ul class="space-y-6">
-    <!-- Item 1 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        anindya_melody_17
-       </p>
-       <p class="leading-tight select-text">
-        Kak, tiket Pink VIP itu termasuk hi-touch atau cuma dekat panggung aja?
-       </p>
+<main class="flex-1 max-w-7xl mx-auto my-8 px-0 flex gap-8">
+<section class="flex-1 rounded-lg bg-gray-300 overflow-hidden shadow-md max-h-[400px]">
+  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad78aa4c-b0b7-4924-925d-eaf4b3d9e852.png" alt="Poster preview" class="w-full h-full object-cover rounded-lg" />
+</section>
+  <section class="w-1/3 flex flex-col">
+    <h2 class="text-lg font-bold mb-4">Masukkan Poster untuk ditampilkan pada event anda!!</h2>
+    <div class="flex items-center gap-3 mb-5">
+      <input type="file" id="posterUpload" class="border border-gray-400 rounded-lg p-2 cursor-pointer text-sm" />
+    </div>
+    <div class="flex gap-4 mb-8">
+      <button class="flex-1 py-2 font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700">Confirm</button>
+      <button class="flex-1 py-2 font-semibold text-white bg-gray-600 rounded-full hover:bg-gray-700">Cancelled</button>
+    </div>
+    <div class="bg-gray-100 rounded-lg border border-gray-300 p-4 flex flex-col gap-4">
+      <div class="flex items-center gap-3">
+        <label for="eventDate" class="material-icons text-gray-500">event</label>
+        <input type="date" id="eventDate" name="eventDate" class="flex-1 border-none rounded-lg p-2" />
       </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       02/06
-      </span>
-      <div class="bg-[#0B1E8A] text-white rounded-full w-6 h-6 flex items-center justify-center font-semibold">
-       1
+      <div class="flex items-center gap-3">
+        <label for="eventVenue" class="material-icons text-gray-500">location_on</label>
+        <input type="text" id="eventVenue" name="eventVenue" placeholder="Masukkan Venue event" class="flex-1 border-none rounded-lg p-2" />
       </div>
-     </div>
-    </li>
-    <!-- Item 2 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        lisa_onrepeat_everyday
-       </p>
-       <p class="leading-tight select-text">
-        Aku sudah beli tiket, tapi belum dapet e-ticket ke email. Mohon bantuannya ya 🙏
-       </p>
+      <div class="flex items-center gap-3">
+        <label for="eventTime" class="material-icons text-gray-500">access_time</label>
+        <input type="time" id="eventTime" name="eventTime" class="flex-1 border-none rounded-lg p-2" />
       </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       02/06
-      </span>
-      <div class="bg-[#0B1E8A] text-white rounded-full w-6 h-6 flex items-center justify-center font-semibold">
-       1
-      </div>
-     </div>
-    </li>
-    <!-- Item 3 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        ot4_forever_blinkz
-       </p>
-       <p class="leading-tight select-text">
-        Batas maksimal pembelian tiket dalam satu akun berapa ya?
-       </p>
-      </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       02/06
-      </span>
-      <div class="bg-[#0B1E8A] text-white rounded-full w-6 h-6 flex items-center justify-center font-semibold">
-       1
-      </div>
-     </div>
-    </li>
-    <!-- Item 4 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        pinkvenom_tourindo.bl
-       </p>
-       <p class="leading-tight select-text">
-        Kak mohon info, gate dibuka jam berapa dan apakah perlu cetak tiket fisik?
-       </p>
-      </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       02/06
-      </span>
-      <div class="bg-[#0B1E8A] text-white rounded-full w-6 h-6 flex items-center justify-center font-semibold">
-       1
-      </div>
-     </div>
-    </li>
-    <!-- Item 5 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        bpconcert_familytrip
-       </p>
-       <p class="leading-tight select-text">
-        Saya bawa anak usia 9 tahun, apakah perlu beli tiket sendiri atau ada kebijakan khusus anak?
-       </p>
-      </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       02/06
-      </span>
-      <div class="bg-[#0B1E8A] text-white rounded-full w-6 h-6 flex items-center justify-center font-semibold">
-       1
-      </div>
-     </div>
-    </li>
-    <!-- Item 6 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        blackpink_fan_tired123
-       </p>
-       <p class="leading-tight select-text">
-        Kenapa sih selalu rebutan tiket kayak gini tiap konser BLACKPINK? 🤔
-       </p>
-      </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       01/06
-      </span>
-      <div class="w-6 h-6 flex items-center justify-center font-semibold">
-      </div>
-     </div>
-    </li>
-    <!-- Item 7 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        bpblinksquad_jakarta
-       </p>
-       <p class="leading-tight select-text">
-        Untuk konser BORN PINK, semua zona boleh membawa lightstick resmi BLACKPINK. Tidak ada pembagian zona khusus, tapi akan ada light sync di area tertentu.
-       </p>
-      </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       01/06
-      </span>
-      <div class="w-6 h-6 flex items-center justify-center font-semibold">
-      </div>
-     </div>
-    </li>
-    <!-- Item 8 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        bornpink_diary_bali
-       </p>
-       <p class="leading-tight select-text">
-        Maaf, tidak diperbolehkan membawa kamera profesional atau mirrorless. Hanya ponsel yang diizinkan untuk dokumentasi pribadi.
-       </p>
-      </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       01/06
-      </span>
-      <div class="w-6 h-6 flex items-center justify-center font-semibold">
-      </div>
-     </div>
-    </li>
-    <!-- Item 9 -->
-    <li class="flex justify-between items-start border-b border-black/10 pb-4">
-     <div class="flex space-x-4 max-w-[calc(100%-72px)]">
-      <img alt="User avatar placeholder blue circle" class="w-10 h-10 rounded-full flex-shrink-0" height="40" src="https://storage.googleapis.com/a1aa/image/f405a632-8d6f-4000-4dad-1f2d34fa498d.jpg" width="40"/>
-      <div class="text-sm text-black">
-       <p class="font-semibold leading-tight select-text">
-        roseanne_indonesia_luv
-       </p>
-       <p class="leading-tight select-text">
-        Ya, kami bekerja sama dengan mitra transportasi untuk menyediakan shuttle dari stasiun utama ke venue. Info lengkap akan kami umumkan H-3 sebelum konser.
-       </p>
-      </div>
-     </div>
-     <div class="flex flex-col items-center space-y-1 text-xs text-[#0B1E8A] select-none min-w-[48px]">
-      <span>
-       01/06
-      </span>
-      <div class="w-6 h-6 flex items-center justify-center font-semibold">
-      </div>
-     </div>
-    </li>
-   </ul>
-  </main>
+    </div>
+  </section>
+</main>
+<form class="flex flex-col w-full px-6 mt-12 gap-6 ml-56 max-w-6xl">
+
+  <!-- JUDUL FORM -->
+  <label class="block text-lg font-bold mb-4">Masukkan Seat Plan dan Kategori Tiket anda!</label>
+
+  <!-- ISI FORM DALAM FLEX ROW -->
+  <div class="flex flex-row gap-12">
+
+    <!-- BAGIAN SEAT PLAN (KIRI) -->
+    <div class="w-1/2 flex flex-col gap-6">
+      <button type="button" class="w-[500px] h-[300px] border-4 border-gray-400 rounded-lg bg-white flex items-center justify-center cursor-pointer">
+        <span class="material-icons text-7xl text-gray-600">add</span>
+      </button>
+    </div>
+
+    <!-- BAGIAN KATEGORI TIKET (KANAN) -->
+    <div class="w-1/2 flex flex-col gap-3">
+      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
+      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
+      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
+      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
+      <button type="button" class="flex items-center bg-gray-200 rounded-lg p-3 text-gray-600 font-semibold gap-2">
+        <span class="material-icons">add</span> Tambah kategori
+      </button>
+    </div>
+  </div>
+
+</form>
+<div class="ml-40 w-full max-w-6xl">
+  <label for="event-description" class="block text-sm font-bold mt-8 mb-2">
+    Masukkan Deskripsi Event!
+  </label>
+  <textarea id="event-description"
+    class="w-full min-h-[140px] border border-gray-400 rounded-lg p-4 resize-y"
+    aria-label="Masukkan Deskripsi Event">
+  </textarea>
+</div>
+<div class="w-full max-w-6xl ml-40 mt-6 mb-12 flex justify-end pr-8">
+  <button type="submit"
+    class="w-full max-w-sm bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700">
+    Confirm
+  </button>
+</div>
+
 <!-- Footer -->
   <footer class="bg-[#0B1A8C] text-white px-6 py-8 select-none">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-xs leading-relaxed">
@@ -460,5 +329,5 @@
       </div>
     </div>
   </footer>
- </body>
+</body>
 </html>

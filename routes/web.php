@@ -118,6 +118,9 @@ Route::get('/review', function () {
 Route::get('/review1', function () {
     return view('review1');
 });
+Route::get('/notif', function () {
+    return view('notif');
+});
 Route::get('/notif1', function () {
     return view('notif1');
 });
@@ -143,6 +146,9 @@ Route::get('/contoh', function () {
 
 Route::get('/seating', function () {
     return view('seating');
+});
+Route::get('/tambahticket', function () {
+    return view('tambahticket');
 });
 
 // Route untuk menampilkan halaman dashboard
