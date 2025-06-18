@@ -68,7 +68,7 @@
   </style>
  </head>
  <body class="bg-white text-black">
-    <!-- Navbar -->
+   <!-- Navbar -->
     <nav class="bg-[#00108b] flex items-center justify-between px-6 py-3">
         <div class="flex items-center space-x-2 min-w-[840px]">
             <img alt="TixMeUp logo with hand gesture icon in white on blue background" class="w-8 h-8" height="32"
@@ -105,22 +105,16 @@
                 </div>
 
                 <ul class="p-4 space-y-4 text-white ml-4">
-                    <li><a href="#" class="hover:underline">My Tickets</a></li>
-                    <li><a href="#" class="hover:underline">Shopping Basket</a></li>
-                    <li><a href="#" class="hover:underline">Transaction History</a></li>
+                    <li><a href="#" class="hover:underline">My Sales</a></li>
+                    <li><a href="#" class="hover:underline">My Event archive</a></li>
+                    <li><a href="#" class="hover:underline">Recap of user transactions</a></li>
                     <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Notification</a></li>
                     <li>
                         <div class="flex items-center">
-                            <a href="#" class="hover:underline">Started as an</a>
-                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
-                                <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
-                            </button>
+                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none"></button>
                         </div>
-                        <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
-                            <li><a href="#" class="hover:underline text-xs">Admin</a></li>
-                            <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
-                        </ul>
                     </li>
                     <li><a href="#" id="logoutButton" class="hover:underline">Logout</a></li>
                 </ul>
@@ -268,11 +262,11 @@
 
    <!-- Card for Analisis -->
    <section class="border border-black rounded-lg p-6 shadow-sm">
-    <h3 class="font-bold text-sm mb-2 text-center" style="color: #e91e63;">
-    Penjualan Tiket per Minggu - BLACKPINK
+    <h3 class="font-bold text-sm mb-2 text-center" style="color:#f97316;">
+    Penjualan Tiket per Minggu - ARIANA GRANDE
     </h3>
     <svg
-     aria-label="Line chart showing ticket sales per week for BLACKPINK"
+     aria-label="Line chart showing ticket sales per week for exo"
      class="block mx-auto mb-6"
      height="260"
      role="img"
@@ -306,7 +300,7 @@
       x="70"
       y="180"
      >
-      10,000
+      1000
      </text>
      <text
       class="chart-text axis-label"
@@ -315,7 +309,7 @@
       x="70"
       y="140"
      >
-      20,000
+      2000
      </text>
      <text
       class="chart-text axis-label"
@@ -324,7 +318,7 @@
       x="70"
       y="100"
      >
-      30,000
+      3000
      </text>
      <text
       class="chart-text axis-label"
@@ -333,7 +327,7 @@
       x="70"
       y="60"
      >
-      40,000
+      4000
      </text>
      <text
       class="chart-text axis-label"
@@ -342,7 +336,7 @@
       x="70"
       y="20"
      >
-      50,000
+      5000
      </text>
      <!-- Y axis label vertical -->
      <text class="chart-text" dominant-baseline="middle" font-weight="600" text-anchor="middle" transform="rotate(-90 15 130)" x="15" y="130">
@@ -386,17 +380,17 @@
       Minggu 4
      </text>
      <!-- Line with updated points for values 50000, 40000, 30000, 20000 -->
-     <polyline
-      fill="none"
-      points="140,20 280,60 420,100 560,140"
-      stroke="#ff69b4"
-      stroke-width="2"
-     />
-     <!-- Points -->
-     <circle cx="140" cy="20" fill="#ff69b4" r="4" />
-     <circle cx="280" cy="60" fill="#ff69b4" r="4" />
-     <circle cx="420" cy="100" fill="#ff69b4" r="4" />
-     <circle cx="560" cy="140" fill="#ff69b4" r="4" />
+            <polyline
+            fill="none"
+            points="140,120 280,140 420,140 560,120"
+            stroke="#f97316"
+            stroke-width="2"
+        />
+        <!-- Points -->
+        <circle cx="140" cy="120" fill="#f97316" r="4" />
+        <circle cx="280" cy="140" fill="#f97316" r="4" />
+        <circle cx="420" cy="140" fill="#f97316" r="4" />
+        <circle cx="560" cy="120" fill="#f97316" r="4" />
     </svg>
     <!-- X-axis label inside the card -->
             <text class="chart-title axis-label text-center block mt-2" dominant-baseline="middle" x="350" y="0">
@@ -406,34 +400,35 @@
    <br>
 <div class="text-sm">
     <p class="font-bold mb-1">Ticket</p>
-    <p>Total Tiket Terjual: 140,000 tiket</p>
-    <p>Total Nilai Penjualan: Rp 56,000,000,000 (asumsi rata-rata harga tiket Rp 400,000)</p>
-    <p>Persentase Tiket Terjual: 100% (kapasitas penuh)</p>
-    <p>Tingkat Penjualan: Sangat Tinggi (ludes dalam waktu singkat)</p>
+    <p>Total Tiket Terjual: 9,000 tiket</p>
+    <p>Total Nilai Penjualan: Rp 4,050,000,000 (rata-rata harga tiket Rp 450,000)</p>
+    <p>Persentase Tiket Terjual: 85%</p>
+    <p>Tingkat Penjualan: Baik</p>
 </div>
 <br>
 <hr class="border-t border-black mb-6" />
 <div class="text-sm">
     <p class="font-bold mb-1">Penjualan</p>
-    <p>VIP: 15,000 tiket (Rp 9,000,000,000)</p>
-    <p>Regular: 85,000 tiket (Rp 34,000,000,000)</p>
-    <p>Standing: 40,000 tiket (Rp 13,000,000,000)</p>
-    <p>Tingkat Penjualan: Sangat Tinggi (ludes dalam waktu singkat)</p>
-    <p>Online: 90,000 tiket (Rp 36,000,000,000)</p>
-    <p>Outlet: 50,000 tiket (Rp 20,000,000,000)</p>
-    <p>Presale: 40,000 tiket (Rp 16,000,000,000)</p>
-    <p>General Sale: 100,000 tiket (Rp 40,000,000,000)</p>
+    <p>VIP: 1,500 tiket (Rp 900,000,000)</p>
+    <p>Regular: 5,000 tiket (Rp 1,875,000,000)</p>
+    <p>Standing: 2,500 tiket (Rp 1,275,000,000)</p>
+    <br>
+    <p>Online: 4,000 tiket (Rp 1,800,000,000)</p>
+    <p>Outlet: 5,000 tiket (Rp 2,250,000,000)</p>
+    <br>
+    <p>Presale: 2,000 tiket (Rp 900,000,000)</p>
+    <p>General Sale: 7,000 tiket (Rp 3,150,000,000)</p>
 </div>
 <br>
 <hr class="border-t border-black mb-6" />
 <div class="text-sm">
     <p class="font-bold mb-1">Analisis Tambahan</p>
-    <p>-Grafik penjualan menunjukkan lonjakan signifikan saat presale.</p>
-    <p>-Wilayah penjualan terbanyak: Jakarta, Surabaya, Bandung.</p>
-    <p>-Jenis tiket terlaris: Regular</p>
-    <p>-Catatan: Ada promosi early bird di presale dan kerjasama dengan e-commerce besar.</p>
-    <p>-Penjualan tiket konser BLACKPINK sangat sukses, memenuhi kapasitas dengan cepat.</p>
-    <p>-Rekomendasi: Perlu tingkatkan kapasitas venue dan integrasi penjualan online yang lebih baik.</p>
+    <p>-Penjualan outlet lebih tinggi dibanding online.</p>
+    <p>-Wilayah terbanyak: Jakarta, Bali.</p>
+    <p>-Jenis tiket terlaris: Regular.</p>
+    <p>-Catatan: Kendala server pada masa presale.</p>
+    <p>-Penjualan tiket Ariana Grande cukup sukses.</p>
+    <p>-Rekomendasi: Upgrade infrastruktur server dan tingkatkan promosi online.</p>
 </div>
 <br>
 

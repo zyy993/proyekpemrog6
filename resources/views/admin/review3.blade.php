@@ -51,22 +51,16 @@
                 </div>
 
                 <ul class="p-4 space-y-4 text-white ml-4">
-                    <li><a href="#" class="hover:underline">My Tickets</a></li>
-                    <li><a href="#" class="hover:underline">Shopping Basket</a></li>
-                    <li><a href="#" class="hover:underline">Transaction History</a></li>
+                    <li><a href="#" class="hover:underline">My Sales</a></li>
+                    <li><a href="#" class="hover:underline">My Event archive</a></li>
+                    <li><a href="#" class="hover:underline">Recap of user transactions</a></li>
                     <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Notification</a></li>
                     <li>
                         <div class="flex items-center">
-                            <a href="#" class="hover:underline">Started as an</a>
-                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
-                                <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
-                            </button>
+                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none"></button>
                         </div>
-                        <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
-                            <li><a href="#" class="hover:underline text-xs">Admin</a></li>
-                            <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
-                        </ul>
                     </li>
                     <li><a href="#" id="logoutButton" class="hover:underline">Logout</a></li>
                 </ul>
@@ -243,359 +237,280 @@
    </section>
    <!-- Reviews list -->
    <section class="space-y-6">
-    <!-- Review 1 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       AurelKim
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       13 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Konser Impian Seumur Hidup
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Ini pertama kalinya aku nonton JKT48 langsung dan aku sangat puas karena
-            aku lihat JKT48nya sangat energik. Aku juga suka lagu-lagunya. Terima kasih
-            sudah membuat konser ini.
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
+<!-- Review 1 -->
+<article class="flex space-x-4 relative review-item border p-4 rounded-md shadow-sm">
+  <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <span class="mt-1 text-xs font-semibold text-black select-text">
+      AurelKim
+    </span>
+    <time class="text-xs text-gray-500 mt-0.5 select-none">
+      13 Maret 2023
+    </time>
+  </div>
+
+  <div class="flex-1">
+    <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
+      Konser Impian Seumur Hidup
+    </p>
+    <p class="text-xs text-gray-600 mt-1 select-text">
+      Ini pertama kalinya aku nonton JKT48 langsung dan aku sangat puas karena
+      aku lihat JKT48nya sangat energik. Aku juga suka lagu-lagunya. Terima kasih
+      sudah membuat konser ini.
+    </p>
+    <div class="flex space-x-4 mt-3">
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-up"></i>
+        <span>1</span>
+      </button>
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-down"></i>
+        <span>0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Tombol tong sampah merah di bawah kanan -->
+  <button class="absolute bottom-0 right-2 mb-1 text-red-600 hover:text-red-800 delete-button" type="button">
+  <i class="fas fa-trash-alt text-lg"></i>
+</button>
+</article>
+
     <!-- Review 2 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="far fa-star text-gray-300">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       blinkzone88
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       13 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Seru tapi ada kendala teknis
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Overall sangat seru dan seru banget tapi agak kurang pas. Ada kendala teknis
-            yang bikin agak terganggu sedikit. Selain itu, sistem masuknya juga kurang
-            lancar, tapi yang penting tiketnya dan acara oke dan seru deh. Totalnya
-            puas banget dan bakal nonton lagi kalau ada acara JKT48 lagi. Sukses terus
-            buat acara TixMeUp.
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
+<article class="flex space-x-4 relative review-item border p-4 rounded-md shadow-sm">
+  <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star text-gray-300"></i>
+    </div>
+    <span class="mt-1 text-xs font-semibold text-black select-text">
+      blinkzone88
+    </span>
+    <time class="text-xs text-gray-500 mt-0.5 select-none">
+      13 Maret 2023
+    </time>
+  </div>
+
+  <div class="flex-1">
+    <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
+      Seru tapi ada kendala teknis
+    </p>
+    <p class="text-xs text-gray-600 mt-1 select-text">
+      Overall sangat seru dan seru banget tapi agak kurang pas. Ada kendala teknis
+      yang bikin agak terganggu sedikit. Selain itu, sistem masuknya juga kurang
+      lancar, tapi yang penting tiketnya dan acara oke dan seru deh. Totalnya
+      puas banget dan bakal nonton lagi kalau ada acara JKT48 lagi. Sukses terus
+      buat acara TixMeUp.
+    </p>
+    <div class="flex space-x-4 mt-3">
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-up"></i>
+        <span>0</span>
+      </button>
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-down"></i>
+        <span>1</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Tombol tong sampah merah di kanan bawah -->
+  <button class="absolute bottom-0 right-2 mb-1 text-red-600 hover:text-red-800 delete-button" type="button">
+    <i class="fas fa-trash-alt text-lg"></i>
+  </button>
+</article>
+
     <!-- Review 3 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="far fa-star text-gray-300">
-       </i>
-       <i class="far fa-star text-gray-300">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       jisoostan_21
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       5 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Crowd Management Harus Dievaluasi
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Aku agak kesal karena acara pembukaan agak terlambat dan susah ke lokasi.
-            Tapi yang paling aku sesalkan adalah crowd management. Antrian masuk
-            berantakan dan agak kurang terkoordinasi. Aku berharap panitia bisa lebih
-            disiplin dan tertib supaya acara bisa lebih lancar. Semoga ke depannya
-            lebih baik lagi.
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
+<article class="flex space-x-4 relative review-item border p-4 rounded-md shadow-sm">
+  <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star text-gray-300"></i>
+      <i class="far fa-star text-gray-300"></i>
+    </div>
+    <span class="mt-1 text-xs font-semibold text-black select-text">
+      jisoostan_21
+    </span>
+    <time class="text-xs text-gray-500 mt-0.5 select-none">
+      5 Maret 2023
+    </time>
+  </div>
+
+  <div class="flex-1">
+    <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
+      Crowd Management Harus Dievaluasi
+    </p>
+    <p class="text-xs text-gray-600 mt-1 select-text">
+      Aku agak kesal karena acara pembukaan agak terlambat dan susah ke lokasi.
+      Tapi yang paling aku sesalkan adalah crowd management. Antrian masuk
+      berantakan dan agak kurang terkoordinasi. Aku berharap panitia bisa lebih
+      disiplin dan tertib supaya acara bisa lebih lancar. Semoga ke depannya
+      lebih baik lagi.
+    </p>
+    <div class="flex space-x-4 mt-3">
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-up"></i>
+        <span>0</span>
+      </button>
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-down"></i>
+        <span>0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Tombol tong sampah merah di kanan bawah -->
+  <button class="absolute bottom-0 right-2 mb-1 text-red-600 hover:text-red-800 delete-button" type="button">
+    <i class="fas fa-trash-alt text-lg"></i>
+  </button>
+</article>
+
     <!-- Review 4 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       hanablink
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       12 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Worth Every Second!
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Konsernya sangat seru banget dan banyak lagu yang dinyanyikan. Aku sangat
-            puas dengan acara ini. Meskipun agak sedikit ada gangguan saat masuk tapi
-            overall sangat happy. Aku suka banget konser ini dan pengen nonton lagi
-            terus - terussaya pasti nonton lagi kalau ada konser JKT48 lagi. Terima
-            kasih TixMeUp, pokoknya sukses terus yaa &lt;3
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
-    <!-- Review 5 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       bp4ever
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       15 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       BLACKPINK Slay All Night
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Aku suka banget dengan acara BLACKPINK yang keren banget konsepnya dan
-            penampilannya luar biasa. Aku juga suka lagu-lagunya yang enak didengar.
-            Aku berharap acara seperti ini bisa terus ada dan makin keren lagi. Terima
-            kasih TixMeUp atas pengalaman yang luar biasa ini.
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
-    <!-- Review 6 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       ryuzakura
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       17 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Magical Night with BLACKPINK
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Dua kata buat acara ini: magical night! Aku terpesona pada tata cahaya dan
-            desain panggungnya. Semua anggota tampil dengan sangat memukau dan lagu-lagu
-            mereka sangat enak didengar. Aku sangat ingin datang lagi ke acara seperti
-            ini. Terima kasih TixMeUp sudah membuat malamku sangat spesial.
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
-    <!-- Review 7 -->
-    <article class="flex space-x-4">
-     <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
-      <div class="text-yellow-400 text-lg">
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-       <i class="fas fa-star">
-       </i>
-      </div>
-      <span class="mt-1 text-xs font-semibold text-black select-text">
-       icha_luvrosé
-      </span>
-      <time class="text-xs text-gray-500 mt-0.5 select-none">
-       18 Maret 2023
-      </time>
-     </div>
-     <div class="flex-1">
-      <p class="text-sm mt-1 text-gray-900 select-text font-semibold">
-       Sempurna Tapi Masih Bisa Lebih Baik
-      </p>
-      <p class="text-xs text-gray-600 mt-1 select-text">
-       Aku sangat bangga menjadi bagian dari BLACKPINK. Lagu-lagu mereka penuh
-            energi dan penampilan mereka sangat luar biasa. Namun, pengalaman masuk
-            ke venue agak kurang nyaman. Aku berharap panitia bisa memperbaiki hal ini
-            supaya pengalaman menonton bisa lebih baik lagi. Tapi secara keseluruhan,
-            aku sangat puas dan akan terus support mereka! Wajib nonton lagi!
-      </p>
-      <div class="flex space-x-4 mt-3">
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-up">
-        </i>
-        <span>
-         1
-        </span>
-       </button>
-       <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
-        <i class="far fa-thumbs-down">
-        </i>
-        <span>
-         0
-        </span>
-       </button>
-      </div>
-     </div>
-    </article>
+<article class="flex space-x-4 relative review-item border p-4 rounded-md shadow-sm">
+  <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+    <span class="mt-1 text-xs font-semibold text-black select-text">hanablink</span>
+    <time class="text-xs text-gray-500 mt-0.5 select-none">12 Maret 2023</time>
+  </div>
+  <div class="flex-1">
+    <p class="text-sm mt-1 text-gray-900 select-text font-semibold">Worth Every Second!</p>
+    <p class="text-xs text-gray-600 mt-1 select-text">
+      Konsernya sangat seru banget dan banyak lagu yang dinyanyikan. Aku sangat
+      puas dengan acara ini. Meskipun agak sedikit ada gangguan saat masuk tapi
+      overall sangat happy. Aku suka banget konser ini dan pengen nonton lagi
+      terus - terussaya pasti nonton lagi kalau ada konser JKT48 lagi. Terima
+      kasih TixMeUp, pokoknya sukses terus yaa &lt;3
+    </p>
+    <div class="flex space-x-4 mt-3">
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-up"></i><span>1</span>
+      </button>
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-down"></i><span>0</span>
+      </button>
+    </div>
+  </div>
+  <button class="absolute bottom-0 right-2 mb-1 text-red-600 hover:text-red-800 delete-button" type="button">
+    <i class="fas fa-trash-alt text-lg"></i>
+  </button>
+</article>
+
+<!-- Review 5 -->
+<article class="flex space-x-4 relative review-item border p-4 rounded-md shadow-sm">
+  <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+    <span class="mt-1 text-xs font-semibold text-black select-text">bp4ever</span>
+    <time class="text-xs text-gray-500 mt-0.5 select-none">15 Maret 2023</time>
+  </div>
+  <div class="flex-1">
+    <p class="text-sm mt-1 text-gray-900 select-text font-semibold">BLACKPINK Slay All Night</p>
+    <p class="text-xs text-gray-600 mt-1 select-text">
+      Aku suka banget dengan acara BLACKPINK yang keren banget konsepnya dan
+      penampilannya luar biasa. Aku juga suka lagu-lagunya yang enak didengar.
+      Aku berharap acara seperti ini bisa terus ada dan makin keren lagi. Terima
+      kasih TixMeUp atas pengalaman yang luar biasa ini.
+    </p>
+    <div class="flex space-x-4 mt-3">
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-up"></i><span>1</span>
+      </button>
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-down"></i><span>0</span>
+      </button>
+    </div>
+  </div>
+  <button class="absolute bottom-0 right-2 mb-1 text-red-600 hover:text-red-800 delete-button" type="button">
+    <i class="fas fa-trash-alt text-lg"></i>
+  </button>
+</article>
+
+<!-- Review 6 -->
+<article class="flex space-x-4 relative review-item border p-4 rounded-md shadow-sm">
+  <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+    <span class="mt-1 text-xs font-semibold text-black select-text">ryuzakura</span>
+    <time class="text-xs text-gray-500 mt-0.5 select-none">17 Maret 2023</time>
+  </div>
+  <div class="flex-1">
+    <p class="text-sm mt-1 text-gray-900 select-text font-semibold">Magical Night with BLACKPINK</p>
+    <p class="text-xs text-gray-600 mt-1 select-text">
+      Dua kata buat acara ini: magical night! Aku terpesona pada tata cahaya dan
+      desain panggungnya. Semua anggota tampil dengan sangat memukau dan lagu-lagu
+      mereka sangat enak didengar. Aku sangat ingin datang lagi ke acara seperti
+      ini. Terima kasih TixMeUp sudah membuat malamku sangat spesial.
+    </p>
+    <div class="flex space-x-4 mt-3">
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-up"></i><span>1</span>
+      </button>
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-down"></i><span>0</span>
+      </button>
+    </div>
+  </div>
+  <button class="absolute bottom-0 right-2 mb-1 text-red-600 hover:text-red-800 delete-button" type="button">
+    <i class="fas fa-trash-alt text-lg"></i>
+  </button>
+</article>
+
+<!-- Review 7 -->
+<article class="flex space-x-4 relative review-item border p-4 rounded-md shadow-sm">
+  <div class="flex-shrink-0 flex flex-col items-center leading-none select-none">
+    <div class="text-yellow-400 text-lg">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+    <span class="mt-1 text-xs font-semibold text-black select-text">icha_luvrosé</span>
+    <time class="text-xs text-gray-500 mt-0.5 select-none">18 Maret 2023</time>
+  </div>
+  <div class="flex-1">
+    <p class="text-sm mt-1 text-gray-900 select-text font-semibold">Sempurna Tapi Masih Bisa Lebih Baik</p>
+    <p class="text-xs text-gray-600 mt-1 select-text">
+      Aku sangat bangga menjadi bagian dari BLACKPINK. Lagu-lagu mereka penuh
+      energi dan penampilan mereka sangat luar biasa. Namun, pengalaman masuk
+      ke venue agak kurang nyaman. Aku berharap panitia bisa memperbaiki hal ini
+      supaya pengalaman menonton bisa lebih baik lagi. Tapi secara keseluruhan,
+      aku sangat puas dan akan terus support mereka! Wajib nonton lagi!
+    </p>
+    <div class="flex space-x-4 mt-3">
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-up"></i><span>1</span>
+      </button>
+      <button class="flex items-center space-x-1 text-gray-700 border border-gray-300 rounded px-3 py-1 text-xs select-none" type="button">
+        <i class="far fa-thumbs-down"></i><span>0</span>
+      </button>
+    </div>
+  </div>
+  <button class="absolute bottom-0 right-2 mb-1 text-red-600 hover:text-red-800 delete-button" type="button">
+    <i class="fas fa-trash-alt text-lg"></i>
+  </button>
+</article>
+
+<!-- Script untuk menghapus review saat tombol tong sampah diklik -->
+<script>
+  document.querySelectorAll('.delete-button').forEach(button => {
+    button.addEventListener('click', function () {
+      const review = this.closest('.review-item');
+      if (review) review.remove();
+    });
+  });
+</script>
    </section>
    <!-- More complete button -->
    <div class="flex justify-end mt-8">

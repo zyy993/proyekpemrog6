@@ -3,16 +3,27 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   Ticket Archive - TixMeUp
+   Edit Profile - TixMeUp
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <style>
    body {
       font-family: 'Inter', sans-serif;
     }
+   /* Custom arrow for select */
+   select {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     background-image: url("data:image/svg+xml,%3csvg fill='none' stroke='%239CA3AF' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'%3e%3c/path%3e%3c/svg%3e");
+     background-repeat: no-repeat;
+     background-position: right 0.75rem center;
+     background-size: 1em;
+     padding-right: 2.5rem;
+   }
   </style>
  </head>
  <body class="bg-white text-black">
@@ -22,6 +33,14 @@
             <img alt="TixMeUp logo with hand gesture icon in white on blue background" class="w-8 h-8" height="32"
                 src="{{ asset('img/logo.png') }}" width="32" />
             <span class="text-white font-semibold text-lg select-none">TixMeUp</span>
+        </div>
+        <div class="hidden sm:flex flex-1 max-w-[480px] mx-6 mr-10"> <!-- Increased right margin here -->
+            <div class="relative w-full">
+                <input
+                    class="w-full rounded-full bg-[#00108b] placeholder-white text-white pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white"
+                    placeholder="Search by artist or event" type="text" />
+                <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-white text-sm"></i>
+            </div>
         </div>
         <div class="flex items-center space-x-3 min-w-[180px] justify-end">
             <button class="text-white text-xl sm:hidden">
@@ -49,24 +68,17 @@
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
-
                 <ul class="p-4 space-y-4 text-white ml-4">
-                    <li><a href="#" class="hover:underline">My Tickets</a></li>
-                    <li><a href="#" class="hover:underline">Shopping Basket</a></li>
-                    <li><a href="#" class="hover:underline">Transaction History</a></li>
+                    <li><a href="#" class="hover:underline">My Sales</a></li>
+                    <li><a href="#" class="hover:underline">My Event archive</a></li>
+                    <li><a href="#" class="hover:underline">Recap of user transactions</a></li>
                     <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Notification</a></li>
                     <li>
                         <div class="flex items-center">
-                            <a href="#" class="hover:underline">Started as an</a>
-                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
-                                <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
-                            </button>
+                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none"></button>
                         </div>
-                        <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
-                            <li><a href="#" class="hover:underline text-xs">Admin</a></li>
-                            <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
-                        </ul>
                     </li>
                     <li><a href="#" id="logoutButton" class="hover:underline">Logout</a></li>
                 </ul>
@@ -136,202 +148,92 @@
         });
     </script>
     </nav>
-  <main class="max-w-3xl mx-auto px-4 sm:px-6 md:px-0 py-8">
-   <h1 class="text-center font-bold text-xl sm:text-2xl mb-6 select-none">
-    Ticket Archive
-   </h1>
-   <!-- Ticket 1 -->
-   <section class="flex flex-col border border-gray-300 rounded-xl p-4 mb-6">
-    <div class="flex items-center mb-3">
-     <img alt="BLACKPINK BORN PINK album cover with black background and pink text" class="w-20 h-20 rounded-md flex-shrink-0" height="80" src="https://storage.googleapis.com/a1aa/image/cfcce71b-659a-451f-aab7-aa91e8a6b023.jpg" width="80"/>
-     <div class="ml-4 flex-1">
-      <h2 class="font-semibold text-sm sm:text-base leading-tight mb-0.5 select-text">
-       BLACKPINK WORLD TOUR | BORNPINK
-      </h2>
-      <p class="text-xs sm:text-sm text-gray-600 select-text">
-       11 Maret 2022 · GBK Jakarta
-      </p>
+  <!-- Main content -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-8">
+   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8">
+    <h1 class="text-black font-bold text-xl select-none">
+     Edit Profile
+    </h1>
+    <img alt="User avatar circle with blue background and user silhouette" class="w-20 h-20 rounded-full mt-4 sm:mt-0" height="80" src="{{ asset('img/kosong.png') }}" width="80"/>
+   </div>
+   <form class="space-y-6 max-w-3xl">
+    <div>
+     <label class="block text-xs font-semibold mb-1 select-none" for="username">
+      Username
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E8A]" id="username" type="text"/>
+    </div>
+    <div>
+     <label class="block text-xs font-semibold mb-1 select-none" for="email">
+      Email
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E8A]" id="email" type="email"/>
+    </div>
+    <div>
+     <label class="block text-xs font-semibold mb-1 select-none" for="address">
+      Address
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E8A]" id="address" type="text"/>
+    </div>
+    <div>
+     <label class="block text-xs font-semibold mb-1 select-none" for="contact">
+      Contact Number
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E8A]" id="contact" type="tel"/>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+     <div>
+      <label class="block text-xs font-semibold mb-1 select-none" for="city">
+       City
+      </label>
+      <select class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#0B1E8A]" id="city">
+       <option disabled="" selected="" value="">
+       </option>
+       <option>
+        Yogyakarta
+       </option>
+       <option>
+        Jakarta
+       </option>
+       <option>
+        Bandung
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-xs font-semibold mb-1 select-none" for="state">
+       State
+      </label>
+      <select class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#0B1E8A]" id="state">
+       <option disabled="" selected="" value="">
+       </option>
+       <option>
+        Special Region of Yogyakarta
+       </option>
+       <option>
+        DKI Jakarta
+       </option>
+       <option>
+        West Java
+       </option>
+      </select>
      </div>
     </div>
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between text-xs sm:text-sm text-gray-700">
-     <div class="flex flex-col">
-      <p class="mb-1 select-text">
-       Total Tiket Terjual : 131.000
-      </p>
-      <span class="inline-block bg-pink-200 text-pink-700 text-xs rounded-full px-3 py-1 select-text w-max">
-       Sukses (98% tiket terjual)
-      </span>
-     </div>
-     <div class="flex flex-col items-start sm:items-end mt-3 sm:mt-0">
-      <p class="mb-2 select-text">
-       Pendapatan : Rp 150M
-      </p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-md px-5 py-2 select-none">
-       Lihat Detail
-      </button>
-     </div>
+    <div>
+     <label class="block text-xs font-semibold mb-1 select-none" for="password">
+      Password
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#0B1E8A]" id="password" type="password"/>
     </div>
-   </section>
-   <!-- Ticket 2 -->
-   <section class="flex flex-col border border-gray-300 rounded-xl p-4 mb-6">
-    <div class="flex items-center mb-3">
-     <img alt="EXO SC Back To Back album cover with two men in blue background" class="w-20 h-20 rounded-md flex-shrink-0" height="80" src="https://storage.googleapis.com/a1aa/image/fbf55454-ae63-401b-d15e-77d7ceafec64.jpg" width="80"/>
-     <div class="ml-4 flex-1">
-      <h2 class="font-semibold text-sm sm:text-base leading-tight mb-0.5 select-text">
-       EXO SC | BACK TO BACK
-      </h2>
-      <p class="text-xs sm:text-sm text-gray-600 select-text">
-       04 Februari 2023 · Ancol Beach City International Stadium, Jakarta
-      </p>
-     </div>
+    <div class="flex space-x-4">
+     <button class="bg-[#6B89B1] text-white text-sm font-semibold rounded-md px-6 py-2" type="button">
+      Cancel
+     </button>
+     <button class="bg-[#6B89B1] text-white text-sm font-semibold rounded-md px-6 py-2" type="submit">
+      Save
+     </button>
     </div>
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between text-xs sm:text-sm text-gray-700">
-     <div class="flex flex-col">
-      <p class="mb-1 select-text">
-       Total Tiket Terjual : 15.000
-      </p>
-      <span class="inline-block bg-pink-200 text-pink-700 text-xs rounded-full px-3 py-1 select-text w-max">
-       Sukses (87% tiket terjual)
-      </span>
-     </div>
-     <div class="flex flex-col items-start sm:items-end mt-3 sm:mt-0">
-      <p class="mb-2 select-text">
-       Pendapatan : Rp 6M
-      </p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-md px-5 py-2 select-none">
-       Lihat Detail
-      </button>
-     </div>
-    </div>
-   </section>
-   <!-- Ticket 3 -->
-   <section class="flex flex-col border border-gray-300 rounded-xl p-4 mb-6">
-    <div class="flex items-center mb-3">
-     <img alt="IU H.E.R Tour album cover with close up of eye makeup in pink tones" class="w-20 h-20 rounded-md flex-shrink-0" height="80" src="https://storage.googleapis.com/a1aa/image/ed6d5b62-1cc6-42ae-f512-b4fb21a53c9a.jpg" width="80"/>
-     <div class="ml-4 flex-1">
-      <h2 class="font-semibold text-sm sm:text-base leading-tight mb-0.5 select-text">
-       IU WORLD TOUR | H.E.R TOUR
-      </h2>
-      <p class="text-xs sm:text-sm text-gray-600 select-text">
-       27-28 April 2024 · Indonesia Convention Exhibition BSD City, Jakarta
-      </p>
-     </div>
-    </div>
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between text-xs sm:text-sm text-gray-700">
-     <div class="flex flex-col">
-      <p class="mb-1 select-text">
-       Total Tiket Terjual : 12.000
-      </p>
-      <span class="inline-block bg-pink-200 text-pink-700 text-xs rounded-full px-3 py-1 select-text w-max">
-       Sukses (80% tiket terjual)
-      </span>
-     </div>
-     <div class="flex flex-col items-start sm:items-end mt-3 sm:mt-0">
-      <p class="mb-2 select-text">
-       Pendapatan : Rp 4,5M
-      </p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-md px-5 py-2 select-none">
-       Lihat Detail
-      </button>
-     </div>
-    </div>
-   </section>
-   <!-- Ticket 4 -->
-   <section class="flex flex-col border border-gray-300 rounded-xl p-4 mb-6">
-    <div class="flex items-center mb-3">
-     <img alt="Ariana Grande Honeymoon Tour album cover with black and white photo of Ariana Grande" class="w-20 h-20 rounded-md flex-shrink-0" height="80" src="https://storage.googleapis.com/a1aa/image/6697efc6-7efd-40fb-f456-9db6265c1d10.jpg" width="80"/>
-     <div class="ml-4 flex-1">
-      <h2 class="font-semibold text-sm sm:text-base leading-tight mb-0.5 select-text">
-       ARIANA GRANDE | HONEYMOON TOUR
-      </h2>
-      <p class="text-xs sm:text-sm text-gray-600 select-text">
-       26 Agustus 2015 di JIExpo Kemayoran
-      </p>
-     </div>
-    </div>
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between text-xs sm:text-sm text-gray-700">
-     <div class="flex flex-col">
-      <p class="mb-1 select-text">
-       Total Tiket Terjual : 9.000
-      </p>
-      <span class="inline-block bg-pink-200 text-pink-700 text-xs rounded-full px-3 py-1 select-text w-max">
-       Sukses (85% tiket terjual)
-      </span>
-     </div>
-     <div class="flex flex-col items-start sm:items-end mt-3 sm:mt-0">
-      <p class="mb-2 select-text">
-       Pendapatan : Rp 2,7M
-      </p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-md px-5 py-2 select-none">
-       Lihat Detail
-      </button>
-     </div>
-    </div>
-   </section>
-   <!-- Ticket 5 -->
-   <section class="flex flex-col border border-gray-300 rounded-xl p-4 mb-6">
-    <div class="flex items-center mb-3">
-     <img alt="G-Dragon Ubermensch Tour album cover with black and white photo of G-Dragon" class="w-20 h-20 rounded-md flex-shrink-0" height="80" src="https://storage.googleapis.com/a1aa/image/05fd6ba8-d196-40c7-7090-156f1d101f1d.jpg" width="80"/>
-     <div class="ml-4 flex-1">
-      <h2 class="font-semibold text-sm sm:text-base leading-tight mb-0.5 select-text">
-       G-DRAGON - UBERMENSCH TOUR
-      </h2>
-      <p class="text-xs sm:text-sm text-gray-600 select-text">
-       26 Juli 2025 · Indonesia Arena, Jakarta
-      </p>
-     </div>
-    </div>
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between text-xs sm:text-sm text-gray-700">
-     <div class="flex flex-col">
-      <p class="mb-1 select-text">
-       Total Tiket Terjual : 16.500
-      </p>
-      <span class="inline-block bg-pink-200 text-pink-700 text-xs rounded-full px-3 py-1 select-text w-max">
-       Sukses (98% tiket terjual)
-      </span>
-     </div>
-     <div class="flex flex-col items-start sm:items-end mt-3 sm:mt-0">
-      <p class="mb-2 select-text">
-       Pendapatan : Rp 4,2M
-      </p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-md px-5 py-2 select-none">
-       Lihat Detail
-      </button>
-     </div>
-    </div>
-   </section>
-   <!-- Ticket 6 -->
-   <section class="flex flex-col border border-gray-300 rounded-xl p-4 mb-6">
-    <div class="flex items-center mb-3">
-     <img alt="Seventeen Right Here Tour album cover with brown and gold stage photo" class="w-20 h-20 rounded-md flex-shrink-0" height="80" src="https://storage.googleapis.com/a1aa/image/0acf886c-a985-4f37-846f-b65fe5816674.jpg" width="80"/>
-     <div class="ml-4 flex-1">
-      <h2 class="font-semibold text-sm sm:text-base leading-tight mb-0.5 select-text">
-       SEVENTEEN WORLD TOUR | RIGHT HERE
-      </h2>
-      <p class="text-xs sm:text-sm text-gray-600 select-text">
-       8-9 Februari 2025 · Jakarta International Stadium (JIS), Jakarta
-      </p>
-     </div>
-    </div>
-    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between text-xs sm:text-sm text-gray-700">
-     <div class="flex flex-col">
-      <p class="mb-1 select-text">
-       Total Tiket Terjual : 50.000
-      </p>
-      <span class="inline-block bg-pink-200 text-pink-700 text-xs rounded-full px-3 py-1 select-text w-max">
-       Sukses (95% tiket terjual)
-      </span>
-     </div>
-     <div class="flex flex-col items-start sm:items-end mt-3 sm:mt-0">
-      <p class="mb-2 select-text">
-       Pendapatan : Rp 7,5M
-      </p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-md px-5 py-2 select-none">
-       Lihat Detail
-      </button>
-     </div>
-    </div>
-   </section>
+   </form>
   </main>
 <!-- Footer -->
   <footer class="bg-[#0B1A8C] text-white px-6 py-8 select-none">

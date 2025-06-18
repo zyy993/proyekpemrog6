@@ -61,22 +61,16 @@
                 </div>
 
                 <ul class="p-4 space-y-4 text-white ml-4">
-                    <li><a href="#" class="hover:underline">My Tickets</a></li>
-                    <li><a href="#" class="hover:underline">Shopping Basket</a></li>
-                    <li><a href="#" class="hover:underline">Transaction History</a></li>
+                    <li><a href="#" class="hover:underline">My Sales</a></li>
+                    <li><a href="#" class="hover:underline">My Event archive</a></li>
+                    <li><a href="#" class="hover:underline">Recap of user transactions</a></li>
                     <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Notification</a></li>
                     <li>
                         <div class="flex items-center">
-                            <a href="#" class="hover:underline">Started as an</a>
-                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
-                                <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
-                            </button>
+                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none"></button>
                         </div>
-                        <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
-                            <li><a href="#" class="hover:underline text-xs">Admin</a></li>
-                            <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
-                        </ul>
                     </li>
                     <li><a href="#" id="logoutButton" class="hover:underline">Logout</a></li>
                 </ul>
@@ -527,7 +521,7 @@ src="{{ asset('img/deadline.jpg') }}"
 <div class="w-full max-w-6xl mx-auto mt-6 mb-12 flex justify-center">
   <button type="submit"
     class="w-full max-w-sm bg-[#5F7EA4] text-white font-semibold py-3 px-8 rounded-full hover:opacity-90">
-    Return to the Home Page
+    Waiting for approval by admin
   </button>
 </div>
 

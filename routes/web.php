@@ -45,86 +45,93 @@ Route::get('/verifc', function () {
 });
 
 Route::get('/info1', function () {
-    return view('info1');
+    return view('user.info1');
 });
 
+
 Route::get('/info2', function () {
-    return view('info2');
+    return view('user.info2');
 });
 
 Route::get('/info3', function () {
-    return view('info3');
+    return view('user.info3');
 });
 Route::get('/info4', function () {
-    return view('info4');
+    return view('promotor.info4');
 });
 Route::get('/eticket', function () {
-    return view('eticket');
+    return view('user.eticket');
 });
 
 Route::get('/myticket', function () {
-    return view('myticket');
+    return view('user.myticket');
 });
 
 Route::get('/pilihtempat', function () {
-    return view('pilihtempat');
+    return view('user.pilihtempat');
 });
 
 Route::get('/shoppingbasket', function () {
-    return view('shoppingbasket');
+    return view('user.shoppingbasket');
 });
 
 Route::get('/promotorawal', function () {
-    return view('promotorawal');
+    return view('promotor.promotorawal');
 });
 Route::get('/promotorawal1', function () {
     return view('promotorawal1');
 });
 
 Route::get('/mysales', function () {
-    return view('mysales');
+    return view('promotor.mysales');
 });
 Route::get('/mysales1', function () {
-    return view('mysales1');
+    return view('promotor.mysales1');
 });
 Route::get('/mysales2', function () {
-    return view('mysales2');
+    return view('promotor.mysales2');
 });
 Route::get('/mysales3', function () {
-    return view('mysales3');
+    return view('promotor.mysales3');
 });
 Route::get('/mysales4', function () {
-    return view('mysales4');
+    return view('promotor.mysales4');
 });
 Route::get('/mysales5', function () {
-    return view('mysales5');
+    return view('promotor.mysales5');
 });
 Route::get('/arsipevent', function () {
-    return view('arsipevent');
+    return view('promotor.arsipevent');
 });
 
 Route::get('/riwayattransaksi', function () {
-    return view('riwayattransaksi');
+    return view('promotor.riwayattransaksi');
 });
 
 Route::get('/riwayattransaksi1', function () {
-    return view('riwayattransaksi1');
+    return view('user.riwayattransaksi1');
 });
 
 Route::get('/faq', function () {
-    return view('faq');
+    return view('promotor.faq');
 });
 Route::get('/faq1', function () {
-    return view('faq1');
+    return view('user.faq1');
+});
+Route::get('/faq2', function () {
+    return view('admin.faq2');
 });
 Route::get('/review', function () {
-    return view('review');
+    return view('promotor.review');
 });
 Route::get('/review1', function () {
-    return view('review1');
+    return view('user.review1');
+});
+Route::get('/review3', function () {
+    return view('admin.review3');
 });
 Route::get('/notif', function () {
-    return view('notif');
+    return view('promotor.notif');
 });
 Route::get('/notif1', function () {
     return view('notif1');
@@ -137,18 +144,31 @@ Route::get('/notif2', function () {
 Route::get('/notif3', function () {
     return view('notif3');
 });
-
+Route::get('/notif4', function () {
+    return view('admin.notif4');
+});
 Route::get('/livechat', function () {
-    return view('livechat');
+    return view('user.livechat');
 });
 
 Route::get('/editprofile', function () {
-    return view('editprofile');
+    return view('user.editprofile');
 });
 Route::get('/contoh', function () {
     return view('contoh');
 });
-
+Route::get('livechat1', function () {
+    return view('promotor.livechat1');
+});
+Route::get('livechat2', function () {
+    return view('admin.livechat2');
+});
+Route::get('editprofile1', function () {
+    return view('promotor.editprofile1');
+});
+Route::get('editprofile3', function () {
+    return view('promotor.editprofile3');
+});
 Route::get('/seating', function () {
     return view('seating');
 });

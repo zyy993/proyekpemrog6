@@ -105,22 +105,16 @@
                 </div>
 
                 <ul class="p-4 space-y-4 text-white ml-4">
-                    <li><a href="#" class="hover:underline">My Tickets</a></li>
-                    <li><a href="#" class="hover:underline">Shopping Basket</a></li>
-                    <li><a href="#" class="hover:underline">Transaction History</a></li>
+                    <li><a href="#" class="hover:underline">My Sales</a></li>
+                    <li><a href="#" class="hover:underline">My Event archive</a></li>
+                    <li><a href="#" class="hover:underline">Recap of user transactions</a></li>
                     <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Notification</a></li>
                     <li>
                         <div class="flex items-center">
-                            <a href="#" class="hover:underline">Started as an</a>
-                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
-                                <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
-                            </button>
+                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none"></button>
                         </div>
-                        <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
-                            <li><a href="#" class="hover:underline text-xs">Admin</a></li>
-                            <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
-                        </ul>
                     </li>
                     <li><a href="#" id="logoutButton" class="hover:underline">Logout</a></li>
                 </ul>
@@ -268,8 +262,8 @@
 
    <!-- Card for Analisis -->
    <section class="border border-black rounded-lg p-6 shadow-sm">
-    <h3 class="font-bold text-sm mb-2 text-center" style="color:rgb(0, 47, 255);">
-    Penjualan Tiket per Minggu - EXO-SC
+    <h3 class="font-bold text-sm mb-2 text-center" style="color:#facc15;">
+    Penjualan Tiket per Minggu - SEVENTEEN
     </h3>
     <svg
      aria-label="Line chart showing ticket sales per week for exo"
@@ -306,7 +300,7 @@
       x="70"
       y="180"
      >
-      1000
+      10,000
      </text>
      <text
       class="chart-text axis-label"
@@ -315,7 +309,7 @@
       x="70"
       y="140"
      >
-      2000
+      12,000
      </text>
      <text
       class="chart-text axis-label"
@@ -324,7 +318,7 @@
       x="70"
       y="100"
      >
-      3000
+      14,000
      </text>
      <text
       class="chart-text axis-label"
@@ -333,7 +327,7 @@
       x="70"
       y="60"
      >
-      4000
+      16,000
      </text>
      <text
       class="chart-text axis-label"
@@ -342,7 +336,7 @@
       x="70"
       y="20"
      >
-      5000
+      18,000
      </text>
      <!-- Y axis label vertical -->
      <text class="chart-text" dominant-baseline="middle" font-weight="600" text-anchor="middle" transform="rotate(-90 15 130)" x="15" y="130">
@@ -386,17 +380,17 @@
       Minggu 4
      </text>
      <!-- Line with updated points for values 50000, 40000, 30000, 20000 -->
-    <polyline
-        fill="none"
-        points="140,20 280,60 420,100 560,100"
-        stroke="rgb(0, 47, 255)"
-        stroke-width="2"
-    />
-    <!-- Points -->
-    <circle cx="140" cy="20" fill="rgb(0, 47, 255)" r="4" />
-    <circle cx="280" cy="60" fill="rgb(0, 47, 255)" r="4" />
-    <circle cx="420" cy="100" fill="rgb(0, 47, 255)" r="4" />
-    <circle cx="560" cy="100" fill="rgb(0, 47, 255)" r="4" />
+            <polyline
+            fill="none"
+            points="140,80 280,120 420,140 560,180"
+            stroke="#facc15"
+            stroke-width="2"
+        />
+        <!-- Points -->
+        <circle cx="140" cy="80" fill="#facc15" r="4" />
+        <circle cx="280" cy="120" fill="#facc15" r="4" />
+        <circle cx="420" cy="140" fill="#facc15" r="4" />
+        <circle cx="560" cy="180" fill="#facc15" r="4" />
     </svg>
     <!-- X-axis label inside the card -->
             <text class="chart-title axis-label text-center block mt-2" dominant-baseline="middle" x="350" y="0">
@@ -406,38 +400,37 @@
    <br>
 <div class="text-sm">
     <p class="font-bold mb-1">Ticket</p>
-    <p>Total Tiket Terjual: 15,000 tiket</p>
-    <p>Total Nilai Penjualan: Rp 6,000,000,000 (asumsi rata-rata harga tiket Rp 400,000)</p>
-    <p>Persentase Tiket Terjual: 95%</p>
-    <p>Tingkat Penjualan: Tinggi</p>
+    <p>Total Tiket Terjual: 50,000 tiket</p>
+    <p>Total Nilai Penjualan: Rp 15,000,000,000 (rata-rata harga tiket Rp 300,000) </p>
+    <p>Persentase Tiket Terjual: 95% (kapasitas penuh)</p>
+    <p>Tingkat Penjualan: Sangat Baik</p>
 </div>
 <br>
 <hr class="border-t border-black mb-6" />
 <div class="text-sm">
     <p class="font-bold mb-1">Penjualan</p>
-    <p>VIP: 2,000 tiket (Rp 1,200,000,000)</p>
-    <p>Regular: 8,000 tiket (Rp 2,800,000,000)</p>
-    <p>Standing: 5,000 tiket (Rp 2,000,000,000)</p>
+    <p>VIP: 5,000 tiket (Rp 2,000,000,000)</p>
+    <p>Regular: 30,000 tiket (Rp 9,000,000,000)</p>
+    <p>Standing: 15,000 tiket (Rp 4,000,000,000)</p>
     <br>
-    <p>Online: 8,000 tiket (Rp 3,200,000,000)</p>
-    <p>Outlet: 7,000 tiket (Rp 2,800,000,000)</p>
+    <p>Online: 25,000 tiket (Rp 7,500,000,000)</p>
+    <p>Outlet: 25,000 tiket (Rp 7,500,000,000)</p>
     <br>
-    <p>Presale: 5,000 tiket (Rp 2,000,000,000)</p>
-    <p>General Sale: 10,000 tiket (Rp 4,000,000,000)</p>
+    <p>Presale: 10,000 tiket (Rp 3,000,000,000)</p>
+    <p>General Sale: 40,000 tiket (Rp 12,000,000,000)</p>
 </div>
 <br>
 <hr class="border-t border-black mb-6" />
 <div class="text-sm">
     <p class="font-bold mb-1">Analisis Tambahan</p>
-    <p>-Penjualan cukup stabil dari presale sampai general sale.</p>
-    <p>-Wilayah terbanyak: Jakarta, Medan.</p>
+    <p>-Penjualan tersebar merata antara online dan offline.</p>
+    <p>-Wilayah terbanyak: Jakarta, Bandung, Semarang.</p>
     <p>-Jenis tiket terlaris: Regular</p>
-    <p>-Catatan: Ada kendala teknis di beberapa outlet pada hari pertama.</p>
-    <p>-Penjualan tiket EXO-SC terbilang sangat baik.</p>
-    <p>-Rekomendasi: Perbaiki sistem outlet dan pertimbangkan promosi bundle tiket.</p>
+    <p>-Catatan: Promosi bundle tiket dengan merchandise.</p>
+    <p>-Penjualan tiket SEVENTEEN sangat sukses dan stabil.</p>
+    <p>-Rekomendasi: Tambah kanal penjualan offline di kota-kota besar lainnya.</p>
 </div>
 <br>
-
    </section>
   </main>
  </body>

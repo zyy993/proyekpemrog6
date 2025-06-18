@@ -1,23 +1,21 @@
-
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   TixMeUp
+   TixMeUp Chat
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
   <style>
    body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
   </style>
  </head>
-<body class="flex flex-col min-h-screen bg-white text-gray-800 font-inter">
+ <body class="flex flex-col min-h-screen bg-white">
     <!-- Navbar -->
     <nav class="bg-[#00108b] flex items-center justify-between px-6 py-3">
         <div class="flex items-center space-x-2 min-w-[840px]">
@@ -61,22 +59,16 @@
                 </div>
 
                 <ul class="p-4 space-y-4 text-white ml-4">
-                    <li><a href="#" class="hover:underline">My Tickets</a></li>
-                    <li><a href="#" class="hover:underline">Shopping Basket</a></li>
-                    <li><a href="#" class="hover:underline">Transaction History</a></li>
+                    <li><a href="#" class="hover:underline">My Sales</a></li>
+                    <li><a href="#" class="hover:underline">My Event archive</a></li>
+                    <li><a href="#" class="hover:underline">Recap of user transactions</a></li>
                     <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Notification</a></li>
                     <li>
                         <div class="flex items-center">
-                            <a href="#" class="hover:underline">Started as an</a>
-                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
-                                <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
-                            </button>
+                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none"></button>
                         </div>
-                        <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
-                            <li><a href="#" class="hover:underline text-xs">Admin</a></li>
-                            <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
-                        </ul>
                     </li>
                     <li><a href="#" id="logoutButton" class="hover:underline">Logout</a></li>
                 </ul>
@@ -146,79 +138,21 @@
         });
     </script>
     </nav>
-<main class="flex-1 max-w-7xl mx-auto my-8 px-0 flex gap-8">
-<section class="flex-1 rounded-lg bg-gray-300 overflow-hidden shadow-md max-h-[400px]">
-  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad78aa4c-b0b7-4924-925d-eaf4b3d9e852.png" alt="Poster preview" class="w-full h-full object-cover rounded-lg" />
-</section>
-  <section class="w-1/3 flex flex-col">
-    <h2 class="text-lg font-bold mb-4">Masukkan Poster untuk ditampilkan pada event anda!!</h2>
-    <div class="flex items-center gap-3 mb-5">
-      <input type="file" id="posterUpload" class="border border-gray-400 rounded-lg p-2 cursor-pointer text-sm" />
+  <!-- Chat content -->
+  <main class="flex-grow flex flex-col items-center px-4 py-8 sm:py-12 w-full max-w-xl mx-auto">
+   <img alt="User avatar circle with blue background and lighter blue head and shoulders silhouette" class="w-24 h-24 rounded-full mb-12" height="96" src="{{ asset('img/Live Chat.png') }}" width="96"/>
+   <div class="w-full space-y-4 mb-6">
+    <div class="bg-[#c4c4c4] text-black text-xs font-semibold rounded-lg py-3 px-4 max-w-[70%] break-words">
+     Hey! What's going on? Anything troubling you?
     </div>
-    <div class="flex gap-4 mb-8">
-      <button class="flex-1 py-2 font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700">Confirm</button>
-      <button class="flex-1 py-2 font-semibold text-white bg-gray-600 rounded-full hover:bg-gray-700">Cancelled</button>
+    <div class="bg-[#4a6a9e] text-white text-xs font-semibold rounded-lg py-3 px-4 max-w-[70%] ml-auto break-words">
+     I would like to request a refund for my ticket. Could you please guide me through the process?
     </div>
-    <div class="bg-gray-100 rounded-lg border border-gray-300 p-4 flex flex-col gap-4">
-      <div class="flex items-center gap-3">
-        <label for="eventDate" class="material-icons text-gray-500">event</label>
-        <input type="date" id="eventDate" name="eventDate" class="flex-1 border-none rounded-lg p-2" />
-      </div>
-      <div class="flex items-center gap-3">
-        <label for="eventVenue" class="material-icons text-gray-500">location_on</label>
-        <input type="text" id="eventVenue" name="eventVenue" placeholder="Masukkan Venue event" class="flex-1 border-none rounded-lg p-2" />
-      </div>
-      <div class="flex items-center gap-3">
-        <label for="eventTime" class="material-icons text-gray-500">access_time</label>
-        <input type="time" id="eventTime" name="eventTime" class="flex-1 border-none rounded-lg p-2" />
-      </div>
-    </div>
-  </section>
-</main>
-<form class="flex flex-col w-full px-6 mt-12 gap-6 ml-56 max-w-6xl">
-
-  <!-- JUDUL FORM -->
-  <label class="block text-lg font-bold mb-4">Masukkan Seat Plan dan Kategori Tiket anda!</label>
-
-  <!-- ISI FORM DALAM FLEX ROW -->
-  <div class="flex flex-row gap-12">
-
-    <!-- BAGIAN SEAT PLAN (KIRI) -->
-    <div class="w-1/2 flex flex-col gap-6">
-      <button type="button" class="w-[500px] h-[300px] border-4 border-gray-400 rounded-lg bg-white flex items-center justify-center cursor-pointer">
-        <span class="material-icons text-7xl text-gray-600">add</span>
-      </button>
-    </div>
-
-    <!-- BAGIAN KATEGORI TIKET (KANAN) -->
-    <div class="w-1/2 flex flex-col gap-3">
-      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
-      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
-      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
-      <input type="text" class="bg-gray-200 border-none rounded-lg p-3 text-gray-600 italic font-semibold" placeholder="Masukkan kategori tiket" />
-      <button type="button" class="flex items-center bg-gray-200 rounded-lg p-3 text-gray-600 font-semibold gap-2">
-        <span class="material-icons">add</span> Tambah kategori
-      </button>
-    </div>
-  </div>
-
-</form>
-<div class="ml-40 w-full max-w-6xl">
-  <label for="event-description" class="block text-sm font-bold mt-8 mb-2">
-    Masukkan Deskripsi Event!
-  </label>
-  <textarea id="event-description"
-    class="w-full min-h-[140px] border border-gray-400 rounded-lg p-4 resize-y"
-    aria-label="Masukkan Deskripsi Event">
-  </textarea>
-</div>
-<div class="w-full max-w-6xl ml-40 mt-6 mb-12 flex justify-end pr-8">
-  <button type="submit"
-    class="w-full max-w-sm bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700">
-    Confirm
-  </button>
-</div>
-
+   </div>
+   <form class="w-full">
+    <input aria-label="Message input" class="w-full border border-gray-300 rounded-md py-2 px-3 text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1a2ea0]" placeholder="Please enter the message you would like to send" type="text"/>
+   </form>
+  </main>
 <!-- Footer -->
   <footer class="bg-[#0B1A8C] text-white px-6 py-8 select-none">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-xs leading-relaxed">
@@ -329,5 +263,5 @@
       </div>
     </div>
   </footer>
-</body>
+ </body>
 </html>

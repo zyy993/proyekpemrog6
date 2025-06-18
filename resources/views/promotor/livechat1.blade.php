@@ -3,7 +3,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   TixMeUp - Riwayat Transaksi Promotor/Admin
+   TixMeUp Chat
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -15,13 +15,21 @@
     }
   </style>
  </head>
- <body class="bg-white">
+ <body class="flex flex-col min-h-screen bg-white">
     <!-- Navbar -->
     <nav class="bg-[#00108b] flex items-center justify-between px-6 py-3">
         <div class="flex items-center space-x-2 min-w-[840px]">
             <img alt="TixMeUp logo with hand gesture icon in white on blue background" class="w-8 h-8" height="32"
                 src="{{ asset('img/logo.png') }}" width="32" />
             <span class="text-white font-semibold text-lg select-none">TixMeUp</span>
+        </div>
+        <div class="hidden sm:flex flex-1 max-w-[480px] mx-6 mr-10"> <!-- Increased right margin here -->
+            <div class="relative w-full">
+                <input
+                    class="w-full rounded-full bg-[#00108b] placeholder-white text-white pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white"
+                    placeholder="Search by artist or event" type="text" />
+                <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-white text-sm"></i>
+            </div>
         </div>
         <div class="flex items-center space-x-3 min-w-[180px] justify-end">
             <button class="text-white text-xl sm:hidden">
@@ -51,22 +59,16 @@
                 </div>
 
                 <ul class="p-4 space-y-4 text-white ml-4">
-                    <li><a href="#" class="hover:underline">My Tickets</a></li>
-                    <li><a href="#" class="hover:underline">Shopping Basket</a></li>
-                    <li><a href="#" class="hover:underline">Transaction History</a></li>
+                    <li><a href="#" class="hover:underline">My Sales</a></li>
+                    <li><a href="#" class="hover:underline">My Event archive</a></li>
+                    <li><a href="#" class="hover:underline">Recap of user transactions</a></li>
                     <li><a href="#" class="hover:underline">Reviews &amp; Ratings</a></li>
                     <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Notification</a></li>
                     <li>
                         <div class="flex items-center">
-                            <a href="#" class="hover:underline">Started as an</a>
-                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none">
-                                <i class="fas fa-chevron-down"></i> <!-- Downward arrow icon -->
-                            </button>
+                            <button id="toggleAdminPromotor" class="ml-2 text-white focus:outline-none"></button>
                         </div>
-                        <ul id="adminPromotorList" class="ml-4 mt-1 space-y-2 hidden"> <!-- Initially hidden -->
-                            <li><a href="#" class="hover:underline text-xs">Admin</a></li>
-                            <li><a href="#" class="hover:underline text-xs">Promotor</a></li>
-                        </ul>
                     </li>
                     <li><a href="#" id="logoutButton" class="hover:underline">Logout</a></li>
                 </ul>
@@ -136,218 +138,22 @@
         });
     </script>
     </nav>
-  <main class="px-4 sm:px-10 py-8">
-   <div class="max-w-5xl mx-auto bg-white rounded-2xl border border-gray-200 shadow-md p-4 sm:p-8">
-    <div class="overflow-x-auto rounded-2xl">
-     <table class="w-full border-collapse rounded-2xl text-sm text-gray-700">
-      <thead>
-       <tr class="bg-gray-100 rounded-t-2xl">
-        <th class="text-left font-semibold py-3 px-3 rounded-tl-2xl w-10">
-         No
-        </th>
-        <th class="text-left font-semibold py-3 px-3 min-w-[110px]">
-         Username
-        </th>
-        <th class="text-left font-semibold py-3 px-3 min-w-[130px]">
-         Email
-        </th>
-        <th class="text-left font-semibold py-3 px-3 min-w-[110px]">
-         Tgl. pem
-        </th>
-        <th class="text-left font-semibold py-3 px-3 min-w-[110px]">
-         Jenis tiket
-        </th>
-        <th class="text-left font-semibold py-3 px-3 min-w-[70px]">
-         Jumlah
-        </th>
-        <th class="text-left font-semibold py-3 px-3 min-w-[110px]">
-         Total
-        </th>
-        <th class="text-left font-semibold py-3 px-3 rounded-tr-2xl min-w-[90px]">
-         Status
-        </th>
-       </tr>
-      </thead>
-      <tbody>
-       <tr class="border-t border-gray-200">
-        <td class="py-3 px-3 font-semibold">
-         1
-        </td>
-        <td class="py-3 px-3">
-         Zera Aulia
-        </td>
-        <td class="py-3 px-3">
-         zeraaulia
-        </td>
-        <td class="py-3 px-3">
-         2023-06-01
-        </td>
-        <td class="py-3 px-3">
-         VVIP
-        </td>
-        <td class="py-3 px-3">
-         2
-        </td>
-        <td class="py-3 px-3">
-         Rp5.000.000
-        </td>
-        <td class="py-3 px-3">
-         <span class="inline-block bg-[#a6f4a6] text-[#0f7a0f] text-xs font-semibold px-3 py-1 rounded-md select-none">
-          Success
-         </span>
-        </td>
-       </tr>
-       <tr class="border-t border-gray-200">
-        <td class="py-3 px-3 font-semibold">
-         2
-        </td>
-        <td class="py-3 px-3">
-         Damar Putra
-        </td>
-        <td class="py-3 px-3">
-         damarp
-        </td>
-        <td class="py-3 px-3">
-         2023-06-01
-        </td>
-        <td class="py-3 px-3">
-         Zone A
-        </td>
-        <td class="py-3 px-3">
-         1
-        </td>
-        <td class="py-3 px-3">
-         Rp2.000.000
-        </td>
-        <td class="py-3 px-3">
-         <span class="inline-block bg-[#4a6edb] text-white text-xs font-semibold px-3 py-1 rounded-md select-none">
-          In Process
-         </span>
-        </td>
-       </tr>
-       <tr class="border-t border-gray-200">
-        <td class="py-3 px-3 font-semibold">
-         3
-        </td>
-        <td class="py-3 px-3">
-         Vina Lestari
-        </td>
-        <td class="py-3 px-3">
-         vina_l
-        </td>
-        <td class="py-3 px-3">
-         2023-06-02
-        </td>
-        <td class="py-3 px-3">
-         Zone D
-        </td>
-        <td class="py-3 px-3">
-         3
-        </td>
-        <td class="py-3 px-3">
-         Rp3.000.000
-        </td>
-        <td class="py-3 px-3">
-         <span class="inline-block bg-[#4a6edb] text-white text-xs font-semibold px-3 py-1 rounded-md select-none">
-          In Process
-         </span>
-        </td>
-       </tr>
-       <tr class="border-t border-gray-200">
-        <td class="py-3 px-3 font-semibold">
-         4
-        </td>
-        <td class="py-3 px-3">
-         Arsen Maul
-        </td>
-        <td class="py-3 px-3">
-         arsenmln
-        </td>
-        <td class="py-3 px-3">
-         2023-06-03
-        </td>
-        <td class="py-3 px-3">
-         Zone A
-        </td>
-        <td class="py-3 px-3">
-         2
-        </td>
-        <td class="py-3 px-3">
-         Rp4.000.000
-        </td>
-        <td class="py-3 px-3">
-         <span class="inline-block bg-[#4a6edb] text-white text-xs font-semibold px-3 py-1 rounded-md select-none">
-          In Process
-         </span>
-        </td>
-       </tr>
-       <tr class="border-t border-gray-200">
-        <td class="py-3 px-3 font-semibold">
-         5
-        </td>
-        <td class="py-3 px-3">
-         Dina Ayu
-        </td>
-        <td class="py-3 px-3">
-         dinad
-        </td>
-        <td class="py-3 px-3">
-         2023-06-03
-        </td>
-        <td class="py-3 px-3">
-         Zone D
-        </td>
-        <td class="py-3 px-3">
-         1
-        </td>
-        <td class="py-3 px-3">
-         Rp1.000.000
-        </td>
-        <td class="py-3 px-3">
-         <span class="inline-block bg-[#4a6edb] text-white text-xs font-semibold px-3 py-1 rounded-md select-none">
-          In Process
-         </span>
-        </td>
-       </tr>
-       <tr class="border-t border-gray-200">
-        <td class="py-3 px-3 font-semibold">
-         6
-        </td>
-        <td class="py-3 px-3">
-         Aji Nugroho
-        </td>
-        <td class="py-3 px-3">
-         ajinugroho
-        </td>
-        <td class="py-3 px-3">
-         2023-06-02
-        </td>
-        <td class="py-3 px-3">
-         VVIP
-        </td>
-        <td class="py-3 px-3">
-         1
-        </td>
-        <td class="py-3 px-3">
-         Rp2.500.000
-        </td>
-        <td class="py-3 px-3">
-         <span class="inline-block bg-[#fca5a5] text-[#7f1d1d] text-xs font-semibold px-3 py-1 rounded-md select-none">
-          canceled
-         </span>
-        </td>
-       </tr>
-      </tbody>
-     </table>
+  <!-- Chat content -->
+  <main class="flex-grow flex flex-col items-center px-4 py-8 sm:py-12 w-full max-w-xl mx-auto">
+   <img alt="User avatar circle with blue background and lighter blue head and shoulders silhouette" class="w-24 h-24 rounded-full mb-12" height="96" src="{{ asset('img/Live Chat.png') }}" width="96"/>
+   <div class="w-full space-y-4 mb-6">
+    <div class="bg-[#c4c4c4] text-black text-xs font-semibold rounded-lg py-3 px-4 max-w-[70%] break-words">
+     Hey! What's going on? Anything troubling you?
     </div>
-    <div class="flex justify-end mt-6">
-     <button class="bg-[#4a6edb] text-white text-sm font-semibold px-6 py-2 rounded-full hover:bg-[#3b57b0] transition-colors">
-      Show in File
-     </button>
+    <div class="bg-[#4a6a9e] text-white text-xs font-semibold rounded-lg py-3 px-4 max-w-[70%] ml-auto break-words">
+     I would like to request a refund for my ticket. Could you please guide me through the process?
     </div>
    </div>
+   <form class="w-full">
+    <input aria-label="Message input" class="w-full border border-gray-300 rounded-md py-2 px-3 text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1a2ea0]" placeholder="Please enter the message you would like to send" type="text"/>
+   </form>
   </main>
-  <!-- Footer -->
+<!-- Footer -->
   <footer class="bg-[#0B1A8C] text-white px-6 py-8 select-none">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-xs leading-relaxed">
       <!-- Navigasi Cepat -->
