@@ -55,7 +55,9 @@ Route::get('/info2', function () {
 Route::get('/info3', function () {
     return view('info3');
 });
-
+Route::get('/info4', function () {
+    return view('info4');
+});
 Route::get('/eticket', function () {
     return view('eticket');
 });
@@ -74,6 +76,9 @@ Route::get('/shoppingbasket', function () {
 
 Route::get('/promotorawal', function () {
     return view('promotorawal');
+});
+Route::get('/promotorawal1', function () {
+    return view('promotorawal1');
 });
 
 Route::get('/mysales', function () {
@@ -150,7 +155,12 @@ Route::get('/seating', function () {
 Route::get('/tambahticket', function () {
     return view('tambahticket');
 });
-
+Route::get('/validasikonser', function () {
+    return view('validasikonser');
+});
+Route::get('/validasikonser1', function () {
+    return view('validasikonser1');
+});
 // Route untuk menampilkan halaman dashboard
 //Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard.index');
 

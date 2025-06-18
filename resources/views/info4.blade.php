@@ -180,7 +180,12 @@
       </div>
     </section>
    </div>
-
+   <!-- Tombol di bawah konten utama -->
+    <div class="mt-8 flex justify-center">
+    <button class="w-full max-w-md bg-[#5F7EA4] hover:bg-[#4f6b8c] text-white font-semibold py-3 px-8 rounded-full shadow-md transition">
+        Edit Event
+    </button>
+    </div>
    <!-- Tabs & Content outside the image card, full width -->
    <section class="mt-8 max-w-7xl mx-auto rounded-xl border border-gray-200 bg-white shadow-sm">
      <!-- Tabs -->

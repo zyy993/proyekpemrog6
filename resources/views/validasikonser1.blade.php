@@ -1,18 +1,23 @@
+
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>TixMeUp - Taylor Swift The Eras Tour</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>
+   TixMeUp
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <style>
    body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Montserrat', sans-serif;
     }
   </style>
  </head>
- <body class="bg-white text-gray-900">
+<body class="flex flex-col min-h-screen bg-white text-gray-800 font-inter">
     <!-- Navbar -->
     <nav class="bg-[#00108b] flex items-center justify-between px-6 py-3">
         <div class="flex items-center space-x-2 min-w-[840px]">
@@ -141,11 +146,13 @@
         });
     </script>
     </nav>
-  <main class="max-w-7xl mx-auto p-4 sm:p-6 md:p-10">
+<main class="max-w-7xl mx-auto p-4 sm:p-6 md:p-10 overflow-x-hidden">
    <div class="flex flex-col lg:flex-row gap-6">
     <!-- Left side with image only -->
     <section class="flex-[1.8] rounded-xl overflow-hidden border border-gray-200 shadow-sm">
-     <img alt="Taylor Swift portrait with red background, hand covering mouth, text overlay 'b*ck the patriarchy' in white cursive" class="w-full object-cover aspect-[16/9]" height="400" src="{{ asset('img/deadline.jpg') }}" width="600"/>
+     <img src="{{ asset('img/deadline.jpg') }}"
+     class="w-full object-cover aspect-[16/9]"
+     alt="Gambar" />
     </section>
 
     <!-- Right side with event details -->
@@ -180,49 +187,20 @@
       </div>
     </section>
    </div>
+<!-- SEAT PLAN & KATEGORI TIKET -->
+<form class="flex flex-col w-full px-6 mt-12 gap-6 max-w-6xl mx-auto">
 
-   <!-- Tabs & Content outside the image card, full width -->
-   <section class="mt-8 max-w-7xl mx-auto rounded-xl border border-gray-200 bg-white shadow-sm">
-     <!-- Tabs -->
-     <div class="flex border-b border-gray-200">
-      <button id="tab-deskripsi" class="flex-1 py-3 text-center font-semibold border-b-4 border-[#0B1460] text-[#0B1460]" type="button" aria-current="true">
-       Deskripsi
-      </button>
-      <button id="tab-tiket" class="flex-1 py-3 text-center font-semibold text-gray-400" type="button" aria-current="false">
-       Tiket
-      </button>
-     </div>
+   <label class="block text-xl font-bold relative top-8 mb-4">
+  Seat Plan dan Kategori Tiket
+</label>
+  <div class="flex flex-row gap-12">
+    <!-- SEAT PLAN -->
+    <div class="w-full flex flex-col gap-6">
+  <img src="{{ asset('img/stage.png') }}" alt="Seat Plan" class="w-[700px] h-[450px] object-contain" />
+</div>
 
-     <!-- Konten tab -->
-     <div id="content-deskripsi" class="p-6 text-gray-900">
-      <h2 class="font-extrabold text-base mb-2 underline">BLACKPINK | DEADLINE - Live in Jakarta</h2>
-      <p class="mb-4 font-bold">
-        Bersiaplah untuk malam penuh energi dan kemegahan bersama BLACKPINK dalam tur dunia paling ditunggu tahun ini – [The World Tour: Deadline] akhirnya hadir di Jakarta!
-      </p>
-      <p class="mb-4">
-        Setelah sukses mengguncang berbagai negara dengan penampilan memukau, BLACKPINK siap menghadirkan pertunjukan luar biasa yang akan membakar semangat para BLINK di tanah air. Konser ini bukan hanya tentang musik—ini adalah perayaan cinta, kekuatan, dan gaya khas BLACKPINK yang telah merebut hati jutaan penggemar di seluruh dunia.
-Jennie, Jisoo, Lisa, dan Rosé akan membawamu menjelajahi era kejayaan mereka, dari debut yang mendobrak dunia K-pop hingga lagu-lagu terbaru yang mendominasi chart global. Rasakan langsung dentuman beat dari DDU-DU DDU-DU, gemerlap Kill This Love, getaran emosional dari Stay, hingga kekuatan panggung luar biasa dari Pink Venom dan Shut Down.
-      </p>
-      <p class="mb-4">
-        Dibalut tata panggung spektakuler, efek visual futuristik, koreografi memikat, dan suasana yang membakar semangat, konser ini bukan hanya pertunjukan musik—ini adalah pengalaman global yang tak terlupakan bersama jutaan BLINK di seluruh dunia.
-Kenakan outfit BLACKPINK-mu yang paling ikonik, bawa lightstick kesayangan, dan bersiaplah menyatu dalam gelombang cinta dan energi luar biasa dari para member!
-Tandai kalendermu, karena Jakarta akan menjadi bagian dari sejarah tur dunia BLACKPINK – dan kamu adalah saksi hidupnya.
-      </p>
-      <h3 class="font-semibold text-base mt-8 mb-3">Syarat dan Ketentuan :</h3>
-      <p class="mb-3">1. Tiket hanya tersedia melalui platform penjualan resmi yang telah ditentukan oleh promotor.</p>
-      <p class="mb-3">2. Semua pembelian bersifat final. Tidak ada pengembalian dana (refund) atau penukaran tiket kecuali dalam kondisi konser dibatalkan oleh pihak penyelenggara.</p>
-      <p class="mb-3">3. Harga tiket belum termasuk pajak dan biaya layanan.</p>
-      <p class="mb-3">4. Tiket akan dikirim dalam format digital (e-ticket) melalui email atau aplikasi resmi.</p>
-      <p class="mb-3">5. Penonton wajib menunjukkan e-ticket serta identitas resmi (KTP/Passport/SIM) yang sesuai dengan data pemesanan.</p>
-      <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat konser dimulai.</p>
-      <p class="mb-3">7. Dilarang membawa senjata tajam, minuman keras, narkoba, kembang api, laser pointer, drone, dan benda berbahaya lainnya.</p>
-      <p class="mb-3">8. Tidak diperbolehkan membawa makanan dan minuman dari luar ke dalam area konser.</p>
-      <p class="mb-3">9. Dilarang melakukan tindakan yang mengganggu kenyamanan dan keamanan penonton lain.</p>
-      <p class="mb-3">10. Penyelenggara berhak untuk mengubah jadwal, artis pendukung, atau susunan acara dengan pemberitahuan sebelumnya.</p>
-     </div>
-
-     <div id="content-tiket" class="hidden p-6 text-gray-900">
-<section class="mt-6 space-y-4 max-w-full mx-auto lg:mx-0">
+    <!-- KATEGORI TIKET -->
+    <section class="mt-6 space-y-4 max-w-full mx-auto lg:mx-0">
   <!-- Ticket item 1 -->
   <article
     class="border border-gray-300 rounded-xl flex overflow-hidden relative"
@@ -235,7 +213,7 @@ Tandai kalendermu, karena Jakarta akan menjadi bagian dari sejarah tur dunia BLA
       style="width: 100px; height: 100%; object-fit: cover;"
     />
 
-    <div class="flex-1 p-3 flex flex-col justify-between">
+    <div class="flex-1 p-2 flex flex-col justify-between">
       <div>
         <h2 class="font-semibold text-sm text-[#1A1A1A]">
           BLACKPINK | DEADLINE
@@ -499,252 +477,62 @@ src="{{ asset('img/deadline.jpg') }}"
     </script>
   </article>
 </section>
-<section class="mt-6 space-y-4 max-w-full mx-auto lg:mx-0">
-  <!-- Tickets list sold out -->
-  <section class="mt-6 space-y-4 max-w-full mx-auto lg:mx-0">
-    <!-- Ticket item 1 -->
-    <article
-      class="border border-gray-300 rounded-xl flex overflow-hidden relative opacity-50 pointer-events-none select-none"
-      style="width: 550px;"
-    >
-      <img
-        alt="Sold Out Ticket"
-        class="rounded-l-xl"
-        src="{{ asset('img/deadline.jpg') }}"
-        style="width: 100px; height: 100%; object-fit: cover;"
-      />
+  </div>
+</form>
+</form>
+<div class="w-full max-w-6xl mx-auto">
+  <label for="event-description" class="block text-xl font-extrabold text-gray-800 pl-4 relative top-2">
+    Masukkan Deskripsi Event!
+  </label>
+</div>
 
-      <div class="flex-1 p-3 flex flex-col justify-between">
-        <div>
-          <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            BLACKPINK | DEADLINE
-          </h2>
-          <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
-            <li class="flex items-center gap-1">
-              <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
-            </li>
-            <li class="flex items-center gap-1">
-              <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
-            </li>
-          </ul>
-          <a
-            class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
-            href="#"
-            >* Berakhir pada 27 Mei 2025</a
-          >
-        </div>
-        <div class="flex flex-col items-end gap-2 mt-2">
-          <div class="flex items-center gap-2">
-            <button
-              type="button"
-              class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold"
-              disabled
-            >
-              −
-            </button>
-            <span class="w-4 text-center text-sm font-semibold select-none"
-              >0</span
-            >
-            <button
-              type="button"
-              class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold"
-              disabled
-            >
-              +
-            </button>
-          </div>
-          <button
-            class="bg-gray-500 text-white text-xs font-semibold rounded px-3 py-1 cursor-not-allowed"
-            type="button"
-            disabled
-          >
-            Sold Out
-          </button>
-        </div>
-      </div>
-      <div
-        class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none"
-      >
-        ZONE A
-      </div>
-    </article>
-    <!-- Ticket item 2 -->
-    <article
-      class="border border-gray-300 rounded-xl flex overflow-hidden relative opacity-50 pointer-events-none select-none"
-      style="width: 550px;"
-    >
-      <img
-        alt="Sold Out Ticket"
-        class="rounded-l-xl"
-        src="{{ asset('img/deadline.jpg') }}"
-        style="width: 100px; height: 100%; object-fit: cover;"
-      />
+<!-- Wrapper  -->
+<div class="w-full px-2 py-10">
+  <!-- Konten tab  -->
+  <div id="content-deskripsi" class="w-full max-w-6xl border border-gray-300 rounded-lg p-6 shadow-sm text-gray-900">
+    <h2 class="font-extrabold text-base mb-4 underline ">
+      BLACKPINK | DEADLINE - Live in Jakarta
+    </h2>
 
-      <div class="flex-1 p-3 flex flex-col justify-between">
-        <div>
-          <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            BLACKPINK | DEADLINE
-          </h2>
-          <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
-            <li class="flex items-center gap-1">
-              <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
-            </li>
-            <li class="flex items-center gap-1">
-              <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
-            </li>
-          </ul>
-          <a
-            class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
-            href="#"
-            >* Berakhir pada 27 Mei 2025</a
-          >
-        </div>
-        <div class="flex flex-col items-end gap-2 mt-2">
-          <div class="flex items-center gap-2">
-            <button
-              type="button"
-              class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold"
-              disabled
-            >
-              −
-            </button>
-            <span class="w-4 text-center text-sm font-semibold select-none"
-              >0</span
-            >
-            <button
-              type="button"
-              class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold"
-              disabled
-            >
-              +
-            </button>
-          </div>
-          <button
-            class="bg-gray-500 text-white text-xs font-semibold rounded px-3 py-1 cursor-not-allowed"
-            type="button"
-            disabled
-          >
-            Sold Out
-          </button>
-        </div>
-      </div>
-      <div
-        class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none"
-      >
-        ZONE C
-      </div>
-    </article>
-    <!-- Ticket item 3 -->
-    <article
-      class="border border-gray-300 rounded-xl flex overflow-hidden relative opacity-50 pointer-events-none select-none"
-      style="width: 550px;"
-    >
-      <img
-        alt="Sold Out Ticket"
-        class="rounded-l-xl"
-        src="{{ asset('img/deadline.jpg') }}"
-        style="width: 100px; height: 100%; object-fit: cover;"
-      />
+    <p class="mb-4 font-bold text-justify">
+      Bersiaplah untuk malam penuh energi dan kemegahan bersama BLACKPINK dalam tur dunia paling ditunggu tahun ini – [The World Tour: Deadline] akhirnya hadir di Jakarta!
+    </p>
 
-      <div class="flex-1 p-3 flex flex-col justify-between">
-        <div>
-          <h2 class="font-semibold text-sm text-[#1A1A1A]">
-            BLACKPINK | DEADLINE
-          </h2>
-          <ul class="text-xs text-[#4B4B4B] mt-1 space-y-1">
-            <li class="flex items-center gap-1">
-              <i class="fas fa-map-marker-alt text-[#4B4B4B] text-[10px]"></i>
-              <span>Gelora Bung Karno Stadium, Jakarta</span>
-            </li>
-            <li class="flex items-center gap-1">
-              <i class="fas fa-clock text-[#4B4B4B] text-[10px]"></i>
-              <span>Gates open at 5:00 PM | Show starts at 7:00 PM</span>
-            </li>
-          </ul>
-          <a
-            class="text-xs text-[#1A2EBF] mt-1 inline-block hover:underline pointer-events-auto"
-            href="#"
-            >* Berakhir pada 27 Mei 2025</a
-          >
-        </div>
-        <div class="flex flex-col items-end gap-2 mt-2">
-          <div class="flex items-center gap-2">
-            <button
-              type="button"
-              class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold"
-              disabled
-            >
-              −
-            </button>
-            <span class="w-4 text-center text-sm font-semibold select-none"
-              >0</span
-            >
-            <button
-              type="button"
-              class="w-5 h-5 flex items-center justify-center border border-black rounded-full text-sm font-bold"
-              disabled
-            >
-              +
-            </button>
-          </div>
-          <button
-            class="bg-gray-500 text-white text-xs font-semibold rounded px-3 py-1 cursor-not-allowed"
-            type="button"
-            disabled
-          >
-            Sold Out
-          </button>
-        </div>
-      </div>
-      <div
-        class="absolute top-0 right-0 bg-gray-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-bl-lg select-none"
-      >
-        Presale
-      </div>
-    </article>
-  </section>
-</section>
+    <p class="mb-4 text-justify">
+      Setelah sukses mengguncang berbagai negara dengan penampilan memukau, BLACKPINK siap menghadirkan pertunjukan luar biasa yang akan membakar semangat para BLINK di tanah air. Konser ini bukan hanya tentang musik—ini adalah perayaan cinta, kekuatan, dan gaya khas BLACKPINK yang telah merebut hati jutaan penggemar di seluruh dunia.
+      Jennie, Jisoo, Lisa, dan Rosé akan membawamu menjelajahi era kejayaan mereka, dari debut yang mendobrak dunia K-pop hingga lagu-lagu terbaru yang mendominasi chart global. Rasakan langsung dentuman beat dari DDU-DU DDU-DU, gemerlap Kill This Love, getaran emosional dari Stay, hingga kekuatan panggung luar biasa dari Pink Venom dan Shut Down.
+    </p>
 
-  </main>
+    <p class="mb-4 text-justify">
+      Dibalut tata panggung spektakuler, efek visual futuristik, koreografi memikat, dan suasana yang membakar semangat, konser ini bukan hanya pertunjukan musik—ini adalah pengalaman global yang tak terlupakan bersama jutaan BLINK di seluruh dunia.
+      Kenakan outfit BLACKPINK-mu yang paling ikonik, bawa lightstick kesayangan, dan bersiaplah menyatu dalam gelombang cinta dan energi luar biasa dari para member!
+      Tandai kalendermu, karena Jakarta akan menjadi bagian dari sejarah tur dunia BLACKPINK – dan kamu adalah saksi hidupnya.
+    </p>
 
-  <script>
-    const tabDeskripsi = document.getElementById('tab-deskripsi');
-    const tabTiket = document.getElementById('tab-tiket');
-    const contentDeskripsi = document.getElementById('content-deskripsi');
-    const contentTiket = document.getElementById('content-tiket');
+    <h3 class="font-semibold text-base mt-8 mb-3">Syarat dan Ketentuan :</h3>
 
-    tabDeskripsi.addEventListener('click', () => {
-      tabDeskripsi.classList.add('border-b-4', 'border-[#0B1460]', 'text-[#0B1460]');
-      tabDeskripsi.classList.remove('text-gray-400');
-      tabDeskripsi.setAttribute('aria-current', 'true');
+    <p class="mb-3">1. Tiket hanya tersedia melalui platform penjualan resmi yang telah ditentukan oleh promotor.</p>
+    <p class="mb-3">2. Semua pembelian bersifat final. Tidak ada pengembalian dana (refund) atau penukaran tiket kecuali dalam kondisi konser dibatalkan oleh pihak penyelenggara.</p>
+    <p class="mb-3">3. Harga tiket belum termasuk pajak dan biaya layanan.</p>
+    <p class="mb-3">4. Tiket akan dikirim dalam format digital (e-ticket) melalui email atau aplikasi resmi.</p>
+    <p class="mb-3">5. Penonton wajib menunjukkan e-ticket serta identitas resmi (KTP/Passport/SIM) yang sesuai dengan data pemesanan.</p>
+    <p class="mb-3">6. Pintu masuk akan dibuka mulai pukul 16.00 WIB dan ditutup saat konser dimulai.</p>
+    <p class="mb-3">7. Dilarang membawa senjata tajam, minuman keras, narkoba, kembang api, laser pointer, drone, dan benda berbahaya lainnya.</p>
+    <p class="mb-3">8. Tidak diperbolehkan membawa makanan dan minuman dari luar ke dalam area konser.</p>
+    <p class="mb-3">9. Dilarang melakukan tindakan yang mengganggu kenyamanan dan keamanan penonton lain.</p>
+    <p class="mb-3">10. Penyelenggara berhak untuk mengubah jadwal, artis pendukung, atau susunan acara dengan pemberitahuan sebelumnya.</p>
+  </div>
+</div>
 
-      tabTiket.classList.remove('border-b-4', 'border-[#0B1460]', 'text-[#0B1460]');
-      tabTiket.classList.add('text-gray-400');
-      tabTiket.setAttribute('aria-current', 'false');
+<div class="w-full max-w-6xl mx-auto mt-6 mb-12 flex justify-center">
+  <button type="submit"
+    class="w-full max-w-sm bg-[#5F7EA4] text-white font-semibold py-3 px-8 rounded-full hover:opacity-90">
+    Return to the Home Page
+  </button>
+</div>
 
-      contentDeskripsi.classList.remove('hidden');
-      contentTiket.classList.add('hidden');
-    });
-
-    tabTiket.addEventListener('click', () => {
-      tabTiket.classList.add('border-b-4', 'border-[#0B1460]', 'text-[#0B1460]');
-      tabTiket.classList.remove('text-gray-400');
-      tabTiket.setAttribute('aria-current', 'true');
-
-      tabDeskripsi.classList.remove('border-b-4', 'border-[#0B1460]', 'text-[#0B1460]');
-      tabDeskripsi.classList.add('text-gray-400');
-      tabDeskripsi.setAttribute('aria-current', 'false');
-
-      contentTiket.classList.remove('hidden');
-      contentDeskripsi.classList.add('hidden');
-    });
-  </script>
- </body>
- <!-- Footer -->
+</main>
+<!-- Footer -->
   <footer class="bg-[#0B1A8C] text-white px-6 py-8 select-none">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-xs leading-relaxed">
       <!-- Navigasi Cepat -->
@@ -854,4 +642,5 @@ src="{{ asset('img/deadline.jpg') }}"
       </div>
     </div>
   </footer>
+</body>
 </html>
