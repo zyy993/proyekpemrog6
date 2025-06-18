@@ -1,46 +1,76 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-function tampilRegistrasi () {
-return view('signup');
-}
+    // Tampilkan halaman registrasi
+    public function tampilRegistrasi()
+    {
+        return view('signup');
+    }
 
-function submitRegistrasi (Request $request){
+    // Proses data registrasi
+    public function submitRegistrasi(Request $request)
+    {
+        // Validasi sederhana (opsional, bisa ditambah)
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users',
+            'no_hp' => 'required|string',
+            'password' => 'required', // gunakan password_confirmation di form
+        ]);
 
-$user = new User();
-$user->name = $request->name;
-$user->email = $request->email;
-$user->no_hp = $request->no_hp;
-$user->password = bcrypt($request->password);
-$user->save();
-return redirect()->route ('login.tampil');
-}
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->no_hp = $request->no_hp;
+        $user->password = bcrypt($request->password);
+        $user->role = 'user'; // default role
+        $user->save();
 
-function tampilLogin(){
-    return view('signin');
+        return redirect()->route('login.tampil')->with('sukses', 'Registrasi berhasil. Silakan login.');
+    }
 
-}
+    // Tampilkan halaman login
+    public function tampilLogin()
+    {
+        return view('signin');
+    }
 
-function submitLogin (Request $request) {
-    $data = $request->only('email', 'password');
+    // Proses login
+    public function submitLogin(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
 
-if (Auth:: attempt ($data)) {
-    $request->session()->regenerate();
-return redirect()->route('home.tampil');
-} else {
-return redirect()->back()->with('gagal', 'Email atau password anda salah');
-}
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
 
-}
+            $user = Auth::user();
 
-function tampilHome(){
-    return view('home');
+            // Redirect berdasarkan role
+            switch ($user->role) {
+                case 'admin':
+                    return redirect('/info3');
+                case 'promotor':
+                    return redirect('/promotor/dashboard');
+                case 'user':
+                    return redirect('/home');
+                default:
+                    return redirect( '/info1');
+            }
+        }
 
-}
+        return redirect()->back()->with('gagal', 'Email atau password salah.');
+    }
 
+    // Tampilkan halaman home (sementara/tidak wajib)
+    public function tampilHome()
+    {
+        return view('user.home');
+    }
 }

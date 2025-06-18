@@ -25,8 +25,8 @@ Route::get('/login', [AuthController::class, 'tampilLogin'])->name('login.tampil
 Route::post('/login/sub', [AuthController::class, 'submitLogin'])->name('submit.login');
 
 // Route untuk menampilkan halaman beranda (dengan card event)
-Route::get('/home', [AuthController::class, 'tampilHome'])->name('home.tampil');
-Route::get('/home', [HomeController::class, 'tampilHome'])->name('home.tampil');
+Route::get('/home', [HomeController::class, 'tampilHome'])->middleware('auth')->name('home.tampil');
+
 
 Route::get('/', function () {
     return view('signup');
@@ -186,3 +186,22 @@ Route::get('/validasikonser1', function () {
 
 // Dashboard CRUD routes (menggunakan HomeController)
 Route::resource('dashboard', HomeController::class);
+
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::get('/admin/dashboard', function () {
+        return view('admin.dashboard');
+    });
+});
+
+Route::middleware(['auth', 'role:promotor'])->group(function () {
+    Route::get('/promotor/dashboard', function () {
+        return view('promotor.dashboard');
+    });
+});
+
+Route::middleware(['auth', 'role:user'])->group(function () {
+    Route::get('/user/dashboard', function () {
+        return view('user.dashboard');
+    });
+});
+
