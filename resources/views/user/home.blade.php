@@ -171,16 +171,38 @@
     <section class="mb-8">
 
 
-
-
-
-
       <h2 class="text-3xl font-bold mb-4 select-none">THIS MONTH’s SPOTLIGHT</h2>
       <div class="flex items-center space-x-4 overflow-x-auto scrollbar-hide">
+
+@foreach ($contents as $content)
+        <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-">
+             @if($content->image_path)
+          <img alt="Hello Monster –0 Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('storage/' . $content->image_path) }}" alt="{{ $content->name }}" width="280"/>
+          @else
+                        <img src="https://placehold.co/280x140?text=No+Image" alt="No Image" />
+                    @endif
+          <div class="p-3">
+            <p class="text-xs font-semibold mb-1 select-none">{{ $content->name }}</p>
+            <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
+              <i class="fas fa-calendar-alt"></i>
+              <span>{{ $content->date->format('H.i') }}</span>
+              <i class="fas fa-map-marker-alt ml-3"></i>
+              <span>{{ $content->location }}</span>
+            </div>
+             <a href="/info3">
+
+            <button class="bg-[#4a6b8a] text-white text-xs rounded px-3 py-1 hover:bg-[#3a5570] transition">More info</button>
+            </a>
+          </div>
+        </div>
+ @endforeach
+
+
+               
         <!-- Card 1 -->
 
-        <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-0">
-          <img alt="Hello Monster – Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/deadline.jpg') }}" width="280"/>
+        <div class="min-w-[370px] bg-white border border-gray-200 rounded-lg shadow-sm flex-shrink-">
+          <img alt="Hello Monster –0 Baby Monster" class="rounded-t-lg object-cover w-full h-[140px]" height="140" src="{{ asset('img/deadline.jpg') }}" width="280"/>
           <div class="p-3">
             <p class="text-xs font-semibold mb-1 select-none">Hello Monster – Baby Monster</p>
             <div class="flex items-center text-xs text-gray-500 space-x-1 mb-2 select-none">
@@ -189,30 +211,13 @@
               <i class="fas fa-map-marker-alt ml-3"></i>
               <span>Jakarta, Indonesia</span>
             </div>
+             <a href="/info3">
+
             <button class="bg-[#4a6b8a] text-white text-xs rounded px-3 py-1 hover:bg-[#3a5570] transition">More info</button>
+            </a>
           </div>
         </div>
 
-
-@foreach ($contents as $content)
-                <div class="card">
-                    @if($content->image_path)
-                        <img src="{{ asset('storage/' . $content->image_path) }}" alt="{{ $content->name }}" loading="lazy" />
-                    @else
-                        <img src="https://placehold.co/280x140?text=No+Image" alt="No Image" />
-                    @endif
-                    <div class="card-content">
-                        <p class="card-title">{{ $content->name }}</p>
-                        <div class="info">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span>{{ $content->date->format('H.i') }}</span>
-                            <i class="fas fa-map-marker-alt" style="margin-left:12px;"></i>
-                            <span>{{ $content->location }}</span>
-                        </div>
-                        <button class="btn">More info</button>
-                    </div>
-                </div>
-            @endforeach
 
 
         <!-- Card 2 -->
@@ -226,7 +231,10 @@
               <i class="fas fa-map-marker-alt ml-3"></i>
               <span>Jakarta, Indonesia</span>
             </div>
+            <a href="/info1">
+
             <button class="bg-[#4a6b8a] text-white text-xs rounded px-3 py-1 hover:bg-[#3a5570] transition">More info</button>
+            </a>
           </div>
         </div>
         <!-- Card 3 -->
@@ -240,7 +248,10 @@
               <i class="fas fa-map-marker-alt ml-3"></i>
               <span>Jakarta, Indonesia</span>
             </div>
+            <a href="/info2">
+
             <button class="bg-[#4a6b8a] text-white text-xs rounded px-3 py-1 hover:bg-[#3a5570] transition">More info</button>
+            </a>
           </div>
         </div>
       </div>
@@ -260,7 +271,10 @@
               <i class="fas fa-map-marker-alt ml-3"></i>
               <span>Jakarta, Indonesia</span>
             </div>
+            <a href="/info3">
+
             <button class="bg-[#4a6b8a] text-white text-xs rounded px-3 py-1 hover:bg-[#3a5570] transition">More info</button>
+            </a>
           </div>
         </div>
         <!-- Card 2 -->

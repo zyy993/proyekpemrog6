@@ -94,7 +94,7 @@ class HomeController extends Controller
        public function tampilHome()
    {
        $contents = Home::all(); // Ambil semua data dari tabel home_page_contents
-       return view('home', compact('contents')); // Kirim variabel contents ke view
+       return view('user.home', compact('contents')); // Kirim variabel contents ke view
    }
-   
+
 }
