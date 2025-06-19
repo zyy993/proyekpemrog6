@@ -163,6 +163,9 @@ Route::get('livechat1', function () {
 Route::get('livechat2', function () {
     return view('admin.livechat2');
 });
+Route::get('haladmin', function () {
+    return view('admin.haladmin');
+});
 Route::get('editprofile1', function () {
     return view('promotor.editprofile1');
 });
@@ -173,13 +176,13 @@ Route::get('/seating', function () {
     return view('seating');
 });
 Route::get('/tambahticket', function () {
-    return view('tambahticket');
+    return view('promotor.tambahticket');
 });
 Route::get('/validasikonser', function () {
-    return view('validasikonser');
+    return view('promotor.validasikonser');
 });
 Route::get('/validasikonser1', function () {
-    return view('validasikonser1');
+    return view('promotor.validasikonser1');
 });
 // Route untuk menampilkan halaman dashboard
 //Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard.index');
